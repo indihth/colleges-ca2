@@ -1,0 +1,205 @@
+{
+	"status": "success",
+	"data": {
+		"id": 1,
+		"title": "Cloud computing",
+		"code": "QB254",
+		"description": "When she got to do,' said the Hatter: 'but you could keep it to the whiting,' said Alice, swallowing down her flamingo, and began to get hold of this pool? I am now? That'll be a very little!.",
+		"points": 526,
+		"level": 7,
+		"created_at": "2023-11-17T15:46:26.000000Z",
+		"updated_at": "2023-11-17T15:46:26.000000Z",
+		"enrolments": [
+			{
+				"id": 8,
+				"date": "2023-10-09",
+				"time": "13:49:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 27,
+				"created_at": "2023-11-17T15:46:40.000000Z",
+				"updated_at": "2023-11-17T15:46:40.000000Z",
+				"lecturer": {
+					"id": 27,
+					"name": "Lenny Reynolds",
+					"address": "13 Toby Gardens, Port Travon",
+					"email": "constance.koch@kiehn.com",
+					"phone": "088-3548861",
+					"created_at": "2023-11-17T15:46:34.000000Z",
+					"updated_at": "2023-11-17T15:46:34.000000Z"
+				}
+			},
+			{
+				"id": 40,
+				"date": "2023-11-01",
+				"time": "02:28:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 41,
+				"created_at": "2023-11-17T15:46:46.000000Z",
+				"updated_at": "2023-11-17T15:46:46.000000Z",
+				"lecturer": {
+					"id": 41,
+					"name": "Christelle Durgan",
+					"address": "18 Nyah Port, McClureberg",
+					"email": "vbashirian@metz.com",
+					"phone": "020-1952892",
+					"created_at": "2023-11-17T15:46:37.000000Z",
+					"updated_at": "2023-11-17T15:46:37.000000Z"
+				}
+			},
+			{
+				"id": 53,
+				"date": "2023-09-05",
+				"time": "13:01:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 5,
+				"created_at": "2023-11-17T15:46:48.000000Z",
+				"updated_at": "2023-11-17T15:46:48.000000Z",
+				"lecturer": {
+					"id": 5,
+					"name": "Dr. Dave Pouros MD",
+					"address": "58 Stehr Junction, Lake Pierre",
+					"email": "astracke@considine.net",
+					"phone": "008-2818300",
+					"created_at": "2023-11-17T15:46:31.000000Z",
+					"updated_at": "2023-11-17T15:46:31.000000Z"
+				}
+			},
+			{
+				"id": 70,
+				"date": "2023-11-08",
+				"time": "10:12:00",
+				"status": "career_break",
+				"course_id": 1,
+				"lecturer_id": 40,
+				"created_at": "2023-11-17T15:46:52.000000Z",
+				"updated_at": "2023-11-17T15:46:52.000000Z",
+				"lecturer": {
+					"id": 40,
+					"name": "Fae Wyman",
+					"address": "15 Thalia Road, New Thalia",
+					"email": "predovic.kylie@hauck.com",
+					"phone": "014-8409657",
+					"created_at": "2023-11-17T15:46:37.000000Z",
+					"updated_at": "2023-11-17T15:46:37.000000Z"
+				}
+			},
+			{
+				"id": 86,
+				"date": "2023-09-20",
+				"time": "16:28:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 26,
+				"created_at": "2023-11-17T15:46:54.000000Z",
+				"updated_at": "2023-11-17T15:46:54.000000Z",
+				"lecturer": {
+					"id": 26,
+					"name": "Kailee McLaughlin",
+					"address": "33 Runolfsson Corners, Macbury",
+					"email": "iwaters@emmerich.org",
+					"phone": "084-9295147",
+					"created_at": "2023-11-17T15:46:34.000000Z",
+					"updated_at": "2023-11-17T15:46:34.000000Z"
+				}
+			},
+			{
+				"id": 102,
+				"date": "2023-11-01",
+				"time": "21:07:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 41,
+				"created_at": "2023-11-17T15:46:57.000000Z",
+				"updated_at": "2023-11-17T15:46:57.000000Z",
+				"lecturer": {
+					"id": 41,
+					"name": "Christelle Durgan",
+					"address": "18 Nyah Port, McClureberg",
+					"email": "vbashirian@metz.com",
+					"phone": "020-1952892",
+					"created_at": "2023-11-17T15:46:37.000000Z",
+					"updated_at": "2023-11-17T15:46:37.000000Z"
+				}
+			},
+			{
+				"id": 120,
+				"date": "2023-10-18",
+				"time": "06:47:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 15,
+				"created_at": "2023-11-17T15:47:00.000000Z",
+				"updated_at": "2023-11-17T15:47:00.000000Z",
+				"lecturer": {
+					"id": 15,
+					"name": "Mr. Evans Rice",
+					"address": "98 Zelma Walk, North Tyresehaven",
+					"email": "ykunde@lehner.biz",
+					"phone": "097-1987859",
+					"created_at": "2023-11-17T15:46:32.000000Z",
+					"updated_at": "2023-11-17T15:46:32.000000Z"
+				}
+			},
+			{
+				"id": 122,
+				"date": "2023-08-26",
+				"time": "01:05:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 20,
+				"created_at": "2023-11-17T15:47:01.000000Z",
+				"updated_at": "2023-11-17T15:47:01.000000Z",
+				"lecturer": {
+					"id": 20,
+					"name": "Leora Grady",
+					"address": "24 Rutherford Springs, Mollyfort",
+					"email": "giovanny16@yahoo.com",
+					"phone": "005-3935354",
+					"created_at": "2023-11-17T15:46:33.000000Z",
+					"updated_at": "2023-11-17T15:46:33.000000Z"
+				}
+			},
+			{
+				"id": 138,
+				"date": "2023-11-13",
+				"time": "14:54:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 38,
+				"created_at": "2023-11-17T15:47:04.000000Z",
+				"updated_at": "2023-11-17T15:47:04.000000Z",
+				"lecturer": {
+					"id": 38,
+					"name": "August Mueller",
+					"address": "91 Walsh Falls, West Edwinabury",
+					"email": "vonrueden.ethelyn@kovacek.com",
+					"phone": "088-4933437",
+					"created_at": "2023-11-17T15:46:36.000000Z",
+					"updated_at": "2023-11-17T15:46:36.000000Z"
+				}
+			},
+			{
+				"id": 165,
+				"date": "2023-11-02",
+				"time": "06:37:00",
+				"status": "interested",
+				"course_id": 1,
+				"lecturer_id": 12,
+				"created_at": "2023-11-17T15:47:08.000000Z",
+				"updated_at": "2023-11-17T15:47:08.000000Z",
+				"lecturer": {
+					"id": 12,
+					"name": "Odie Wolf",
+					"address": "33 Lia Valleys, Schillerfort",
+					"email": "eschinner@gutmann.com",
+					"phone": "014-3193617",
+					"created_at": "2023-11-17T15:46:32.000000Z",
+					"updated_at": "2023-11-17T15:46:32.000000Z"
+				}
+			}
+		]
+	}
+}

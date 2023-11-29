@@ -8,52 +8,27 @@ import {
   Card,
   Input,
   Textarea,
-  Typography,
-  Select,
-  Option,
+  Typography
 } from "@material-tailwind/react";
 
-const Edit = () => {
+const Create = () => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);  
+  const [lecturer, setLecturer] = useState(null);  
   const [errors, setErrors] = useState({});
  
   const [form, setForm] = useState({
-    title: "",
-    description: "",
-    code: "",
-    points: "",
-    level: "",
+    name: "",
+    address: "",
+    email: "",
+    phone: "",
+    // enrolments: "",
   });
   
   const navigate = useNavigate();
 
-  const errorStyle = {
-    color: "red",
-    marginStart: "3px",
-  };
+  const fieldText = ["name", "address", "email", "phone"];
+  // const fieldText = ["name", "address", "email", "phone", "enrolments"];
 
-  let token = localStorage.getItem("token");
-
-  const fieldText = ["title", "description", "code", "points", "level"];
-  const levelOptions = [7, 8, 9, 10];
-
-  useEffect(() => {
-    axios
-      .get(`/courses/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then((response) => {
-        console.log(response);
-        setCourse(response.data.data); // Puts data in 'course' state
-        setForm(response.data.data); // Fills form with existing data
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, [id]);
 
   // Handles multiple form fields
   const handleForm = (e) => {
@@ -96,14 +71,14 @@ const Edit = () => {
 
       console.log("submitted", form);
       axios
-        .put(`/courses/${id}`, form, {
+        .post(`/lecturers`, form, {
           // Put method with id in URL
           headers: {
             Authorization: `Bearer ${token}`,
           },
         })
         .then((response) => {
-          navigate(`/courses/${id}`);
+          navigate(`/lecturers`);
         })
         .catch((err) => {
           console.error(err);
@@ -111,23 +86,10 @@ const Edit = () => {
     }
   };
 
-  if (!course) return <h3>course not found</h3>;
-
-
-  // const renderOptions = () => {
-  //   let options = ["7", "8", "9", "10"]
-
-  //   const selectOptions = options.map((option, i) => (
-  //       <option value={option} key={i}>{option}</option>
-  //     ))
-  //     console.log("select ops:" + selectOptions)
-  //     return selectOptions
-  // };
-
   return (
     <Card color="transparent" shadow={false}>
       <Typography variant="h4" color="blue-gray">
-        Edit Course
+        Edit Lecturer
       </Typography>
       <form
         onSubmit={submitForm}
@@ -135,14 +97,14 @@ const Edit = () => {
       >
         <div className="mb-1 flex flex-col gap-6">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Title
+            Name
           </Typography>
 
           <Input
             type="text"
             onChange={handleForm}
-            value={form.title}
-            name="title"
+            // value={form.name}
+            name="name"
             size="lg"
             variant="static"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -151,24 +113,24 @@ const Edit = () => {
             }}
           />
 
-          {/* ? will display if a title exists */}
+          {/* ? will display if a name exists */}
           <Typography
             variant="small"
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.title?.message}
+            {errors.name?.message}
           </Typography>
         </div>
         <div className="mb-3">
           <Typography variant="h6" color="blue-gray" className="mb-3">
-            Description
+            Address
           </Typography>
           <Textarea
             type="text"
             onChange={handleForm}
-            value={form.description}
-            name="description"
+            // value={form.address}
+            name="address"
             size="md"
             variant="outlined"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -181,18 +143,18 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.description?.message}
+            {errors.address?.message}
           </Typography>
         </div>
         <div className="mb-3">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Code
+            Email
           </Typography>
           <Input
             type="text"
             onChange={handleForm}
-            value={form.code}
-            name="code"
+            // value={form.email}
+            name="email"
             size="lg"
             variant="static"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -205,18 +167,18 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.code?.message}
+            {errors.email?.message}
           </Typography>
         </div>
         <div>
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Points
+            Phone
           </Typography>
           <Input
-            type="number"
+            type="text"
             onChange={handleForm}
-            value={form.points}
-            name="points"
+            // value={form.phone}
+            name="phone"
             size="lg"
             variant="static"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -229,28 +191,28 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.points?.message}
+            {errors.phone?.message}
           </Typography>
         </div>
         <div>
           <Typography variant="h6" color="blue-gray" className="mb-3">
-            Level
+            Enrolments - to be done
           </Typography>
 
-          <select value={form.level} name="level" onChange={handleForm}>
+          {/* <select // value={form.enrolments} name="enrolments" onChange={handleForm}>
             
-            {levelOptions.map((level, i) => (
-              <option value={level} key={i}> 
-              {level}              
+            {enrolmentsOptions.map((enrolments, i) => (
+              <option value={enrolments} key={i}> 
+              {enrolments}              
               </option>
             ))
             }
-          </select>
+          </select> */}
           {/* <Select
             variant="static"
             onChange={handleForm}
-            name="level"
-            value={form.level}
+            name="enrolments"
+            // value={form.enrolments}
           >
             <Option value="7">7</Option>
             <Option value="8">8</Option>
@@ -260,8 +222,8 @@ const Edit = () => {
           {/* <Input
             type="text"
             onChange={handleForm}
-            value={form.level}
-            name="level"
+            // value={form.enrolments}
+            name="enrolments"
             size="lg"
             variant="static"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -274,7 +236,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.level?.message}
+            {errors.enrolments?.message}
           </Typography>
         </div>
         <Input type="submit" />
@@ -283,4 +245,4 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default Create;

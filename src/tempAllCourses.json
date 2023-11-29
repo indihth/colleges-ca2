@@ -1,0 +1,4095 @@
+{
+	"status": "success",
+	"data": [
+		{
+			"id": 1,
+			"title": "Cloud computing",
+			"code": "QB254",
+			"description": "When she got to do,' said the Hatter: 'but you could keep it to the whiting,' said Alice, swallowing down her flamingo, and began to get hold of this pool? I am now? That'll be a very little!.",
+			"points": 526,
+			"level": 7,
+			"created_at": "2023-11-17T15:46:26.000000Z",
+			"updated_at": "2023-11-17T15:46:26.000000Z",
+			"enrolments": [
+				{
+					"id": 8,
+					"date": "2023-10-09",
+					"time": "13:49:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 27,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 27,
+						"name": "Lenny Reynolds",
+						"address": "13 Toby Gardens, Port Travon",
+						"email": "constance.koch@kiehn.com",
+						"phone": "088-3548861",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 40,
+					"date": "2023-11-01",
+					"time": "02:28:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 41,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 41,
+						"name": "Christelle Durgan",
+						"address": "18 Nyah Port, McClureberg",
+						"email": "vbashirian@metz.com",
+						"phone": "020-1952892",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 53,
+					"date": "2023-09-05",
+					"time": "13:01:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 5,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 5,
+						"name": "Alexander B. Hamilton",
+						"address": "Somewhere in New York US",
+						"email": "alex.ham@usa.com",
+						"phone": "9863220009",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-18T14:25:28.000000Z"
+					}
+				},
+				{
+					"id": 70,
+					"date": "2023-11-08",
+					"time": "10:12:00",
+					"status": "career_break",
+					"course_id": 1,
+					"lecturer_id": 40,
+					"created_at": "2023-11-17T15:46:52.000000Z",
+					"updated_at": "2023-11-17T15:46:52.000000Z",
+					"lecturer": {
+						"id": 40,
+						"name": "Fae Wyman",
+						"address": "15 Thalia Road, New Thalia",
+						"email": "predovic.kylie@hauck.com",
+						"phone": "014-8409657",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 86,
+					"date": "2023-09-20",
+					"time": "16:28:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 26,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 26,
+						"name": "Kailee McLaughlin",
+						"address": "33 Runolfsson Corners, Macbury",
+						"email": "iwaters@emmerich.org",
+						"phone": "084-9295147",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 102,
+					"date": "2023-11-01",
+					"time": "21:07:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 41,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 41,
+						"name": "Christelle Durgan",
+						"address": "18 Nyah Port, McClureberg",
+						"email": "vbashirian@metz.com",
+						"phone": "020-1952892",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 120,
+					"date": "2023-10-18",
+					"time": "06:47:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 122,
+					"date": "2023-08-26",
+					"time": "01:05:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 20,
+					"created_at": "2023-11-17T15:47:01.000000Z",
+					"updated_at": "2023-11-17T15:47:01.000000Z",
+					"lecturer": {
+						"id": 20,
+						"name": "Leora Grady",
+						"address": "24 Rutherford Springs, Mollyfort",
+						"email": "giovanny16@yahoo.com",
+						"phone": "005-3935354",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 138,
+					"date": "2023-11-13",
+					"time": "14:54:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 38,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 38,
+						"name": "August Mueller",
+						"address": "91 Walsh Falls, West Edwinabury",
+						"email": "vonrueden.ethelyn@kovacek.com",
+						"phone": "088-4933437",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 165,
+					"date": "2023-11-02",
+					"time": "06:37:00",
+					"status": "interested",
+					"course_id": 1,
+					"lecturer_id": 12,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 12,
+						"name": "Odie Wolf",
+						"address": "33 Lia Valleys, Schillerfort",
+						"email": "eschinner@gutmann.com",
+						"phone": "014-3193617",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 2,
+			"title": "Interaction design",
+			"code": "CU442",
+			"description": "I've tried hedges,' the Pigeon went on, without attending to her; 'but those serpents! There's no pleasing them!' Alice was not a moment to think about it, you know--' (pointing with his head!\"'.",
+			"points": 466,
+			"level": 10,
+			"created_at": "2023-11-17T15:46:26.000000Z",
+			"updated_at": "2023-11-17T15:46:26.000000Z",
+			"enrolments": [
+				{
+					"id": 2,
+					"date": "2023-09-18",
+					"time": "06:46:00",
+					"status": "assigned",
+					"course_id": 2,
+					"lecturer_id": 11,
+					"created_at": "2023-11-17T15:46:39.000000Z",
+					"updated_at": "2023-11-17T15:46:39.000000Z",
+					"lecturer": {
+						"id": 11,
+						"name": "Dariana Donnelly",
+						"address": "61 Spinka Passage, South Gerda",
+						"email": "gerhard83@gmail.com",
+						"phone": "029-5354321",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 7,
+					"date": "2023-08-25",
+					"time": "01:01:00",
+					"status": "career_break",
+					"course_id": 2,
+					"lecturer_id": 13,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 13,
+						"name": "Mrs. Desiree Dare II",
+						"address": "55 Block Causeway, Deondreburgh",
+						"email": "dortha97@goodwin.com",
+						"phone": "028-7891972",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 55,
+					"date": "2023-09-08",
+					"time": "06:30:00",
+					"status": "assigned",
+					"course_id": 2,
+					"lecturer_id": 47,
+					"created_at": "2023-11-17T15:46:49.000000Z",
+					"updated_at": "2023-11-17T15:46:49.000000Z",
+					"lecturer": {
+						"id": 47,
+						"name": "Lilly Stracke",
+						"address": "62 Nienow Overpass, Johannamouth",
+						"email": "metz.erich@gleichner.com",
+						"phone": "088-5492739",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 78,
+					"date": "2023-10-16",
+					"time": "05:30:00",
+					"status": "assigned",
+					"course_id": 2,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 88,
+					"date": "2023-09-11",
+					"time": "16:55:00",
+					"status": "interested",
+					"course_id": 2,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:46:55.000000Z",
+					"updated_at": "2023-11-17T15:46:55.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 153,
+					"date": "2023-10-14",
+					"time": "14:04:00",
+					"status": "interested",
+					"course_id": 2,
+					"lecturer_id": 17,
+					"created_at": "2023-11-17T15:47:06.000000Z",
+					"updated_at": "2023-11-17T15:47:06.000000Z",
+					"lecturer": {
+						"id": 17,
+						"name": "Everette Kessler",
+						"address": "88 Hildegard Estates, North Dejon",
+						"email": "taylor.jaskolski@padberg.com",
+						"phone": "030-1446602",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 173,
+					"date": "2023-11-05",
+					"time": "17:44:00",
+					"status": "career_break",
+					"course_id": 2,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 179,
+					"date": "2023-10-05",
+					"time": "21:20:00",
+					"status": "associate",
+					"course_id": 2,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:47:11.000000Z",
+					"updated_at": "2023-11-17T15:47:11.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 198,
+					"date": "2023-09-04",
+					"time": "14:31:00",
+					"status": "interested",
+					"course_id": 2,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:47:15.000000Z",
+					"updated_at": "2023-11-17T15:47:15.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 201,
+					"date": "2023-10-10",
+					"time": "20:15:00",
+					"status": "career_break",
+					"course_id": 2,
+					"lecturer_id": 52,
+					"created_at": "2023-11-18T14:26:55.000000Z",
+					"updated_at": "2023-11-18T14:26:55.000000Z",
+					"lecturer": {
+						"id": 52,
+						"name": "Alexander Hamilton",
+						"address": "Somewhere in New York",
+						"email": "alex.ham@us.com",
+						"phone": "9863220008",
+						"created_at": "2023-11-18T14:25:24.000000Z",
+						"updated_at": "2023-11-18T14:25:24.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 3,
+			"title": "Mobile computing",
+			"code": "LY801",
+			"description": "Mock Turtle drew a long way. So they sat down, and the reason is--' here the conversation a little. ''Tis so,' said Alice. 'Did you speak?' 'Not I!' said the King; 'and don't be nervous, or I'll.",
+			"points": 472,
+			"level": 10,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 10,
+					"date": "2023-11-02",
+					"time": "19:36:00",
+					"status": "assigned",
+					"course_id": 3,
+					"lecturer_id": 11,
+					"created_at": "2023-11-17T15:46:41.000000Z",
+					"updated_at": "2023-11-17T15:46:41.000000Z",
+					"lecturer": {
+						"id": 11,
+						"name": "Dariana Donnelly",
+						"address": "61 Spinka Passage, South Gerda",
+						"email": "gerhard83@gmail.com",
+						"phone": "029-5354321",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 69,
+					"date": "2023-08-20",
+					"time": "23:09:00",
+					"status": "career_break",
+					"course_id": 3,
+					"lecturer_id": 31,
+					"created_at": "2023-11-17T15:46:51.000000Z",
+					"updated_at": "2023-11-17T15:46:51.000000Z",
+					"lecturer": {
+						"id": 31,
+						"name": "Rey Langosh",
+						"address": "90 Horacio Street, North Marjorietown",
+						"email": "tyree.green@hill.net",
+						"phone": "061-8419774",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 77,
+					"date": "2023-09-24",
+					"time": "17:20:00",
+					"status": "associate",
+					"course_id": 3,
+					"lecturer_id": 9,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 9,
+						"name": "Ebony Thiel",
+						"address": "53 Barrows Key, East Christiana",
+						"email": "rachael.leffler@gmail.com",
+						"phone": "055-5407270",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 110,
+					"date": "2023-09-04",
+					"time": "23:03:00",
+					"status": "career_break",
+					"course_id": 3,
+					"lecturer_id": 33,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 33,
+						"name": "Dr. Dorthy Lowe II",
+						"address": "10 Bud Circle, East Rhettton",
+						"email": "sheldon18@leffler.com",
+						"phone": "019-2457787",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 157,
+					"date": "2023-09-17",
+					"time": "23:12:00",
+					"status": "assigned",
+					"course_id": 3,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"title": "Web design",
+			"code": "AN033",
+			"description": "Caterpillar. 'Is that all?' said the Caterpillar. Here was another puzzling question; and as the Rabbit, and had just succeeded in bringing herself down to the game. CHAPTER IX. The Mock Turtle's.",
+			"points": 198,
+			"level": 10,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 6,
+					"date": "2023-08-19",
+					"time": "18:23:00",
+					"status": "interested",
+					"course_id": 4,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 28,
+					"date": "2023-09-05",
+					"time": "04:39:00",
+					"status": "career_break",
+					"course_id": 4,
+					"lecturer_id": 4,
+					"created_at": "2023-11-17T15:46:44.000000Z",
+					"updated_at": "2023-11-17T15:46:44.000000Z",
+					"lecturer": {
+						"id": 4,
+						"name": "Earlene Carroll V",
+						"address": "84 Keagan View, Thadtown",
+						"email": "obeatty@yahoo.com",
+						"phone": "065-6314964",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 45,
+					"date": "2023-08-22",
+					"time": "08:56:00",
+					"status": "interested",
+					"course_id": 4,
+					"lecturer_id": 31,
+					"created_at": "2023-11-17T15:46:47.000000Z",
+					"updated_at": "2023-11-17T15:46:47.000000Z",
+					"lecturer": {
+						"id": 31,
+						"name": "Rey Langosh",
+						"address": "90 Horacio Street, North Marjorietown",
+						"email": "tyree.green@hill.net",
+						"phone": "061-8419774",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 60,
+					"date": "2023-09-20",
+					"time": "04:00:00",
+					"status": "assigned",
+					"course_id": 4,
+					"lecturer_id": 35,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 35,
+						"name": "Laverna Moore",
+						"address": "68 Hills Avenue, Bradtkeville",
+						"email": "murphy.pedro@gmail.com",
+						"phone": "003-6113173",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 83,
+					"date": "2023-08-22",
+					"time": "19:05:00",
+					"status": "interested",
+					"course_id": 4,
+					"lecturer_id": 5,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 5,
+						"name": "Alexander B. Hamilton",
+						"address": "Somewhere in New York US",
+						"email": "alex.ham@usa.com",
+						"phone": "9863220009",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-18T14:25:28.000000Z"
+					}
+				},
+				{
+					"id": 114,
+					"date": "2023-10-31",
+					"time": "23:53:00",
+					"status": "associate",
+					"course_id": 4,
+					"lecturer_id": 4,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 4,
+						"name": "Earlene Carroll V",
+						"address": "84 Keagan View, Thadtown",
+						"email": "obeatty@yahoo.com",
+						"phone": "065-6314964",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 116,
+					"date": "2023-10-21",
+					"time": "16:58:00",
+					"status": "associate",
+					"course_id": 4,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 135,
+					"date": "2023-10-31",
+					"time": "10:52:00",
+					"status": "interested",
+					"course_id": 4,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 167,
+					"date": "2023-09-11",
+					"time": "03:04:00",
+					"status": "career_break",
+					"course_id": 4,
+					"lecturer_id": 25,
+					"created_at": "2023-11-17T15:47:09.000000Z",
+					"updated_at": "2023-11-17T15:47:09.000000Z",
+					"lecturer": {
+						"id": 25,
+						"name": "Dr. Lamar Hill",
+						"address": "46 Hillary Expressway, Lynchfurt",
+						"email": "felipe.donnelly@hotmail.com",
+						"phone": "015-6393132",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 5,
+			"title": "Data analytics and big data",
+			"code": "MY176",
+			"description": "At this the whole party swam to the shore, and then dipped suddenly down, so suddenly that Alice quite jumped; but she did not come the same thing,' said the King, with an M?' said Alice. 'Come on.",
+			"points": 209,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 5,
+					"date": "2023-10-20",
+					"time": "16:57:00",
+					"status": "assigned",
+					"course_id": 5,
+					"lecturer_id": 3,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 3,
+						"name": "Prof. Haley Hansen DDS",
+						"address": "54 Halvorson Plains, Kertzmannmouth",
+						"email": "tre.tromp@hotmail.com",
+						"phone": "047-1647721",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 12,
+					"date": "2023-09-16",
+					"time": "15:27:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 50,
+					"created_at": "2023-11-17T15:46:41.000000Z",
+					"updated_at": "2023-11-17T15:46:41.000000Z",
+					"lecturer": {
+						"id": 50,
+						"name": "Newell Paucek",
+						"address": "31 Sierra Square, Wilfredville",
+						"email": "katharina43@yahoo.com",
+						"phone": "002-3764014",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 41,
+					"date": "2023-11-15",
+					"time": "05:53:00",
+					"status": "career_break",
+					"course_id": 5,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 51,
+					"date": "2023-09-26",
+					"time": "09:17:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 58,
+					"date": "2023-08-28",
+					"time": "11:26:00",
+					"status": "interested",
+					"course_id": 5,
+					"lecturer_id": 31,
+					"created_at": "2023-11-17T15:46:49.000000Z",
+					"updated_at": "2023-11-17T15:46:49.000000Z",
+					"lecturer": {
+						"id": 31,
+						"name": "Rey Langosh",
+						"address": "90 Horacio Street, North Marjorietown",
+						"email": "tyree.green@hill.net",
+						"phone": "061-8419774",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 64,
+					"date": "2023-11-12",
+					"time": "02:23:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 65,
+					"date": "2023-11-08",
+					"time": "07:52:00",
+					"status": "interested",
+					"course_id": 5,
+					"lecturer_id": 8,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 8,
+						"name": "Maude Dickens",
+						"address": "84 Lennie Parkways, New Carmelo",
+						"email": "daphnee35@hotmail.com",
+						"phone": "057-0532648",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 71,
+					"date": "2023-11-09",
+					"time": "21:03:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 3,
+					"created_at": "2023-11-17T15:46:52.000000Z",
+					"updated_at": "2023-11-17T15:46:52.000000Z",
+					"lecturer": {
+						"id": 3,
+						"name": "Prof. Haley Hansen DDS",
+						"address": "54 Halvorson Plains, Kertzmannmouth",
+						"email": "tre.tromp@hotmail.com",
+						"phone": "047-1647721",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 105,
+					"date": "2023-08-30",
+					"time": "05:15:00",
+					"status": "assigned",
+					"course_id": 5,
+					"lecturer_id": 24,
+					"created_at": "2023-11-17T15:46:58.000000Z",
+					"updated_at": "2023-11-17T15:46:58.000000Z",
+					"lecturer": {
+						"id": 24,
+						"name": "Flo Miller",
+						"address": "67 McKenzie Parkways, Paucekfort",
+						"email": "terence.steuber@yahoo.com",
+						"phone": "041-5988189",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 115,
+					"date": "2023-11-14",
+					"time": "23:15:00",
+					"status": "interested",
+					"course_id": 5,
+					"lecturer_id": 19,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 19,
+						"name": "Israel Wunsch",
+						"address": "30 Lorena Valleys, Lake Bridie",
+						"email": "bklocko@yahoo.com",
+						"phone": "059-7885351",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 152,
+					"date": "2023-11-16",
+					"time": "03:31:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 6,
+					"created_at": "2023-11-17T15:47:06.000000Z",
+					"updated_at": "2023-11-17T15:47:06.000000Z",
+					"lecturer": {
+						"id": 6,
+						"name": "Dr. Christiana Auer II",
+						"address": "76 Enola Unions, Joanaside",
+						"email": "pierce.cruickshank@bergstrom.com",
+						"phone": "086-5782718",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 168,
+					"date": "2023-10-25",
+					"time": "05:23:00",
+					"status": "associate",
+					"course_id": 5,
+					"lecturer_id": 1,
+					"created_at": "2023-11-17T15:47:09.000000Z",
+					"updated_at": "2023-11-17T15:47:09.000000Z",
+					"lecturer": {
+						"id": 1,
+						"name": "Adelle Rohan",
+						"address": "34 Pinkie Hollow, Juniormouth",
+						"email": "zmurazik@blanda.com",
+						"phone": "034-4852230",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 169,
+					"date": "2023-10-15",
+					"time": "14:52:00",
+					"status": "assigned",
+					"course_id": 5,
+					"lecturer_id": 36,
+					"created_at": "2023-11-17T15:47:09.000000Z",
+					"updated_at": "2023-11-17T15:47:09.000000Z",
+					"lecturer": {
+						"id": 36,
+						"name": "Ms. Herminia Kertzmann Jr.",
+						"address": "87 Adaline Courts, East Alvah",
+						"email": "ewunsch@yahoo.com",
+						"phone": "091-6374752",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 170,
+					"date": "2023-10-25",
+					"time": "11:07:00",
+					"status": "interested",
+					"course_id": 5,
+					"lecturer_id": 50,
+					"created_at": "2023-11-17T15:47:09.000000Z",
+					"updated_at": "2023-11-17T15:47:09.000000Z",
+					"lecturer": {
+						"id": 50,
+						"name": "Newell Paucek",
+						"address": "31 Sierra Square, Wilfredville",
+						"email": "katharina43@yahoo.com",
+						"phone": "002-3764014",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 186,
+					"date": "2023-09-11",
+					"time": "12:36:00",
+					"status": "assigned",
+					"course_id": 5,
+					"lecturer_id": 13,
+					"created_at": "2023-11-17T15:47:12.000000Z",
+					"updated_at": "2023-11-17T15:47:12.000000Z",
+					"lecturer": {
+						"id": 13,
+						"name": "Mrs. Desiree Dare II",
+						"address": "55 Block Causeway, Deondreburgh",
+						"email": "dortha97@goodwin.com",
+						"phone": "028-7891972",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 6,
+			"title": "Digital media",
+			"code": "TJ523",
+			"description": "I can remember feeling a little bird as soon as the March Hare interrupted in a low, hurried tone. He looked at it, and then a row of lamps hanging from the sky! Ugh, Serpent!' 'But I'm not looking.",
+			"points": 328,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 13,
+					"date": "2023-10-09",
+					"time": "05:15:00",
+					"status": "interested",
+					"course_id": 6,
+					"lecturer_id": 12,
+					"created_at": "2023-11-17T15:46:41.000000Z",
+					"updated_at": "2023-11-17T15:46:41.000000Z",
+					"lecturer": {
+						"id": 12,
+						"name": "Odie Wolf",
+						"address": "33 Lia Valleys, Schillerfort",
+						"email": "eschinner@gutmann.com",
+						"phone": "014-3193617",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 15,
+					"date": "2023-09-05",
+					"time": "23:27:00",
+					"status": "assigned",
+					"course_id": 6,
+					"lecturer_id": 24,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 24,
+						"name": "Flo Miller",
+						"address": "67 McKenzie Parkways, Paucekfort",
+						"email": "terence.steuber@yahoo.com",
+						"phone": "041-5988189",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 20,
+					"date": "2023-11-13",
+					"time": "23:00:00",
+					"status": "interested",
+					"course_id": 6,
+					"lecturer_id": 14,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 14,
+						"name": "Leora Ruecker",
+						"address": "46 Kameron Row, Lake Beatriceborough",
+						"email": "treva43@oconner.info",
+						"phone": "031-2615967",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 80,
+					"date": "2023-09-26",
+					"time": "09:24:00",
+					"status": "career_break",
+					"course_id": 6,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 85,
+					"date": "2023-11-17",
+					"time": "09:10:00",
+					"status": "assigned",
+					"course_id": 6,
+					"lecturer_id": 7,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 7,
+						"name": "Catalina Schulist",
+						"address": "60 Jast Crossing, New Raina",
+						"email": "arau@hessel.com",
+						"phone": "028-9835861",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 99,
+					"date": "2023-10-27",
+					"time": "10:42:00",
+					"status": "assigned",
+					"course_id": 6,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 111,
+					"date": "2023-10-05",
+					"time": "07:11:00",
+					"status": "associate",
+					"course_id": 6,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 123,
+					"date": "2023-10-17",
+					"time": "23:54:00",
+					"status": "career_break",
+					"course_id": 6,
+					"lecturer_id": 43,
+					"created_at": "2023-11-17T15:47:01.000000Z",
+					"updated_at": "2023-11-17T15:47:01.000000Z",
+					"lecturer": {
+						"id": 43,
+						"name": "Ettie Ortiz Sr.",
+						"address": "84 Rosella Spur, VonRuedenburgh",
+						"email": "rbartoletti@cronin.org",
+						"phone": "017-4813484",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 144,
+					"date": "2023-10-08",
+					"time": "23:43:00",
+					"status": "assigned",
+					"course_id": 6,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:47:05.000000Z",
+					"updated_at": "2023-11-17T15:47:05.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 156,
+					"date": "2023-10-07",
+					"time": "01:57:00",
+					"status": "associate",
+					"course_id": 6,
+					"lecturer_id": 4,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 4,
+						"name": "Earlene Carroll V",
+						"address": "84 Keagan View, Thadtown",
+						"email": "obeatty@yahoo.com",
+						"phone": "065-6314964",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 193,
+					"date": "2023-11-10",
+					"time": "22:06:00",
+					"status": "career_break",
+					"course_id": 6,
+					"lecturer_id": 10,
+					"created_at": "2023-11-17T15:47:14.000000Z",
+					"updated_at": "2023-11-17T15:47:14.000000Z",
+					"lecturer": {
+						"id": 10,
+						"name": "Emmanuelle Wiegand",
+						"address": "74 Jeanette Expressway, South Colin",
+						"email": "mabel.waelchi@gmail.com",
+						"phone": "036-7946915",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 7,
+			"title": "Business information systems",
+			"code": "KS859",
+			"description": "France-- Then turn not pale, beloved snail, but come and join the dance. '\"What matters it how far we go?\" his scaly friend replied. \"There is another shore, you know, as we needn't try to find.",
+			"points": 599,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 9,
+					"date": "2023-09-17",
+					"time": "14:24:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 11,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 11,
+						"name": "Dariana Donnelly",
+						"address": "61 Spinka Passage, South Gerda",
+						"email": "gerhard83@gmail.com",
+						"phone": "029-5354321",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 14,
+					"date": "2023-09-23",
+					"time": "02:03:00",
+					"status": "interested",
+					"course_id": 7,
+					"lecturer_id": 14,
+					"created_at": "2023-11-17T15:46:41.000000Z",
+					"updated_at": "2023-11-17T15:46:41.000000Z",
+					"lecturer": {
+						"id": 14,
+						"name": "Leora Ruecker",
+						"address": "46 Kameron Row, Lake Beatriceborough",
+						"email": "treva43@oconner.info",
+						"phone": "031-2615967",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 17,
+					"date": "2023-10-11",
+					"time": "12:01:00",
+					"status": "assigned",
+					"course_id": 7,
+					"lecturer_id": 7,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 7,
+						"name": "Catalina Schulist",
+						"address": "60 Jast Crossing, New Raina",
+						"email": "arau@hessel.com",
+						"phone": "028-9835861",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 89,
+					"date": "2023-10-27",
+					"time": "14:43:00",
+					"status": "associate",
+					"course_id": 7,
+					"lecturer_id": 35,
+					"created_at": "2023-11-17T15:46:55.000000Z",
+					"updated_at": "2023-11-17T15:46:55.000000Z",
+					"lecturer": {
+						"id": 35,
+						"name": "Laverna Moore",
+						"address": "68 Hills Avenue, Bradtkeville",
+						"email": "murphy.pedro@gmail.com",
+						"phone": "003-6113173",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 91,
+					"date": "2023-08-24",
+					"time": "22:47:00",
+					"status": "assigned",
+					"course_id": 7,
+					"lecturer_id": 2,
+					"created_at": "2023-11-17T15:46:55.000000Z",
+					"updated_at": "2023-11-17T15:46:55.000000Z",
+					"lecturer": {
+						"id": 2,
+						"name": "Dr. Adrianna Wyman",
+						"address": "30 Gislason Station, New Arely",
+						"email": "gino.mann@keebler.com",
+						"phone": "081-2155781",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 97,
+					"date": "2023-10-20",
+					"time": "17:04:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 24,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 24,
+						"name": "Flo Miller",
+						"address": "67 McKenzie Parkways, Paucekfort",
+						"email": "terence.steuber@yahoo.com",
+						"phone": "041-5988189",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 98,
+					"date": "2023-09-06",
+					"time": "21:32:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 46,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 46,
+						"name": "Aliyah Keebler",
+						"address": "100 Spencer Pine, West Jeffery",
+						"email": "schuppe.abbie@yahoo.com",
+						"phone": "024-9361232",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 108,
+					"date": "2023-10-17",
+					"time": "15:21:00",
+					"status": "interested",
+					"course_id": 7,
+					"lecturer_id": 4,
+					"created_at": "2023-11-17T15:46:58.000000Z",
+					"updated_at": "2023-11-17T15:46:58.000000Z",
+					"lecturer": {
+						"id": 4,
+						"name": "Earlene Carroll V",
+						"address": "84 Keagan View, Thadtown",
+						"email": "obeatty@yahoo.com",
+						"phone": "065-6314964",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 126,
+					"date": "2023-09-03",
+					"time": "08:49:00",
+					"status": "interested",
+					"course_id": 7,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 127,
+					"date": "2023-09-19",
+					"time": "03:57:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 23,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 23,
+						"name": "Fatima Larkin",
+						"address": "33 Mary Ramp, Ebertshire",
+						"email": "ray32@bauch.com",
+						"phone": "073-5398059",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 128,
+					"date": "2023-09-02",
+					"time": "03:06:00",
+					"status": "associate",
+					"course_id": 7,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 143,
+					"date": "2023-10-22",
+					"time": "10:15:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 145,
+					"date": "2023-09-11",
+					"time": "08:32:00",
+					"status": "interested",
+					"course_id": 7,
+					"lecturer_id": 47,
+					"created_at": "2023-11-17T15:47:05.000000Z",
+					"updated_at": "2023-11-17T15:47:05.000000Z",
+					"lecturer": {
+						"id": 47,
+						"name": "Lilly Stracke",
+						"address": "62 Nienow Overpass, Johannamouth",
+						"email": "metz.erich@gleichner.com",
+						"phone": "088-5492739",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 146,
+					"date": "2023-08-21",
+					"time": "10:49:00",
+					"status": "associate",
+					"course_id": 7,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:47:05.000000Z",
+					"updated_at": "2023-11-17T15:47:05.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 159,
+					"date": "2023-09-03",
+					"time": "15:56:00",
+					"status": "associate",
+					"course_id": 7,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 174,
+					"date": "2023-10-26",
+					"time": "03:45:00",
+					"status": "associate",
+					"course_id": 7,
+					"lecturer_id": 26,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 26,
+						"name": "Kailee McLaughlin",
+						"address": "33 Runolfsson Corners, Macbury",
+						"email": "iwaters@emmerich.org",
+						"phone": "084-9295147",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 177,
+					"date": "2023-08-25",
+					"time": "11:51:00",
+					"status": "career_break",
+					"course_id": 7,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:47:11.000000Z",
+					"updated_at": "2023-11-17T15:47:11.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 192,
+					"date": "2023-10-16",
+					"time": "05:49:00",
+					"status": "interested",
+					"course_id": 7,
+					"lecturer_id": 7,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 7,
+						"name": "Catalina Schulist",
+						"address": "60 Jast Crossing, New Raina",
+						"email": "arau@hessel.com",
+						"phone": "028-9835861",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 8,
+			"title": "Computer vision",
+			"code": "BC227",
+			"description": "Mary Ann, and be turned out of it, and on both sides of the deepest contempt. 'I've seen hatters before,' she said to live. 'I've seen a good deal on where you want to be?' it asked. 'Oh, I'm not.",
+			"points": 465,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:27.000000Z",
+			"updated_at": "2023-11-17T15:46:27.000000Z",
+			"enrolments": [
+				{
+					"id": 16,
+					"date": "2023-08-23",
+					"time": "12:03:00",
+					"status": "interested",
+					"course_id": 8,
+					"lecturer_id": 23,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 23,
+						"name": "Fatima Larkin",
+						"address": "33 Mary Ramp, Ebertshire",
+						"email": "ray32@bauch.com",
+						"phone": "073-5398059",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 31,
+					"date": "2023-11-07",
+					"time": "09:15:00",
+					"status": "career_break",
+					"course_id": 8,
+					"lecturer_id": 14,
+					"created_at": "2023-11-17T15:46:44.000000Z",
+					"updated_at": "2023-11-17T15:46:44.000000Z",
+					"lecturer": {
+						"id": 14,
+						"name": "Leora Ruecker",
+						"address": "46 Kameron Row, Lake Beatriceborough",
+						"email": "treva43@oconner.info",
+						"phone": "031-2615967",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 43,
+					"date": "2023-08-30",
+					"time": "05:40:00",
+					"status": "assigned",
+					"course_id": 8,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 52,
+					"date": "2023-09-11",
+					"time": "09:11:00",
+					"status": "assigned",
+					"course_id": 8,
+					"lecturer_id": 28,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 28,
+						"name": "Wilfrid Lubowitz",
+						"address": "24 Viola Streets, Lavonnefurt",
+						"email": "vicky30@hansen.com",
+						"phone": "024-6390795",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 140,
+					"date": "2023-10-14",
+					"time": "01:05:00",
+					"status": "interested",
+					"course_id": 8,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 182,
+					"date": "2023-10-19",
+					"time": "09:31:00",
+					"status": "assigned",
+					"course_id": 8,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:47:12.000000Z",
+					"updated_at": "2023-11-17T15:47:12.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 190,
+					"date": "2023-10-20",
+					"time": "09:04:00",
+					"status": "interested",
+					"course_id": 8,
+					"lecturer_id": 1,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 1,
+						"name": "Adelle Rohan",
+						"address": "34 Pinkie Hollow, Juniormouth",
+						"email": "zmurazik@blanda.com",
+						"phone": "034-4852230",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 194,
+					"date": "2023-10-24",
+					"time": "04:24:00",
+					"status": "associate",
+					"course_id": 8,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:47:14.000000Z",
+					"updated_at": "2023-11-17T15:47:14.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 9,
+			"title": "Distributed computing",
+			"code": "EC593",
+			"description": "I wonder?' As she said to herself how she was quite tired of being all alone here!' As she said this, she noticed a curious appearance in the direction it pointed to, without trying to fix on one.",
+			"points": 558,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:28.000000Z",
+			"updated_at": "2023-11-17T15:46:28.000000Z",
+			"enrolments": [
+				{
+					"id": 4,
+					"date": "2023-08-22",
+					"time": "22:35:00",
+					"status": "interested",
+					"course_id": 9,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:46:40.000000Z",
+					"updated_at": "2023-11-17T15:46:40.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 19,
+					"date": "2023-08-18",
+					"time": "07:00:00",
+					"status": "assigned",
+					"course_id": 9,
+					"lecturer_id": 34,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 34,
+						"name": "Prof. Jovanny Denesik",
+						"address": "14 Stanton Place, West Esta",
+						"email": "metz.allene@stroman.com",
+						"phone": "082-4499406",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 24,
+					"date": "2023-11-02",
+					"time": "09:55:00",
+					"status": "assigned",
+					"course_id": 9,
+					"lecturer_id": 27,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 27,
+						"name": "Lenny Reynolds",
+						"address": "13 Toby Gardens, Port Travon",
+						"email": "constance.koch@kiehn.com",
+						"phone": "088-3548861",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 66,
+					"date": "2023-09-17",
+					"time": "20:29:00",
+					"status": "career_break",
+					"course_id": 9,
+					"lecturer_id": 46,
+					"created_at": "2023-11-17T15:46:51.000000Z",
+					"updated_at": "2023-11-17T15:46:51.000000Z",
+					"lecturer": {
+						"id": 46,
+						"name": "Aliyah Keebler",
+						"address": "100 Spencer Pine, West Jeffery",
+						"email": "schuppe.abbie@yahoo.com",
+						"phone": "024-9361232",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 67,
+					"date": "2023-09-17",
+					"time": "19:36:00",
+					"status": "associate",
+					"course_id": 9,
+					"lecturer_id": 40,
+					"created_at": "2023-11-17T15:46:51.000000Z",
+					"updated_at": "2023-11-17T15:46:51.000000Z",
+					"lecturer": {
+						"id": 40,
+						"name": "Fae Wyman",
+						"address": "15 Thalia Road, New Thalia",
+						"email": "predovic.kylie@hauck.com",
+						"phone": "014-8409657",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 79,
+					"date": "2023-09-15",
+					"time": "17:55:00",
+					"status": "associate",
+					"course_id": 9,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 84,
+					"date": "2023-10-11",
+					"time": "03:38:00",
+					"status": "associate",
+					"course_id": 9,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 93,
+					"date": "2023-10-16",
+					"time": "05:53:00",
+					"status": "career_break",
+					"course_id": 9,
+					"lecturer_id": 6,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 6,
+						"name": "Dr. Christiana Auer II",
+						"address": "76 Enola Unions, Joanaside",
+						"email": "pierce.cruickshank@bergstrom.com",
+						"phone": "086-5782718",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 94,
+					"date": "2023-08-22",
+					"time": "14:35:00",
+					"status": "career_break",
+					"course_id": 9,
+					"lecturer_id": 23,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 23,
+						"name": "Fatima Larkin",
+						"address": "33 Mary Ramp, Ebertshire",
+						"email": "ray32@bauch.com",
+						"phone": "073-5398059",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 96,
+					"date": "2023-11-02",
+					"time": "01:22:00",
+					"status": "assigned",
+					"course_id": 9,
+					"lecturer_id": 17,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 17,
+						"name": "Everette Kessler",
+						"address": "88 Hildegard Estates, North Dejon",
+						"email": "taylor.jaskolski@padberg.com",
+						"phone": "030-1446602",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 109,
+					"date": "2023-11-01",
+					"time": "01:48:00",
+					"status": "interested",
+					"course_id": 9,
+					"lecturer_id": 18,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 18,
+						"name": "Sarah Weber",
+						"address": "45 Eleonore Overpass, North Maxland",
+						"email": "hayes.gunnar@lynch.com",
+						"phone": "022-9219469",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 119,
+					"date": "2023-10-30",
+					"time": "02:58:00",
+					"status": "assigned",
+					"course_id": 9,
+					"lecturer_id": 32,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 32,
+						"name": "Mr. Judd Bergnaum I",
+						"address": "34 Damion Camp, Alisonmouth",
+						"email": "etrantow@hotmail.com",
+						"phone": "089-8442427",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 132,
+					"date": "2023-11-08",
+					"time": "17:42:00",
+					"status": "associate",
+					"course_id": 9,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 160,
+					"date": "2023-10-17",
+					"time": "09:13:00",
+					"status": "career_break",
+					"course_id": 9,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 172,
+					"date": "2023-10-17",
+					"time": "19:53:00",
+					"status": "assigned",
+					"course_id": 9,
+					"lecturer_id": 38,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 38,
+						"name": "August Mueller",
+						"address": "91 Walsh Falls, West Edwinabury",
+						"email": "vonrueden.ethelyn@kovacek.com",
+						"phone": "088-4933437",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 197,
+					"date": "2023-09-04",
+					"time": "08:33:00",
+					"status": "interested",
+					"course_id": 9,
+					"lecturer_id": 18,
+					"created_at": "2023-11-17T15:47:15.000000Z",
+					"updated_at": "2023-11-17T15:47:15.000000Z",
+					"lecturer": {
+						"id": 18,
+						"name": "Sarah Weber",
+						"address": "45 Eleonore Overpass, North Maxland",
+						"email": "hayes.gunnar@lynch.com",
+						"phone": "022-9219469",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 10,
+			"title": "Computer security and forensics",
+			"code": "HB338",
+			"description": "Mock Turtle. So she stood looking at it again: but he would not join the dance? Will you, won't you, will you join the dance. '\"What matters it how far we go?\" his scaly friend replied. \"There is.",
+			"points": 219,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:28.000000Z",
+			"updated_at": "2023-11-17T15:46:28.000000Z",
+			"enrolments": [
+				{
+					"id": 1,
+					"date": "2023-11-02",
+					"time": "03:08:00",
+					"status": "assigned",
+					"course_id": 10,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:46:39.000000Z",
+					"updated_at": "2023-11-17T15:46:39.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 3,
+					"date": "2023-09-09",
+					"time": "09:40:00",
+					"status": "career_break",
+					"course_id": 10,
+					"lecturer_id": 50,
+					"created_at": "2023-11-17T15:46:39.000000Z",
+					"updated_at": "2023-11-17T15:46:39.000000Z",
+					"lecturer": {
+						"id": 50,
+						"name": "Newell Paucek",
+						"address": "31 Sierra Square, Wilfredville",
+						"email": "katharina43@yahoo.com",
+						"phone": "002-3764014",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 27,
+					"date": "2023-11-12",
+					"time": "12:35:00",
+					"status": "interested",
+					"course_id": 10,
+					"lecturer_id": 6,
+					"created_at": "2023-11-17T15:46:44.000000Z",
+					"updated_at": "2023-11-17T15:46:44.000000Z",
+					"lecturer": {
+						"id": 6,
+						"name": "Dr. Christiana Auer II",
+						"address": "76 Enola Unions, Joanaside",
+						"email": "pierce.cruickshank@bergstrom.com",
+						"phone": "086-5782718",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 33,
+					"date": "2023-08-27",
+					"time": "00:51:00",
+					"status": "associate",
+					"course_id": 10,
+					"lecturer_id": 10,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 10,
+						"name": "Emmanuelle Wiegand",
+						"address": "74 Jeanette Expressway, South Colin",
+						"email": "mabel.waelchi@gmail.com",
+						"phone": "036-7946915",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 44,
+					"date": "2023-10-17",
+					"time": "08:18:00",
+					"status": "assigned",
+					"course_id": 10,
+					"lecturer_id": 33,
+					"created_at": "2023-11-17T15:46:47.000000Z",
+					"updated_at": "2023-11-17T15:46:47.000000Z",
+					"lecturer": {
+						"id": 33,
+						"name": "Dr. Dorthy Lowe II",
+						"address": "10 Bud Circle, East Rhettton",
+						"email": "sheldon18@leffler.com",
+						"phone": "019-2457787",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 73,
+					"date": "2023-10-12",
+					"time": "23:44:00",
+					"status": "assigned",
+					"course_id": 10,
+					"lecturer_id": 12,
+					"created_at": "2023-11-17T15:46:52.000000Z",
+					"updated_at": "2023-11-17T15:46:52.000000Z",
+					"lecturer": {
+						"id": 12,
+						"name": "Odie Wolf",
+						"address": "33 Lia Valleys, Schillerfort",
+						"email": "eschinner@gutmann.com",
+						"phone": "014-3193617",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 76,
+					"date": "2023-09-02",
+					"time": "06:53:00",
+					"status": "assigned",
+					"course_id": 10,
+					"lecturer_id": 7,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 7,
+						"name": "Catalina Schulist",
+						"address": "60 Jast Crossing, New Raina",
+						"email": "arau@hessel.com",
+						"phone": "028-9835861",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 101,
+					"date": "2023-09-28",
+					"time": "05:20:00",
+					"status": "assigned",
+					"course_id": 10,
+					"lecturer_id": 17,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 17,
+						"name": "Everette Kessler",
+						"address": "88 Hildegard Estates, North Dejon",
+						"email": "taylor.jaskolski@padberg.com",
+						"phone": "030-1446602",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 112,
+					"date": "2023-08-26",
+					"time": "00:03:00",
+					"status": "interested",
+					"course_id": 10,
+					"lecturer_id": 35,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 35,
+						"name": "Laverna Moore",
+						"address": "68 Hills Avenue, Bradtkeville",
+						"email": "murphy.pedro@gmail.com",
+						"phone": "003-6113173",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 133,
+					"date": "2023-11-02",
+					"time": "00:55:00",
+					"status": "career_break",
+					"course_id": 10,
+					"lecturer_id": 32,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 32,
+						"name": "Mr. Judd Bergnaum I",
+						"address": "34 Damion Camp, Alisonmouth",
+						"email": "etrantow@hotmail.com",
+						"phone": "089-8442427",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 189,
+					"date": "2023-08-22",
+					"time": "01:24:00",
+					"status": "career_break",
+					"course_id": 10,
+					"lecturer_id": 2,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 2,
+						"name": "Dr. Adrianna Wyman",
+						"address": "30 Gislason Station, New Arely",
+						"email": "gino.mann@keebler.com",
+						"phone": "081-2155781",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 11,
+			"title": "Computer architecture",
+			"code": "XE993",
+			"description": "There was a general chorus of voices asked. 'Why, SHE, of course,' the Gryphon interrupted in a rather offended tone, 'was, that the meeting adjourn, for the garden!' and she very soon found an.",
+			"points": 247,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:28.000000Z",
+			"updated_at": "2023-11-17T15:46:28.000000Z",
+			"enrolments": [
+				{
+					"id": 11,
+					"date": "2023-09-07",
+					"time": "07:25:00",
+					"status": "interested",
+					"course_id": 11,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:41.000000Z",
+					"updated_at": "2023-11-17T15:46:41.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 29,
+					"date": "2023-09-17",
+					"time": "06:00:00",
+					"status": "assigned",
+					"course_id": 11,
+					"lecturer_id": 23,
+					"created_at": "2023-11-17T15:46:44.000000Z",
+					"updated_at": "2023-11-17T15:46:44.000000Z",
+					"lecturer": {
+						"id": 23,
+						"name": "Fatima Larkin",
+						"address": "33 Mary Ramp, Ebertshire",
+						"email": "ray32@bauch.com",
+						"phone": "073-5398059",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 56,
+					"date": "2023-10-29",
+					"time": "08:32:00",
+					"status": "assigned",
+					"course_id": 11,
+					"lecturer_id": 21,
+					"created_at": "2023-11-17T15:46:49.000000Z",
+					"updated_at": "2023-11-17T15:46:49.000000Z",
+					"lecturer": {
+						"id": 21,
+						"name": "Viva Stiedemann",
+						"address": "100 Ludie Islands, East Dollychester",
+						"email": "emma15@gmail.com",
+						"phone": "047-9656323",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 75,
+					"date": "2023-10-11",
+					"time": "03:32:00",
+					"status": "assigned",
+					"course_id": 11,
+					"lecturer_id": 17,
+					"created_at": "2023-11-17T15:46:53.000000Z",
+					"updated_at": "2023-11-17T15:46:53.000000Z",
+					"lecturer": {
+						"id": 17,
+						"name": "Everette Kessler",
+						"address": "88 Hildegard Estates, North Dejon",
+						"email": "taylor.jaskolski@padberg.com",
+						"phone": "030-1446602",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 107,
+					"date": "2023-10-02",
+					"time": "06:18:00",
+					"status": "career_break",
+					"course_id": 11,
+					"lecturer_id": 5,
+					"created_at": "2023-11-17T15:46:58.000000Z",
+					"updated_at": "2023-11-17T15:46:58.000000Z",
+					"lecturer": {
+						"id": 5,
+						"name": "Alexander B. Hamilton",
+						"address": "Somewhere in New York US",
+						"email": "alex.ham@usa.com",
+						"phone": "9863220009",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-18T14:25:28.000000Z"
+					}
+				},
+				{
+					"id": 117,
+					"date": "2023-10-27",
+					"time": "02:19:00",
+					"status": "assigned",
+					"course_id": 11,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 139,
+					"date": "2023-10-05",
+					"time": "17:55:00",
+					"status": "interested",
+					"course_id": 11,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 141,
+					"date": "2023-08-31",
+					"time": "04:53:00",
+					"status": "career_break",
+					"course_id": 11,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 148,
+					"date": "2023-09-18",
+					"time": "16:04:00",
+					"status": "interested",
+					"course_id": 11,
+					"lecturer_id": 33,
+					"created_at": "2023-11-17T15:47:05.000000Z",
+					"updated_at": "2023-11-17T15:47:05.000000Z",
+					"lecturer": {
+						"id": 33,
+						"name": "Dr. Dorthy Lowe II",
+						"address": "10 Bud Circle, East Rhettton",
+						"email": "sheldon18@leffler.com",
+						"phone": "019-2457787",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 158,
+					"date": "2023-09-21",
+					"time": "06:33:00",
+					"status": "career_break",
+					"course_id": 11,
+					"lecturer_id": 25,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 25,
+						"name": "Dr. Lamar Hill",
+						"address": "46 Hillary Expressway, Lynchfurt",
+						"email": "felipe.donnelly@hotmail.com",
+						"phone": "015-6393132",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 12,
+			"title": "Database systems",
+			"code": "GK622",
+			"description": "It was opened by another footman in livery, with a bound into the Dormouse's place, and Alice was very deep, or she should chance to be almost out of sight before the end of the evening, beautiful.",
+			"points": 273,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:28.000000Z",
+			"updated_at": "2023-11-17T15:46:28.000000Z",
+			"enrolments": [
+				{
+					"id": 18,
+					"date": "2023-09-03",
+					"time": "09:30:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:42.000000Z",
+					"updated_at": "2023-11-17T15:46:42.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 34,
+					"date": "2023-09-17",
+					"time": "05:41:00",
+					"status": "career_break",
+					"course_id": 12,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 37,
+					"date": "2023-10-16",
+					"time": "09:16:00",
+					"status": "assigned",
+					"course_id": 12,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 42,
+					"date": "2023-10-31",
+					"time": "00:50:00",
+					"status": "interested",
+					"course_id": 12,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 49,
+					"date": "2023-11-13",
+					"time": "08:27:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 57,
+					"date": "2023-10-17",
+					"time": "17:19:00",
+					"status": "interested",
+					"course_id": 12,
+					"lecturer_id": 46,
+					"created_at": "2023-11-17T15:46:49.000000Z",
+					"updated_at": "2023-11-17T15:46:49.000000Z",
+					"lecturer": {
+						"id": 46,
+						"name": "Aliyah Keebler",
+						"address": "100 Spencer Pine, West Jeffery",
+						"email": "schuppe.abbie@yahoo.com",
+						"phone": "024-9361232",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 81,
+					"date": "2023-10-15",
+					"time": "18:54:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 82,
+					"date": "2023-11-01",
+					"time": "10:11:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 33,
+					"created_at": "2023-11-17T15:46:54.000000Z",
+					"updated_at": "2023-11-17T15:46:54.000000Z",
+					"lecturer": {
+						"id": 33,
+						"name": "Dr. Dorthy Lowe II",
+						"address": "10 Bud Circle, East Rhettton",
+						"email": "sheldon18@leffler.com",
+						"phone": "019-2457787",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 103,
+					"date": "2023-10-21",
+					"time": "20:18:00",
+					"status": "assigned",
+					"course_id": 12,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 125,
+					"date": "2023-10-18",
+					"time": "08:42:00",
+					"status": "career_break",
+					"course_id": 12,
+					"lecturer_id": 11,
+					"created_at": "2023-11-17T15:47:01.000000Z",
+					"updated_at": "2023-11-17T15:47:01.000000Z",
+					"lecturer": {
+						"id": 11,
+						"name": "Dariana Donnelly",
+						"address": "61 Spinka Passage, South Gerda",
+						"email": "gerhard83@gmail.com",
+						"phone": "029-5354321",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 163,
+					"date": "2023-09-14",
+					"time": "00:00:00",
+					"status": "interested",
+					"course_id": 12,
+					"lecturer_id": 3,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 3,
+						"name": "Prof. Haley Hansen DDS",
+						"address": "54 Halvorson Plains, Kertzmannmouth",
+						"email": "tre.tromp@hotmail.com",
+						"phone": "047-1647721",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 171,
+					"date": "2023-10-07",
+					"time": "19:55:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 28,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 28,
+						"name": "Wilfrid Lubowitz",
+						"address": "24 Viola Streets, Lavonnefurt",
+						"email": "vicky30@hansen.com",
+						"phone": "024-6390795",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 187,
+					"date": "2023-10-28",
+					"time": "11:10:00",
+					"status": "assigned",
+					"course_id": 12,
+					"lecturer_id": 13,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 13,
+						"name": "Mrs. Desiree Dare II",
+						"address": "55 Block Causeway, Deondreburgh",
+						"email": "dortha97@goodwin.com",
+						"phone": "028-7891972",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 200,
+					"date": "2023-09-29",
+					"time": "04:26:00",
+					"status": "associate",
+					"course_id": 12,
+					"lecturer_id": 30,
+					"created_at": "2023-11-17T15:47:15.000000Z",
+					"updated_at": "2023-11-17T15:47:15.000000Z",
+					"lecturer": {
+						"id": 30,
+						"name": "Amanda Legros",
+						"address": "17 Sophia Passage, Lake Abelardofurt",
+						"email": "zjohnston@gmail.com",
+						"phone": "039-8449013",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 13,
+			"title": "Computer networks",
+			"code": "EE010",
+			"description": "Gryphon, 'you first form into a pig,' Alice quietly said, just as she could not tell whether they were all ornamented with hearts. Next came the guests, mostly Kings and Queens, and among them Alice.",
+			"points": 453,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:28.000000Z",
+			"updated_at": "2023-11-17T15:46:28.000000Z",
+			"enrolments": [
+				{
+					"id": 32,
+					"date": "2023-11-07",
+					"time": "17:40:00",
+					"status": "associate",
+					"course_id": 13,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 61,
+					"date": "2023-08-27",
+					"time": "22:47:00",
+					"status": "associate",
+					"course_id": 13,
+					"lecturer_id": 1,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 1,
+						"name": "Adelle Rohan",
+						"address": "34 Pinkie Hollow, Juniormouth",
+						"email": "zmurazik@blanda.com",
+						"phone": "034-4852230",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 113,
+					"date": "2023-09-24",
+					"time": "11:33:00",
+					"status": "interested",
+					"course_id": 13,
+					"lecturer_id": 37,
+					"created_at": "2023-11-17T15:46:59.000000Z",
+					"updated_at": "2023-11-17T15:46:59.000000Z",
+					"lecturer": {
+						"id": 37,
+						"name": "Rupert Connelly Jr.",
+						"address": "92 Sallie Manors, Tierraberg",
+						"email": "opowlowski@yahoo.com",
+						"phone": "083-8717042",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 131,
+					"date": "2023-09-23",
+					"time": "19:36:00",
+					"status": "interested",
+					"course_id": 13,
+					"lecturer_id": 19,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 19,
+						"name": "Israel Wunsch",
+						"address": "30 Lorena Valleys, Lake Bridie",
+						"email": "bklocko@yahoo.com",
+						"phone": "059-7885351",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 134,
+					"date": "2023-11-13",
+					"time": "21:17:00",
+					"status": "associate",
+					"course_id": 13,
+					"lecturer_id": 37,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 37,
+						"name": "Rupert Connelly Jr.",
+						"address": "92 Sallie Manors, Tierraberg",
+						"email": "opowlowski@yahoo.com",
+						"phone": "083-8717042",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 136,
+					"date": "2023-10-05",
+					"time": "01:16:00",
+					"status": "associate",
+					"course_id": 13,
+					"lecturer_id": 42,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 42,
+						"name": "Jolie Fisher II",
+						"address": "63 Josefina Port, Modestafurt",
+						"email": "gracie.jones@gmail.com",
+						"phone": "073-5648810",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 162,
+					"date": "2023-08-29",
+					"time": "16:50:00",
+					"status": "associate",
+					"course_id": 13,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 175,
+					"date": "2023-09-25",
+					"time": "20:49:00",
+					"status": "assigned",
+					"course_id": 13,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 14,
+			"title": "Artifical intelligence",
+			"code": "YW765",
+			"description": "However, I've got to do,' said Alice thoughtfully: 'but then--I shouldn't be hungry for it, he was going on, as she couldn't answer either question, it didn't sound at all the jelly-fish out of the.",
+			"points": 486,
+			"level": 7,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 21,
+					"date": "2023-08-28",
+					"time": "05:37:00",
+					"status": "interested",
+					"course_id": 14,
+					"lecturer_id": 25,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 25,
+						"name": "Dr. Lamar Hill",
+						"address": "46 Hillary Expressway, Lynchfurt",
+						"email": "felipe.donnelly@hotmail.com",
+						"phone": "015-6393132",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 62,
+					"date": "2023-09-01",
+					"time": "01:51:00",
+					"status": "career_break",
+					"course_id": 14,
+					"lecturer_id": 36,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 36,
+						"name": "Ms. Herminia Kertzmann Jr.",
+						"address": "87 Adaline Courts, East Alvah",
+						"email": "ewunsch@yahoo.com",
+						"phone": "091-6374752",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 63,
+					"date": "2023-11-13",
+					"time": "09:31:00",
+					"status": "interested",
+					"course_id": 14,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:46:50.000000Z",
+					"updated_at": "2023-11-17T15:46:50.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 90,
+					"date": "2023-08-24",
+					"time": "23:23:00",
+					"status": "assigned",
+					"course_id": 14,
+					"lecturer_id": 24,
+					"created_at": "2023-11-17T15:46:55.000000Z",
+					"updated_at": "2023-11-17T15:46:55.000000Z",
+					"lecturer": {
+						"id": 24,
+						"name": "Flo Miller",
+						"address": "67 McKenzie Parkways, Paucekfort",
+						"email": "terence.steuber@yahoo.com",
+						"phone": "041-5988189",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 121,
+					"date": "2023-11-12",
+					"time": "13:37:00",
+					"status": "career_break",
+					"course_id": 14,
+					"lecturer_id": 27,
+					"created_at": "2023-11-17T15:47:01.000000Z",
+					"updated_at": "2023-11-17T15:47:01.000000Z",
+					"lecturer": {
+						"id": 27,
+						"name": "Lenny Reynolds",
+						"address": "13 Toby Gardens, Port Travon",
+						"email": "constance.koch@kiehn.com",
+						"phone": "088-3548861",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 129,
+					"date": "2023-09-27",
+					"time": "15:44:00",
+					"status": "interested",
+					"course_id": 14,
+					"lecturer_id": 40,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 40,
+						"name": "Fae Wyman",
+						"address": "15 Thalia Road, New Thalia",
+						"email": "predovic.kylie@hauck.com",
+						"phone": "014-8409657",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 130,
+					"date": "2023-09-08",
+					"time": "23:43:00",
+					"status": "career_break",
+					"course_id": 14,
+					"lecturer_id": 19,
+					"created_at": "2023-11-17T15:47:02.000000Z",
+					"updated_at": "2023-11-17T15:47:02.000000Z",
+					"lecturer": {
+						"id": 19,
+						"name": "Israel Wunsch",
+						"address": "30 Lorena Valleys, Lake Bridie",
+						"email": "bklocko@yahoo.com",
+						"phone": "059-7885351",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 149,
+					"date": "2023-10-20",
+					"time": "13:06:00",
+					"status": "interested",
+					"course_id": 14,
+					"lecturer_id": 44,
+					"created_at": "2023-11-17T15:47:06.000000Z",
+					"updated_at": "2023-11-17T15:47:06.000000Z",
+					"lecturer": {
+						"id": 44,
+						"name": "Lucinda Crist",
+						"address": "3 Crona Camp, South Rosalinda",
+						"email": "eldon.rowe@orn.com",
+						"phone": "071-5856737",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 176,
+					"date": "2023-11-05",
+					"time": "10:00:00",
+					"status": "associate",
+					"course_id": 14,
+					"lecturer_id": 10,
+					"created_at": "2023-11-17T15:47:10.000000Z",
+					"updated_at": "2023-11-17T15:47:10.000000Z",
+					"lecturer": {
+						"id": 10,
+						"name": "Emmanuelle Wiegand",
+						"address": "74 Jeanette Expressway, South Colin",
+						"email": "mabel.waelchi@gmail.com",
+						"phone": "036-7946915",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 15,
+			"title": "Image processing",
+			"code": "TX341",
+			"description": "As soon as she was appealed to by the carrier,' she thought; 'and how funny it'll seem, sending presents to one's own feet! And how odd the directions will look! ALICE'S RIGHT FOOT, ESQ. HEARTHRUG.",
+			"points": 379,
+			"level": 8,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 25,
+					"date": "2023-08-26",
+					"time": "12:15:00",
+					"status": "career_break",
+					"course_id": 15,
+					"lecturer_id": 38,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 38,
+						"name": "August Mueller",
+						"address": "91 Walsh Falls, West Edwinabury",
+						"email": "vonrueden.ethelyn@kovacek.com",
+						"phone": "088-4933437",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 30,
+					"date": "2023-10-21",
+					"time": "11:12:00",
+					"status": "career_break",
+					"course_id": 15,
+					"lecturer_id": 15,
+					"created_at": "2023-11-17T15:46:44.000000Z",
+					"updated_at": "2023-11-17T15:46:44.000000Z",
+					"lecturer": {
+						"id": 15,
+						"name": "Mr. Evans Rice",
+						"address": "98 Zelma Walk, North Tyresehaven",
+						"email": "ykunde@lehner.biz",
+						"phone": "097-1987859",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 87,
+					"date": "2023-08-20",
+					"time": "07:28:00",
+					"status": "career_break",
+					"course_id": 15,
+					"lecturer_id": 46,
+					"created_at": "2023-11-17T15:46:55.000000Z",
+					"updated_at": "2023-11-17T15:46:55.000000Z",
+					"lecturer": {
+						"id": 46,
+						"name": "Aliyah Keebler",
+						"address": "100 Spencer Pine, West Jeffery",
+						"email": "schuppe.abbie@yahoo.com",
+						"phone": "024-9361232",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 151,
+					"date": "2023-11-11",
+					"time": "20:11:00",
+					"status": "interested",
+					"course_id": 15,
+					"lecturer_id": 12,
+					"created_at": "2023-11-17T15:47:06.000000Z",
+					"updated_at": "2023-11-17T15:47:06.000000Z",
+					"lecturer": {
+						"id": 12,
+						"name": "Odie Wolf",
+						"address": "33 Lia Valleys, Schillerfort",
+						"email": "eschinner@gutmann.com",
+						"phone": "014-3193617",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 164,
+					"date": "2023-10-08",
+					"time": "04:10:00",
+					"status": "career_break",
+					"course_id": 15,
+					"lecturer_id": 50,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 50,
+						"name": "Newell Paucek",
+						"address": "31 Sierra Square, Wilfredville",
+						"email": "katharina43@yahoo.com",
+						"phone": "002-3764014",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 181,
+					"date": "2023-11-10",
+					"time": "21:18:00",
+					"status": "associate",
+					"course_id": 15,
+					"lecturer_id": 2,
+					"created_at": "2023-11-17T15:47:11.000000Z",
+					"updated_at": "2023-11-17T15:47:11.000000Z",
+					"lecturer": {
+						"id": 2,
+						"name": "Dr. Adrianna Wyman",
+						"address": "30 Gislason Station, New Arely",
+						"email": "gino.mann@keebler.com",
+						"phone": "081-2155781",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 188,
+					"date": "2023-09-05",
+					"time": "09:20:00",
+					"status": "associate",
+					"course_id": 15,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 16,
+			"title": "Machine learning",
+			"code": "HC556",
+			"description": "For some minutes the whole she thought of herself, 'I wish I hadn't cried so much!' said Alice, very earnestly. 'I've had nothing else to do, so Alice ventured to ask. 'Suppose we change the subject.",
+			"points": 437,
+			"level": 10,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 46,
+					"date": "2023-10-08",
+					"time": "11:41:00",
+					"status": "assigned",
+					"course_id": 16,
+					"lecturer_id": 48,
+					"created_at": "2023-11-17T15:46:47.000000Z",
+					"updated_at": "2023-11-17T15:46:47.000000Z",
+					"lecturer": {
+						"id": 48,
+						"name": "Ivah Littel",
+						"address": "63 Gutmann Alley, Ernserborough",
+						"email": "aufderhar.scarlett@graham.com",
+						"phone": "077-3929595",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 48,
+					"date": "2023-09-17",
+					"time": "20:24:00",
+					"status": "associate",
+					"course_id": 16,
+					"lecturer_id": 2,
+					"created_at": "2023-11-17T15:46:47.000000Z",
+					"updated_at": "2023-11-17T15:46:47.000000Z",
+					"lecturer": {
+						"id": 2,
+						"name": "Dr. Adrianna Wyman",
+						"address": "30 Gislason Station, New Arely",
+						"email": "gino.mann@keebler.com",
+						"phone": "081-2155781",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 50,
+					"date": "2023-11-03",
+					"time": "04:33:00",
+					"status": "interested",
+					"course_id": 16,
+					"lecturer_id": 13,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 13,
+						"name": "Mrs. Desiree Dare II",
+						"address": "55 Block Causeway, Deondreburgh",
+						"email": "dortha97@goodwin.com",
+						"phone": "028-7891972",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 68,
+					"date": "2023-09-27",
+					"time": "06:30:00",
+					"status": "assigned",
+					"course_id": 16,
+					"lecturer_id": 29,
+					"created_at": "2023-11-17T15:46:51.000000Z",
+					"updated_at": "2023-11-17T15:46:51.000000Z",
+					"lecturer": {
+						"id": 29,
+						"name": "Clotilde Osinski",
+						"address": "6 Hegmann Island, South Rahulshire",
+						"email": "casimir60@yahoo.com",
+						"phone": "020-7070314",
+						"created_at": "2023-11-17T15:46:35.000000Z",
+						"updated_at": "2023-11-17T15:46:35.000000Z"
+					}
+				},
+				{
+					"id": 72,
+					"date": "2023-10-28",
+					"time": "16:48:00",
+					"status": "assigned",
+					"course_id": 16,
+					"lecturer_id": 13,
+					"created_at": "2023-11-17T15:46:52.000000Z",
+					"updated_at": "2023-11-17T15:46:52.000000Z",
+					"lecturer": {
+						"id": 13,
+						"name": "Mrs. Desiree Dare II",
+						"address": "55 Block Causeway, Deondreburgh",
+						"email": "dortha97@goodwin.com",
+						"phone": "028-7891972",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 106,
+					"date": "2023-09-09",
+					"time": "10:04:00",
+					"status": "assigned",
+					"course_id": 16,
+					"lecturer_id": 27,
+					"created_at": "2023-11-17T15:46:58.000000Z",
+					"updated_at": "2023-11-17T15:46:58.000000Z",
+					"lecturer": {
+						"id": 27,
+						"name": "Lenny Reynolds",
+						"address": "13 Toby Gardens, Port Travon",
+						"email": "constance.koch@kiehn.com",
+						"phone": "088-3548861",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 118,
+					"date": "2023-10-06",
+					"time": "19:15:00",
+					"status": "assigned",
+					"course_id": 16,
+					"lecturer_id": 41,
+					"created_at": "2023-11-17T15:47:00.000000Z",
+					"updated_at": "2023-11-17T15:47:00.000000Z",
+					"lecturer": {
+						"id": 41,
+						"name": "Christelle Durgan",
+						"address": "18 Nyah Port, McClureberg",
+						"email": "vbashirian@metz.com",
+						"phone": "020-1952892",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 124,
+					"date": "2023-10-22",
+					"time": "16:50:00",
+					"status": "interested",
+					"course_id": 16,
+					"lecturer_id": 9,
+					"created_at": "2023-11-17T15:47:01.000000Z",
+					"updated_at": "2023-11-17T15:47:01.000000Z",
+					"lecturer": {
+						"id": 9,
+						"name": "Ebony Thiel",
+						"address": "53 Barrows Key, East Christiana",
+						"email": "rachael.leffler@gmail.com",
+						"phone": "055-5407270",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 142,
+					"date": "2023-10-30",
+					"time": "04:51:00",
+					"status": "associate",
+					"course_id": 16,
+					"lecturer_id": 8,
+					"created_at": "2023-11-17T15:47:04.000000Z",
+					"updated_at": "2023-11-17T15:47:04.000000Z",
+					"lecturer": {
+						"id": 8,
+						"name": "Maude Dickens",
+						"address": "84 Lennie Parkways, New Carmelo",
+						"email": "daphnee35@hotmail.com",
+						"phone": "057-0532648",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 183,
+					"date": "2023-08-18",
+					"time": "21:55:00",
+					"status": "interested",
+					"course_id": 16,
+					"lecturer_id": 18,
+					"created_at": "2023-11-17T15:47:12.000000Z",
+					"updated_at": "2023-11-17T15:47:12.000000Z",
+					"lecturer": {
+						"id": 18,
+						"name": "Sarah Weber",
+						"address": "45 Eleonore Overpass, North Maxland",
+						"email": "hayes.gunnar@lynch.com",
+						"phone": "022-9219469",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 184,
+					"date": "2023-11-13",
+					"time": "09:28:00",
+					"status": "interested",
+					"course_id": 16,
+					"lecturer_id": 40,
+					"created_at": "2023-11-17T15:47:12.000000Z",
+					"updated_at": "2023-11-17T15:47:12.000000Z",
+					"lecturer": {
+						"id": 40,
+						"name": "Fae Wyman",
+						"address": "15 Thalia Road, New Thalia",
+						"email": "predovic.kylie@hauck.com",
+						"phone": "014-8409657",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 185,
+					"date": "2023-09-19",
+					"time": "08:56:00",
+					"status": "associate",
+					"course_id": 16,
+					"lecturer_id": 34,
+					"created_at": "2023-11-17T15:47:12.000000Z",
+					"updated_at": "2023-11-17T15:47:12.000000Z",
+					"lecturer": {
+						"id": 34,
+						"name": "Prof. Jovanny Denesik",
+						"address": "14 Stanton Place, West Esta",
+						"email": "metz.allene@stroman.com",
+						"phone": "082-4499406",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 195,
+					"date": "2023-08-26",
+					"time": "01:42:00",
+					"status": "associate",
+					"course_id": 16,
+					"lecturer_id": 12,
+					"created_at": "2023-11-17T15:47:14.000000Z",
+					"updated_at": "2023-11-17T15:47:14.000000Z",
+					"lecturer": {
+						"id": 12,
+						"name": "Odie Wolf",
+						"address": "33 Lia Valleys, Schillerfort",
+						"email": "eschinner@gutmann.com",
+						"phone": "014-3193617",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 17,
+			"title": "Computer graphics",
+			"code": "GL589",
+			"description": "WHAT?' said the last word with such a simple question,' added the Dormouse. 'Don't talk nonsense,' said Alice timidly. 'Would you tell me,' said Alice, rather alarmed at the Footman's head: it just.",
+			"points": 329,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 26,
+					"date": "2023-10-07",
+					"time": "21:14:00",
+					"status": "associate",
+					"course_id": 17,
+					"lecturer_id": 8,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 8,
+						"name": "Maude Dickens",
+						"address": "84 Lennie Parkways, New Carmelo",
+						"email": "daphnee35@hotmail.com",
+						"phone": "057-0532648",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 38,
+					"date": "2023-09-26",
+					"time": "14:55:00",
+					"status": "interested",
+					"course_id": 17,
+					"lecturer_id": 23,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 23,
+						"name": "Fatima Larkin",
+						"address": "33 Mary Ramp, Ebertshire",
+						"email": "ray32@bauch.com",
+						"phone": "073-5398059",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 39,
+					"date": "2023-09-16",
+					"time": "00:19:00",
+					"status": "associate",
+					"course_id": 17,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:46:46.000000Z",
+					"updated_at": "2023-11-17T15:46:46.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 54,
+					"date": "2023-10-11",
+					"time": "10:22:00",
+					"status": "assigned",
+					"course_id": 17,
+					"lecturer_id": 49,
+					"created_at": "2023-11-17T15:46:48.000000Z",
+					"updated_at": "2023-11-17T15:46:48.000000Z",
+					"lecturer": {
+						"id": 49,
+						"name": "Prof. Devonte Mann III",
+						"address": "45 Emerson Valleys, Schmidtbury",
+						"email": "emmet.jacobi@gmail.com",
+						"phone": "079-4826699",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 92,
+					"date": "2023-10-17",
+					"time": "04:45:00",
+					"status": "career_break",
+					"course_id": 17,
+					"lecturer_id": 25,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 25,
+						"name": "Dr. Lamar Hill",
+						"address": "46 Hillary Expressway, Lynchfurt",
+						"email": "felipe.donnelly@hotmail.com",
+						"phone": "015-6393132",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 95,
+					"date": "2023-11-12",
+					"time": "00:24:00",
+					"status": "assigned",
+					"course_id": 17,
+					"lecturer_id": 9,
+					"created_at": "2023-11-17T15:46:56.000000Z",
+					"updated_at": "2023-11-17T15:46:56.000000Z",
+					"lecturer": {
+						"id": 9,
+						"name": "Ebony Thiel",
+						"address": "53 Barrows Key, East Christiana",
+						"email": "rachael.leffler@gmail.com",
+						"phone": "055-5407270",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 178,
+					"date": "2023-10-09",
+					"time": "09:27:00",
+					"status": "interested",
+					"course_id": 17,
+					"lecturer_id": 3,
+					"created_at": "2023-11-17T15:47:11.000000Z",
+					"updated_at": "2023-11-17T15:47:11.000000Z",
+					"lecturer": {
+						"id": 3,
+						"name": "Prof. Haley Hansen DDS",
+						"address": "54 Halvorson Plains, Kertzmannmouth",
+						"email": "tre.tromp@hotmail.com",
+						"phone": "047-1647721",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 180,
+					"date": "2023-09-26",
+					"time": "20:13:00",
+					"status": "interested",
+					"course_id": 17,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:47:11.000000Z",
+					"updated_at": "2023-11-17T15:47:11.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 18,
+			"title": "Operating systems",
+			"code": "XI606",
+			"description": "King and Queen of Hearts, he stole those tarts, And took them quite away!' 'Consider your verdict,' he said do. Alice looked at poor Alice, who had meanwhile been examining the roses. 'Off with.",
+			"points": 130,
+			"level": 9,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 59,
+					"date": "2023-10-14",
+					"time": "11:56:00",
+					"status": "interested",
+					"course_id": 18,
+					"lecturer_id": 17,
+					"created_at": "2023-11-17T15:46:49.000000Z",
+					"updated_at": "2023-11-17T15:46:49.000000Z",
+					"lecturer": {
+						"id": 17,
+						"name": "Everette Kessler",
+						"address": "88 Hildegard Estates, North Dejon",
+						"email": "taylor.jaskolski@padberg.com",
+						"phone": "030-1446602",
+						"created_at": "2023-11-17T15:46:33.000000Z",
+						"updated_at": "2023-11-17T15:46:33.000000Z"
+					}
+				},
+				{
+					"id": 104,
+					"date": "2023-10-04",
+					"time": "16:15:00",
+					"status": "interested",
+					"course_id": 18,
+					"lecturer_id": 34,
+					"created_at": "2023-11-17T15:46:58.000000Z",
+					"updated_at": "2023-11-17T15:46:58.000000Z",
+					"lecturer": {
+						"id": 34,
+						"name": "Prof. Jovanny Denesik",
+						"address": "14 Stanton Place, West Esta",
+						"email": "metz.allene@stroman.com",
+						"phone": "082-4499406",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				},
+				{
+					"id": 147,
+					"date": "2023-10-15",
+					"time": "12:32:00",
+					"status": "assigned",
+					"course_id": 18,
+					"lecturer_id": 8,
+					"created_at": "2023-11-17T15:47:05.000000Z",
+					"updated_at": "2023-11-17T15:47:05.000000Z",
+					"lecturer": {
+						"id": 8,
+						"name": "Maude Dickens",
+						"address": "84 Lennie Parkways, New Carmelo",
+						"email": "daphnee35@hotmail.com",
+						"phone": "057-0532648",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-17T15:46:31.000000Z"
+					}
+				},
+				{
+					"id": 196,
+					"date": "2023-11-09",
+					"time": "05:53:00",
+					"status": "associate",
+					"course_id": 18,
+					"lecturer_id": 2,
+					"created_at": "2023-11-17T15:47:15.000000Z",
+					"updated_at": "2023-11-17T15:47:15.000000Z",
+					"lecturer": {
+						"id": 2,
+						"name": "Dr. Adrianna Wyman",
+						"address": "30 Gislason Station, New Arely",
+						"email": "gino.mann@keebler.com",
+						"phone": "081-2155781",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 19,
+			"title": "Software testing",
+			"code": "HY362",
+			"description": "Who in the flurry of the court. 'What do you like the largest telescope that ever was! Good-bye, feet!' (for when she looked down at her own children. 'How should I know?' said Alice, a little.",
+			"points": 187,
+			"level": 10,
+			"created_at": "2023-11-17T15:46:29.000000Z",
+			"updated_at": "2023-11-17T15:46:29.000000Z",
+			"enrolments": [
+				{
+					"id": 22,
+					"date": "2023-10-17",
+					"time": "04:43:00",
+					"status": "associate",
+					"course_id": 19,
+					"lecturer_id": 49,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 49,
+						"name": "Prof. Devonte Mann III",
+						"address": "45 Emerson Valleys, Schmidtbury",
+						"email": "emmet.jacobi@gmail.com",
+						"phone": "079-4826699",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 23,
+					"date": "2023-08-30",
+					"time": "03:56:00",
+					"status": "career_break",
+					"course_id": 19,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:46:43.000000Z",
+					"updated_at": "2023-11-17T15:46:43.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 35,
+					"date": "2023-11-03",
+					"time": "20:03:00",
+					"status": "associate",
+					"course_id": 19,
+					"lecturer_id": 22,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 22,
+						"name": "Rosella Mayert",
+						"address": "62 Melisa Ferry, Gradyshire",
+						"email": "bethany.lynch@yahoo.com",
+						"phone": "018-0720339",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 137,
+					"date": "2023-10-09",
+					"time": "00:04:00",
+					"status": "associate",
+					"course_id": 19,
+					"lecturer_id": 5,
+					"created_at": "2023-11-17T15:47:03.000000Z",
+					"updated_at": "2023-11-17T15:47:03.000000Z",
+					"lecturer": {
+						"id": 5,
+						"name": "Alexander B. Hamilton",
+						"address": "Somewhere in New York US",
+						"email": "alex.ham@usa.com",
+						"phone": "9863220009",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-18T14:25:28.000000Z"
+					}
+				},
+				{
+					"id": 154,
+					"date": "2023-10-21",
+					"time": "06:14:00",
+					"status": "interested",
+					"course_id": 19,
+					"lecturer_id": 11,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 11,
+						"name": "Dariana Donnelly",
+						"address": "61 Spinka Passage, South Gerda",
+						"email": "gerhard83@gmail.com",
+						"phone": "029-5354321",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 161,
+					"date": "2023-10-05",
+					"time": "22:35:00",
+					"status": "career_break",
+					"course_id": 19,
+					"lecturer_id": 26,
+					"created_at": "2023-11-17T15:47:08.000000Z",
+					"updated_at": "2023-11-17T15:47:08.000000Z",
+					"lecturer": {
+						"id": 26,
+						"name": "Kailee McLaughlin",
+						"address": "33 Runolfsson Corners, Macbury",
+						"email": "iwaters@emmerich.org",
+						"phone": "084-9295147",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 20,
+			"title": "Robotics and automation",
+			"code": "ZW406",
+			"description": "Mock Turtle, and said to herself, and nibbled a little pattering of feet in a trembling voice to a mouse, you know. Come on!' So they sat down, and was immediately suppressed by the officers of the.",
+			"points": 266,
+			"level": 7,
+			"created_at": "2023-11-17T15:46:30.000000Z",
+			"updated_at": "2023-11-17T15:46:30.000000Z",
+			"enrolments": [
+				{
+					"id": 36,
+					"date": "2023-09-25",
+					"time": "19:53:00",
+					"status": "assigned",
+					"course_id": 20,
+					"lecturer_id": 45,
+					"created_at": "2023-11-17T15:46:45.000000Z",
+					"updated_at": "2023-11-17T15:46:45.000000Z",
+					"lecturer": {
+						"id": 45,
+						"name": "Adolph Ritchie",
+						"address": "73 Austyn Crossing, East Amanda",
+						"email": "casper.antonina@hotmail.com",
+						"phone": "027-6835647",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 47,
+					"date": "2023-09-13",
+					"time": "04:29:00",
+					"status": "assigned",
+					"course_id": 20,
+					"lecturer_id": 14,
+					"created_at": "2023-11-17T15:46:47.000000Z",
+					"updated_at": "2023-11-17T15:46:47.000000Z",
+					"lecturer": {
+						"id": 14,
+						"name": "Leora Ruecker",
+						"address": "46 Kameron Row, Lake Beatriceborough",
+						"email": "treva43@oconner.info",
+						"phone": "031-2615967",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 74,
+					"date": "2023-11-08",
+					"time": "20:53:00",
+					"status": "assigned",
+					"course_id": 20,
+					"lecturer_id": 1,
+					"created_at": "2023-11-17T15:46:52.000000Z",
+					"updated_at": "2023-11-17T15:46:52.000000Z",
+					"lecturer": {
+						"id": 1,
+						"name": "Adelle Rohan",
+						"address": "34 Pinkie Hollow, Juniormouth",
+						"email": "zmurazik@blanda.com",
+						"phone": "034-4852230",
+						"created_at": "2023-11-17T15:46:30.000000Z",
+						"updated_at": "2023-11-17T15:46:30.000000Z"
+					}
+				},
+				{
+					"id": 100,
+					"date": "2023-08-27",
+					"time": "19:52:00",
+					"status": "interested",
+					"course_id": 20,
+					"lecturer_id": 26,
+					"created_at": "2023-11-17T15:46:57.000000Z",
+					"updated_at": "2023-11-17T15:46:57.000000Z",
+					"lecturer": {
+						"id": 26,
+						"name": "Kailee McLaughlin",
+						"address": "33 Runolfsson Corners, Macbury",
+						"email": "iwaters@emmerich.org",
+						"phone": "084-9295147",
+						"created_at": "2023-11-17T15:46:34.000000Z",
+						"updated_at": "2023-11-17T15:46:34.000000Z"
+					}
+				},
+				{
+					"id": 150,
+					"date": "2023-11-14",
+					"time": "06:45:00",
+					"status": "associate",
+					"course_id": 20,
+					"lecturer_id": 16,
+					"created_at": "2023-11-17T15:47:06.000000Z",
+					"updated_at": "2023-11-17T15:47:06.000000Z",
+					"lecturer": {
+						"id": 16,
+						"name": "Priscilla Champlin",
+						"address": "42 Aufderhar Key, Toyton",
+						"email": "gilbert.abernathy@king.info",
+						"phone": "042-0725521",
+						"created_at": "2023-11-17T15:46:32.000000Z",
+						"updated_at": "2023-11-17T15:46:32.000000Z"
+					}
+				},
+				{
+					"id": 155,
+					"date": "2023-11-13",
+					"time": "12:29:00",
+					"status": "career_break",
+					"course_id": 20,
+					"lecturer_id": 39,
+					"created_at": "2023-11-17T15:47:07.000000Z",
+					"updated_at": "2023-11-17T15:47:07.000000Z",
+					"lecturer": {
+						"id": 39,
+						"name": "Tressie Tremblay DVM",
+						"address": "69 Rempel Shoal, Lavonneville",
+						"email": "jammie16@cartwright.com",
+						"phone": "059-0191174",
+						"created_at": "2023-11-17T15:46:37.000000Z",
+						"updated_at": "2023-11-17T15:46:37.000000Z"
+					}
+				},
+				{
+					"id": 166,
+					"date": "2023-09-20",
+					"time": "11:22:00",
+					"status": "associate",
+					"course_id": 20,
+					"lecturer_id": 5,
+					"created_at": "2023-11-17T15:47:09.000000Z",
+					"updated_at": "2023-11-17T15:47:09.000000Z",
+					"lecturer": {
+						"id": 5,
+						"name": "Alexander B. Hamilton",
+						"address": "Somewhere in New York US",
+						"email": "alex.ham@usa.com",
+						"phone": "9863220009",
+						"created_at": "2023-11-17T15:46:31.000000Z",
+						"updated_at": "2023-11-18T14:25:28.000000Z"
+					}
+				},
+				{
+					"id": 191,
+					"date": "2023-09-18",
+					"time": "22:24:00",
+					"status": "assigned",
+					"course_id": 20,
+					"lecturer_id": 49,
+					"created_at": "2023-11-17T15:47:13.000000Z",
+					"updated_at": "2023-11-17T15:47:13.000000Z",
+					"lecturer": {
+						"id": 49,
+						"name": "Prof. Devonte Mann III",
+						"address": "45 Emerson Valleys, Schmidtbury",
+						"email": "emmet.jacobi@gmail.com",
+						"phone": "079-4826699",
+						"created_at": "2023-11-17T15:46:38.000000Z",
+						"updated_at": "2023-11-17T15:46:38.000000Z"
+					}
+				},
+				{
+					"id": 199,
+					"date": "2023-11-04",
+					"time": "10:07:00",
+					"status": "associate",
+					"course_id": 20,
+					"lecturer_id": 36,
+					"created_at": "2023-11-17T15:47:15.000000Z",
+					"updated_at": "2023-11-17T15:47:15.000000Z",
+					"lecturer": {
+						"id": 36,
+						"name": "Ms. Herminia Kertzmann Jr.",
+						"address": "87 Adaline Courts, East Alvah",
+						"email": "ewunsch@yahoo.com",
+						"phone": "091-6374752",
+						"created_at": "2023-11-17T15:46:36.000000Z",
+						"updated_at": "2023-11-17T15:46:36.000000Z"
+					}
+				}
+			]
+		},
+		{
+			"id": 22,
+			"title": "Critical Theory 2",
+			"code": "B4265",
+			"description": "This is the course desc. Edit",
+			"points": 350,
+			"level": 7,
+			"created_at": "2023-11-18T14:25:05.000000Z",
+			"updated_at": "2023-11-18T14:25:12.000000Z",
+			"enrolments": [
+				{
+					"id": 203,
+					"date": "2023-10-11",
+					"time": "20:15:00",
+					"status": "interested",
+					"course_id": 22,
+					"lecturer_id": 52,
+					"created_at": "2023-11-18T14:30:39.000000Z",
+					"updated_at": "2023-11-18T14:30:43.000000Z",
+					"lecturer": {
+						"id": 52,
+						"name": "Alexander Hamilton",
+						"address": "Somewhere in New York",
+						"email": "alex.ham@us.com",
+						"phone": "9863220008",
+						"created_at": "2023-11-18T14:25:24.000000Z",
+						"updated_at": "2023-11-18T14:25:24.000000Z"
+					}
+				}
+			]
+		}
+	]
+}

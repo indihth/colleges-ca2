@@ -8,7 +8,7 @@ import DeleteBtn from "../../components/DeleteBtn";
 
 const Show = () => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);
+  const [lecturer, setLecture] = useState(null);
 
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const Show = () => {
 
   useEffect(() => {
     axios
-      .get(`https://college-api.vercel.app/api/courses/${id}`, {
+      .get(`https://college-api.vercel.app/api/lecturers/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
           // "Authorization": `Bearer ${token}`
@@ -24,35 +24,34 @@ const Show = () => {
       })
       .then((response) => {
         console.log(response.data.data);
-        setCourse(response.data.data); // Puts data in 'course' state
+        setLecture(response.data.data); // Puts data in 'lecturer' state
       })
       .catch((err) => {
         console.error(err);
       });
   }, [id]);
 
-  // If course does not exist, show text. Or while loading
-  if (!course) return <h3>Course not found</h3>;
+  // If lecturer does not exist, show text. Or while loading
+  if (!lecturer) return <h3>Lecturer not found</h3>;
 
   return (
     <>
       <div>
-        <Typography variant="h2">{course.title}</Typography>
-        <Typography variant="paragraph">{course.description}</Typography>
-        <Typography variant="h5">Code: {course.code}</Typography>
-        <Typography variant="h5">Points: {course.points}</Typography>
-        <Typography variant="h5">Level: {course.level}</Typography>
+        <Typography variant="h2">{lecturer.name}</Typography>
+        <Typography variant="h5">Address: {lecturer.address}</Typography>
+        <Typography variant="h5">Email: {lecturer.email}</Typography>
+        <Typography variant="h5">Phone: {lecturer.phone}</Typography>
       </div>
 
       <div className="mt-3">
-        <Link to={`/courses/${id}/edit`}>
+        <Link to={`/lecturers/${id}/edit`}>
           <Button>Edit</Button>
         </Link>
         {/* Can't pass function declaration i.e navigate() - must pass a function*/}
         <DeleteBtn
           id={id}
-          resource="courses"
-          deleteCallback={() => navigate("/courses")}
+          resource="lecturers"
+          deleteCallback={() => navigate("/lecturers")}
         />
       </div>
     </>

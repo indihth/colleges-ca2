@@ -9,55 +9,50 @@ import { Button } from "@material-tailwind/react";
 const Index = () => {
   const { authenticated } = useAuth();
 
-  const [courses, setCourses] = useState([]);
+  const [lecturers, setLecturers] = useState([]);
 
   let token = localStorage.getItem("token");
 
   useEffect(() => {
     axios
-      .get("https://college-api.vercel.app/api/courses", {
+      .get("https://college-api.vercel.app/api/lecturers", {
         headers: {
           Authorization: `Bearer ${token}`,
-          // "Authorization": `Bearer ${token}`
         },
       })
       .then((response) => {
-        setCourses(response.data.data); // Puts data in 'course' state
+        setLecturers(response.data.data); // Puts data in 'lecture' state
+        // console.log(lecturers)
       })
       .catch((err) => {
         console.error(err);
       });
   }, []);
 
-  if (courses.length === 0) return <h3>There are no courses</h3>;
+  if (lecturers.length === 0) return <h3>There are no lecturers</h3>;
 
-  const courseList = courses.map((course) => {
+  const lectureList = lecturers.map((lecture) => {
     return (
-
-      <div key={course.id} className="my-5">
+      <div key={lecture.id} className="my-5">
         {authenticated ? (
           <p>
-            <b>Title: </b>{" "}
-            <Link to={`/courses/${course.id}`}>{course.title}</Link>
+            <b>Name: </b>{" "}
+            <Link to={`/lecturers/${lecture.id}`}>{lecture.name}</Link>
           </p>
         ) : (
           <p>
-            <b>Title: </b> {course.title}
+            <b>Name: </b> {lecture.name}
           </p>
         )}
-        {/* <p><b>Title: </b> <Link to={`/courses/${course._id}`}>{course.title}</Link></p> */}
-        <p>
-          <b>Description: </b> {course.description}
-        </p>
       </div>
     );
   });
 
   return (
     <>
-    <Button><Link to="/courses/create">Create Course</Link></Button>
+    <Button><Link to="/lecturers/create">Create Lecturer</Link></Button>
       <div>Courses Index</div>
-      {courseList}
+      {lectureList}
     </>
   );
 };

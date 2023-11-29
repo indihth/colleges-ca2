@@ -6,10 +6,14 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { useAuth } from '../contexts/AuthContext'
+
 
 import { Link, useNavigate } from "react-router-dom";
 
-const NavbarDefault = ({ authenticated, onAuthenticated }) => {
+const NavbarDefault = () => {
+  const { authenticated, onAuthenticated } = useAuth();
+
   const [openNav, setOpenNav] = React.useState(false);
 
   const navigate = useNavigate();
@@ -19,6 +23,7 @@ const NavbarDefault = ({ authenticated, onAuthenticated }) => {
     navigate("/"); // Go to homepage
   };
 
+  
   React.useEffect(() => {
     window.addEventListener(
       "resize",
