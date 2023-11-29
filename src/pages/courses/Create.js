@@ -198,9 +198,7 @@ const Create = () => {
             Level
           </Typography>
 
-          <select 
-          // value={form.level} 
-          name="level" onChange={handleForm}>
+          <select name="level" onChange={handleForm}>
             
             {levelOptions.map((level, i) => (
               <option value={level} key={i}> 

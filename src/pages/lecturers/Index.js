@@ -21,7 +21,7 @@ const Index = () => {
         },
       })
       .then((response) => {
-        setLecturers(response.data.data); // Puts data in 'lecture' state
+        setLecturers(response.data.data); // Puts data in 'lecturer' state
         // console.log(lecturers)
       })
       .catch((err) => {
@@ -31,17 +31,17 @@ const Index = () => {
 
   if (lecturers.length === 0) return <h3>There are no lecturers</h3>;
 
-  const lectureList = lecturers.map((lecture) => {
+  const lecturersList = lecturers.map((lecturer) => {
     return (
-      <div key={lecture.id} className="my-5">
+      <div key={lecturer.id} className="my-5">
         {authenticated ? (
           <p>
             <b>Name: </b>{" "}
-            <Link to={`/lecturers/${lecture.id}`}>{lecture.name}</Link>
+            <Link to={`/lecturers/${lecturer.id}`}>{lecturer.name}</Link>
           </p>
         ) : (
           <p>
-            <b>Name: </b> {lecture.name}
+            <b>Name: </b> {lecturer.name}
           </p>
         )}
       </div>
@@ -52,7 +52,7 @@ const Index = () => {
     <>
     <Button><Link to="/lecturers/create">Create Lecturer</Link></Button>
       <div>Courses Index</div>
-      {lectureList}
+      {lecturersList}
     </>
   );
 };

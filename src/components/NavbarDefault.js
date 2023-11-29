@@ -99,7 +99,7 @@ const NavbarDefault = () => {
             fill="#90A4AE"
           />
         </svg>
-        <Link to="/enrolment" className="flex items-center">
+        <Link to="/enrolments" className="flex items-center">
           Enrolment
         </Link>
       </Typography>

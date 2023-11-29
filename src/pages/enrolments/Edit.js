@@ -4,56 +4,100 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "../../config/api";
 
 // Import components
-import {
-  Card,
-  Input,
-  Textarea,
-  Typography,
-  Select,
-  Option,
-} from "@material-tailwind/react";
+import { Card, Input, Textarea, Typography } from "@material-tailwind/react";
 
-const Edit = () => {
+const Create = () => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);  
   const [errors, setErrors] = useState({});
- 
-  const [form, setForm] = useState({
-    title: "",
-    description: "",
-    code: "",
-    points: "",
-    level: "",
-  });
-  
-  const navigate = useNavigate();
 
-  const errorStyle = {
-    color: "red",
-    marginStart: "3px",
-  };
+  const [form, setForm] = useState({
+    course_id: "",
+    lecturer_id: "",
+    date: "",
+    time: "",
+    status: "",
+  });
+
+  const [enrolment, setEnrolment] = useState([]);
+  const [lecturers, setLecturers] = useState([]);
+  const [courses, setCourses] = useState([]);
+
+  const navigate = useNavigate();
 
   let token = localStorage.getItem("token");
 
-  const fieldText = ["title", "description", "code", "points", "level"];
-  const levelOptions = [7, 8, 9, 10];
+  const fieldText = ["course_id", "lecturer_id", "status", "date", "time"];
 
+  // Storing status options in object for easier use in select option mapping
+  const statusOptions = [
+    {
+      label: "Interested",
+      value: "interested",
+    },
+    {
+      label: "Assigned",
+      value: "assigned",
+    },
+    {
+      label: "Associate",
+      value: "associate",
+    },
+    {
+      label: "Career Break",
+      value: "career_break",
+    },
+  ];
+
+  // Using seperate useEffect that has dependancy on id to get enrolment data
   useEffect(() => {
     axios
-      .get(`/courses/${id}`, {
+      .get(`/enrolments/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       })
       .then((response) => {
         console.log(response);
-        setCourse(response.data.data); // Puts data in 'course' state
+        setEnrolment(response.data.data); // Puts data in 'enrolment' state
         setForm(response.data.data); // Fills form with existing data
       })
       .catch((err) => {
         console.error(err);
       });
   }, [id]);
+
+
+  useEffect(() => {
+    // Get all Courses
+    axios
+      .get("https://college-api.vercel.app/api/courses", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((response) => {
+        setCourses(response.data.data); // Puts data in 'courses' state
+        // console.log(courses)
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
+      // Get all Lecturers
+    axios
+    .get("https://college-api.vercel.app/api/lecturers", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    .then((response) => {
+      setLecturers(response.data.data); // Puts data in 'lecturers' state
+      // console.log(lecturers)
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  }, []);
 
   // Handles multiple form fields
   const handleForm = (e) => {
@@ -96,14 +140,14 @@ const Edit = () => {
 
       console.log("submitted", form);
       axios
-        .put(`/courses/${id}`, form, {
+        .put(`/enrolments/${id}`, form, {
           // Put method with id in URL
           headers: {
             Authorization: `Bearer ${token}`,
           },
         })
         .then((response) => {
-          navigate(`/courses/${id}`);
+          navigate(`/enrolments/${id}`);
         })
         .catch((err) => {
           console.error(err);
@@ -111,13 +155,10 @@ const Edit = () => {
     }
   };
 
-  if (!course) return <h3>course not found</h3>;
-
-
   return (
     <Card color="transparent" shadow={false}>
       <Typography variant="h4" color="blue-gray">
-        Edit Course
+        Create Enrolment
       </Typography>
       <form
         onSubmit={submitForm}
@@ -125,146 +166,110 @@ const Edit = () => {
       >
         <div className="mb-1 flex flex-col gap-6">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Title
+            Course
           </Typography>
 
-          <Input
-            type="text"
-            onChange={handleForm}
-            value={form.title}
-            name="title"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-
-          {/* ? will display if a title exists */}
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.title?.message}
-          </Typography>
-        </div>
-        <div className="mb-3">
-          <Typography variant="h6" color="blue-gray" className="mb-3">
-            Description
-          </Typography>
-          <Textarea
-            type="text"
-            onChange={handleForm}
-            value={form.description}
-            name="description"
-            size="md"
-            variant="outlined"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.description?.message}
-          </Typography>
-        </div>
-        <div className="mb-3">
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Code
-          </Typography>
-          <Input
-            type="text"
-            onChange={handleForm}
-            value={form.code}
-            name="code"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.code?.message}
-          </Typography>
-        </div>
-        <div>
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Points
-          </Typography>
-          <Input
-            type="number"
-            onChange={handleForm}
-            value={form.points}
-            name="points"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.points?.message}
-          </Typography>
-        </div>
-        <div>
-          <Typography variant="h6" color="blue-gray" className="mb-3">
-            Level
-          </Typography>
-
-          <select value={form.level} name="level" onChange={handleForm}>
-            
-            {levelOptions.map((level, i) => (
-              <option value={level} key={i}> 
-              {level}              
-              </option>
-            ))
-            }
+          <select value={form.course_id} name="course_id" onChange={handleForm}>
+            {courses.map((course, i) => (
+              <option value={course.id} key={i}>{course.title}</option>
+            ))}
           </select>
-          {/* <Select
-            variant="static"
-            onChange={handleForm}
-            name="level"
-            value={form.level}
+
+          {/* ? will display if a name exists */}
+          <Typography
+            variant="small"
+            color="gray"
+            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            <Option value="7">7</Option>
-            <Option value="8">8</Option>
-            <Option value="9">9</Option>
-            <Option value="10">10</Option>
-          </Select> */}
-          {/* <Input
-            type="text"
+            {errors.name?.message}
+          </Typography>
+        </div>
+        <div className="mb-3">
+          <Typography variant="h6" color="blue-gray" className="mb-3">
+            Lecturer
+          </Typography>
+
+          <select value={form.lecturer_id} name="lecturer_id" onChange={handleForm}>
+            {lecturers.map((lecturer, i) => (
+              <option value={lecturer.id} key={i}>{lecturer.name}</option>
+            ))}
+          </select>
+          <Typography
+            variant="small"
+            color="gray"
+            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+          >
+            {errors.address?.message}
+          </Typography>
+        </div>
+        <div className="mb-3">
+          <Typography variant="h6" color="blue-gray" className="mb-3">
+            Status
+          </Typography>
+
+          <select value={form.status} name="status" onChange={handleForm}>
+            {statusOptions.map((option, i) => (
+              <option value={option.value} key={i}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+          <Typography
+            variant="small"
+            color="gray"
+            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+          >
+            {errors.email?.message}
+          </Typography>
+        </div>
+        <div>
+          <Typography variant="h6" color="blue-gray" className="-mb-3">
+            Date
+          </Typography>
+          <Input
+            type="date"
             onChange={handleForm}
-            value={form.level}
-            name="level"
+            value={form.date}
+            name="date"
             size="lg"
             variant="static"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
             labelProps={{
               className: "before:content-none after:content-none",
             }}
-          /> */}
+          />
           <Typography
             variant="small"
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.level?.message}
+            {errors.date?.message}
+          </Typography>
+        </div>
+        <div>
+          <Typography variant="h6" color="blue-gray" className="mb-3">
+            Time
+          </Typography>
+
+          <Input
+            type="time"
+            onChange={handleForm}
+            value={form.time}
+            name="time"
+            size="lg"
+            variant="static"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
+
+          <Typography
+            variant="small"
+            color="gray"
+            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+          >
+            {errors.time?.message}
           </Typography>
         </div>
         <Input type="submit" />
@@ -273,4 +278,4 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default Create;
