@@ -5,11 +5,7 @@ import axios from "axios";
 // Components
 import {
   Typography,
-  Button,
-  Dialog,
-  DialogBody,
-  DialogHeader,
-  DialogFooter,
+  Button
 } from "@material-tailwind/react";
 // import DeleteBtn from "../../components/DeleteBtn";
 import DeletePopup from "../../components/DeletePopup";
@@ -34,7 +30,7 @@ const Show = () => {
         },
       })
       .then((response) => {
-        console.log(response.data.data);
+        // console.log(response.data.data);
         setCourse(response.data.data); // Puts data in 'course' state
         response.data.data.enrolments.length > 0 ? setEnrolment(true) : setEnrolment(false);
         // setEnrolment(response.data.data.enrolments)
@@ -47,51 +43,9 @@ const Show = () => {
   // If course does not exist, show text. Or while loading
   if (!course) return <h3>Course not found</h3>;
 
-  // If no enrolment, show delete button normal
-  // If enrolment, show warning that all enrolments will be deleted
-
-  // const showDeleteAll = () => {
-  //   return (
-  //     <>
-  //       <Button onClick={handleOpen} color="red">Delete</Button>
-
-  //       <Dialog
-  //         open={open}
-  //         handler={handleOpen}
-  //         // Default component animations were lagging in Chrom, reset to no movement (not working)
-  //         animate={{
-  //           mount: { scale: 1, y: 0 },
-  //           unmount: { scale: 1, y: 0 },
-  //         }}
-  //       >
-  //         <DialogHeader>Delete Course?</DialogHeader>
-  //         <DialogBody>
-  //           This course has enrolments. Are you sure you want to delete
-  //           all enrol associated with this course?
-  //         </DialogBody>
-  //         <DialogFooter>
-  //           <Button
-  //             variant="text"
-  //             color="blue"
-  //             onClick={handleOpen}
-  //             className="mr-1"
-  //           >
-  //             <span>Cancel</span>
-  //           </Button>
-
-  //           <DeleteBtn
-  //             id={id}
-  //             resource="courses"
-  //             relatedResource="enrolments"
-  //             data={course}
-  //             titleText={"Delete All"}
-  //             deleteCallback={() => navigate("/courses")}
-  //           />
-  //         </DialogFooter> 
-  //       </Dialog>
-  //     </>
-  //   );
-  // };
+  // Checking enrolments can be read
+  // console.log(`Enrolments: ${course.enrolments.length}`)
+  console.log(`enrolment is: ${enrolment}, ${course.enrolments.length}`)
 
   const handleOpen = () => setOpen(!open);
 
@@ -110,23 +64,9 @@ const Show = () => {
           <Button>Edit</Button>
         </Link>
 
-      <DeletePopup  />
+      {/* Passing the resource type to use in end point, 'data' to pass entire object */}
+      <DeletePopup resource="courses" data={course}/>
 
-        {/* {showDeleteAll()} */}
-        {/* Can't pass function declaration i.e navigate() - must pass a function
-          If enrolments, show */}
-        {/* {enrolment == true ? (
-          showDeleteAll()
-        ) : (
-          <DeleteBtn
-            id={id}
-            resource="courses"
-            relatedResource="enrolments"
-            data={course}
-            titleText="test"
-            deleteCallback={() => navigate("/courses")}
-          />
-        )} */}
       </div>
     </>
   );

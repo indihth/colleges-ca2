@@ -63,20 +63,20 @@ const Create = () => {
         console.error(err);
       });
 
-      // Get all Lecturers
+    // Get all Lecturers
     axios
-    .get("https://college-api.vercel.app/api/lecturers", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
-    .then((response) => {
-      setLecturers(response.data.data); // Puts data in 'lecturers' state
-      // console.log(lecturers)
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+      .get("https://college-api.vercel.app/api/lecturers", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((response) => {
+        setLecturers(response.data.data); // Puts data in 'lecturers' state
+        // console.log(lecturers)
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }, []);
 
   // Handles multiple form fields
@@ -148,10 +148,13 @@ const Create = () => {
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Course
           </Typography>
-
-          <select name="course_id" onChange={handleForm}>
+          {/* Setting defaultValue="" and <option> to hidden and value="" makes the placeholder option hidden after initially selecting*/}
+          <select name="course_id" onChange={handleForm} defaultValue="">
+            <option hidden value="">Selecte a course</option>
             {courses.map((course, i) => (
-              <option value={course.id} key={i}>{course.title}</option>
+              <option value={course.id} key={i}>
+                {course.title}
+              </option>
             ))}
           </select>
 
@@ -161,7 +164,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.course_id?.message ? "Lecturer is required"  : ""}
+            {errors.course_id?.message ? "Lecturer is required" : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -169,9 +172,12 @@ const Create = () => {
             Lecturer
           </Typography>
 
-          <select name="lecturer_id" onChange={handleForm}>
+          <select name="lecturer_id" onChange={handleForm} defaultValue="">
+          <option hidden value="">Selecte a lecturer</option>
             {lecturers.map((lecturer, i) => (
-              <option value={lecturer.id} key={i}>{lecturer.name}</option>
+              <option value={lecturer.id} key={i}>
+                {lecturer.name}
+              </option>
             ))}
           </select>
           <Typography
@@ -187,7 +193,8 @@ const Create = () => {
             Status
           </Typography>
 
-          <select name="status" onChange={handleForm}>
+          <select name="status" onChange={handleForm} defaultValue="">
+          <option hidden value="">Selecte a status</option>
             {statusOptions.map((option, i) => (
               <option value={option.value} key={i}>
                 {option.label}

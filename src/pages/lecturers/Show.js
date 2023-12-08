@@ -5,6 +5,8 @@ import axios from "axios";
 // Components
 import { Typography, Button } from "@material-tailwind/react";
 import DeleteBtn from "../../components/DeleteBtn";
+import DeletePopup from "../../components/DeletePopup";
+
 
 const Show = () => {
   const { id } = useParams();
@@ -47,12 +49,9 @@ const Show = () => {
         <Link to={`/lecturers/${id}/edit`}>
           <Button>Edit</Button>
         </Link>
-        {/* Can't pass function declaration i.e navigate() - must pass a function*/}
-        <DeleteBtn
-          id={id}
-          resource="lecturers"
-          deleteCallback={() => navigate("/lecturers")}
-        />
+
+      {/* Passing the resource type to use in end point, 'data' to pass entire object */}
+        <DeletePopup resource="lecturers" data={lecturer}/>
       </div>
     </>
   );

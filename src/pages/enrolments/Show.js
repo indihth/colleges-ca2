@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Components
 import { Typography, Button } from "@material-tailwind/react";
-import DeleteBtn from "../../components/DeleteBtn";
+import DeletePopup from "../../components/DeletePopup";
 
 const Show = () => {
   const { id } = useParams();
@@ -34,25 +34,22 @@ const Show = () => {
   // If enrolment does not exist, show text. Or while loading
   if (!enrolment) return <h3>Enrolments not found</h3>;
 
-
   return (
     <>
       <div>
         <Typography variant="h2">Status: {enrolment.status}</Typography>
         <Typography variant="h5">Course: {enrolment.course.title}</Typography>
-        <Typography variant="h5">Lecturer: {enrolment.lecturer.name}</Typography>
+        <Typography variant="h5">
+          Lecturer: {enrolment.lecturer.name}
+        </Typography>
       </div>
 
       <div className="mt-3">
         <Link to={`/enrolments/${id}/edit`}>
           <Button>Edit</Button>
         </Link>
-        {/* Can't pass function declaration i.e navigate() - must pass a function*/}
-        <DeleteBtn
-          id={id}
-          resource="enrolments"
-          deleteCallback={() => navigate("/enrolments")}
-        />
+
+        <DeletePopup resource="enrolments" data={enrolment} />
       </div>
     </>
   );

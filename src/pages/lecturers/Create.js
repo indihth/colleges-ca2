@@ -89,7 +89,7 @@ const Create = () => {
   return (
     <Card color="transparent" shadow={false}>
       <Typography variant="h4" color="blue-gray">
-        Edit Lecturer
+        Create Lecturer
       </Typography>
       <form
         onSubmit={submitForm}
@@ -192,51 +192,6 @@ const Create = () => {
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
             {errors.phone?.message}
-          </Typography>
-        </div>
-        <div>
-          <Typography variant="h6" color="blue-gray" className="mb-3">
-            Enrolments - to be done
-          </Typography>
-
-          {/* <select // value={form.enrolments} name="enrolments" onChange={handleForm}>
-            
-            {enrolmentsOptions.map((enrolments, i) => (
-              <option value={enrolments} key={i}> 
-              {enrolments}              
-              </option>
-            ))
-            }
-          </select> */}
-          {/* <Select
-            variant="static"
-            onChange={handleForm}
-            name="enrolments"
-            // value={form.enrolments}
-          >
-            <Option value="7">7</Option>
-            <Option value="8">8</Option>
-            <Option value="9">9</Option>
-            <Option value="10">10</Option>
-          </Select> */}
-          {/* <Input
-            type="text"
-            onChange={handleForm}
-            // value={form.enrolments}
-            name="enrolments"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          /> */}
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.enrolments?.message}
           </Typography>
         </div>
         <Input type="submit" />

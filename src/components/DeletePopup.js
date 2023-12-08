@@ -9,20 +9,23 @@ import {
   DialogHeader,
   DialogFooter,
 } from "@material-tailwind/react";
-import DeleteBtn from 'components/DeleteBtn';
+import DeleteBtn from '../components/DeleteBtn';
 
-const DeletePopup = () => {
+const DeletePopup = ({ resource, data }) => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleOpen = () => setOpen(!open);
+  console.log(resource)
+
+  if (resource === "enrolments") {}
+  // const relatedResource = 
 
   return (
     <>
       <Button onClick={handleOpen} color="red">
-        Delete
+        Delete (popup)
       </Button>
 
       <Dialog
@@ -49,11 +52,12 @@ const DeletePopup = () => {
             <span>Cancel</span>
           </Button>
 
+        {/* Can't pass function declaration i.e navigate() - must pass a function*/}
           <DeleteBtn
             id={id}
-            resource="courses"
+            resource={resource}
             relatedResource="enrolments"
-            data={course}
+            data={data}
             titleText={"Delete All"}
             deleteCallback={() => navigate("/courses")}
           />

@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <>
-    <Button><Link to="/courses/create">Create Course</Link></Button>
+    <Link to="/courses/create"><Button>Create Course</Button></Link>
       <div>Courses Index</div>
       {courseList}
     </>

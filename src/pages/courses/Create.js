@@ -88,13 +88,13 @@ const Create = () => {
   return (
     <Card color="transparent" shadow={false}>
       <Typography variant="h4" color="blue-gray">
-        Edit Course
+        Create Course
       </Typography>
       <form
         onSubmit={submitForm}
         className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
       >
-        <div className="mb-1 flex flex-col gap-6">
+        <div className="mb-5">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Title
           </Typography>
@@ -118,10 +118,10 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.title?.message}
+            {errors.title?.message ? errors.title?.message  : ""}
           </Typography>
         </div>
-        <div className="mb-3">
+        <div className="mb-5">
           <Typography variant="h6" color="blue-gray" className="mb-3">
             Description
           </Typography>
@@ -142,10 +142,11 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.description?.message}
+            {errors.description?.message ? errors.description?.message  : ""}
+
           </Typography>
         </div>
-        <div className="mb-3">
+        <div className="mb-5">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Code
           </Typography>
@@ -166,10 +167,10 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.code?.message}
+            {errors.code?.message ? errors.code?.message  : ""}
           </Typography>
         </div>
-        <div>
+        <div className="mb-5">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Points
           </Typography>
@@ -190,10 +191,11 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.points?.message}
+            {errors.points?.message ? errors.points?.message  : ""}
+
           </Typography>
         </div>
-        <div>
+        <div className="mb-5">
           <Typography variant="h6" color="blue-gray" className="mb-3">
             Level
           </Typography>
@@ -235,7 +237,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.level?.message}
+            {errors.level?.message ? errors.level?.message  : ""}
           </Typography>
         </div>
         <Input type="submit" />
