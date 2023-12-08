@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { useAuth } from "./contexts/AuthContext";
 
 // Import Pages
@@ -24,7 +24,7 @@ import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
-  const { authenticated, onAuthenticated } = useAuth();
+  const { authenticated } = useAuth();
 
   let protectedRoutes;
 
@@ -49,17 +49,17 @@ function App() {
   if (authenticated) {
     protectedRoutes = (
       <>
-      {/* Courses */}
+        {/* Courses */}
         <Route path="/courses/create" element={<CoursesCreate />} />
         <Route path="/courses/:id/edit" element={<CoursesEdit />} />
         <Route path="/courses/:id" element={<CoursesShow />} />
 
-      {/* Lecturers */}
+        {/* Lecturers */}
         <Route path="/lecturers/create" element={<LecturersCreate />} />
         <Route path="/lecturers/:id/edit" element={<LecturersEdit />} />
         <Route path="/lecturers/:id" element={<LecturersShow />} />
 
-      {/* Enrolments */}
+        {/* Enrolments */}
         <Route path="/enrolments/create" element={<EnrolmentsCreate />} />
         <Route path="/enrolments/:id/edit" element={<EnrolmentsEdit />} />
         <Route path="/enrolments/:id" element={<EnrolmentsShow />} />

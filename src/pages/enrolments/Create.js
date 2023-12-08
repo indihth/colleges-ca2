@@ -161,7 +161,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.name?.message}
+            {errors.course_id?.message ? "Lecturer is required"  : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -179,7 +179,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.address?.message}
+            {errors.lecturer_id?.message ? "Lecturer is required" : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -199,7 +199,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.email?.message}
+            {errors.status?.message ? errors.status?.message : ""}
           </Typography>
         </div>
         <div>
@@ -223,7 +223,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.date?.message}
+            {errors.date?.message ? errors.date?.message : ""}
           </Typography>
         </div>
         <div>
@@ -249,7 +249,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.time?.message}
+            {errors.time?.message ? errors.time?.message : ""}
           </Typography>
         </div>
         <Input type="submit" />

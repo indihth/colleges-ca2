@@ -34,6 +34,7 @@ const Show = () => {
   // If enrolment does not exist, show text. Or while loading
   if (!enrolment) return <h3>Enrolments not found</h3>;
 
+
   return (
     <>
       <div>
