@@ -2,9 +2,11 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from '../../contexts/AuthContext'
-import { Button } from "@material-tailwind/react";
+import { useAuth } from "../../contexts/AuthContext";
+import { Button, Typography } from "@material-tailwind/react";
 
+// Components
+import Table from "../../components/Table";
 
 const Index = () => {
   const { authenticated } = useAuth();
@@ -35,23 +37,32 @@ const Index = () => {
     return (
       <div key={lecturer.id} className="my-5">
         {authenticated ? (
-          <p>
-            <b>Name: </b>{" "}
-            <Link to={`/lecturers/${lecturer.id}`}>{lecturer.name}</Link>
-          </p>
+          <Link to={`/lecturers/${lecturer.id}`}>
+            <Typography variant="h5">{lecturer.name}</Typography>
+          </Link>
         ) : (
-          <p>
-            <b>Name: </b> {lecturer.name}
-          </p>
+          <Typography variant="h5">{lecturer.name}</Typography>
         )}
+        <Typography variant="small" color="gray">
+          {lecturer.email}
+        </Typography>
+        <Typography variant="small" color="gray">
+          {lecturer.phone}
+        </Typography>
+        <Typography variant="small" color="gray">
+          Enrolments: {lecturer.enrolments.length}
+        </Typography>
       </div>
     );
   });
 
   return (
     <>
-    <Link to="/lecturers/create"><Button>Create Lecturer</Button></Link>
+      <Link to="/lecturers/create">
+        <Button>Create Lecturer</Button>
+      </Link>
       <div>Courses Index</div>
+      <Table data={lecturers}/>
       {lecturersList}
     </>
   );

@@ -49,6 +49,9 @@ const Index = () => {
         <p>
           <b>Description: </b> {course.description}
         </p>
+        <p>
+          No. of Enrolments: {course.enrolments.length}
+        </p>
       </div>
     );
   });

@@ -4,18 +4,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "../../config/api";
 
 // Import components
-import {
-  Card,
-  Input,
-  Textarea,
-  Typography
-} from "@material-tailwind/react";
+import { Card, Input, Textarea, Typography } from "@material-tailwind/react";
 
 const Create = () => {
   const { id } = useParams();
-  const [lecturer, setLecturer] = useState(null);  
+  const [lecturer, setLecturer] = useState(null);
   const [errors, setErrors] = useState({});
- 
+
   const [form, setForm] = useState({
     name: "",
     address: "",
@@ -23,12 +18,11 @@ const Create = () => {
     phone: "",
     // enrolments: "",
   });
-  
+
   const navigate = useNavigate();
 
   const fieldText = ["name", "address", "email", "phone"];
   // const fieldText = ["name", "address", "email", "phone", "enrolments"];
-
 
   // Handles multiple form fields
   const handleForm = (e) => {
@@ -41,6 +35,8 @@ const Create = () => {
 
   const isRequired = (fields) => {
     let included = true;
+    let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+
     setErrors({});
 
     fields.forEach((field) => {
@@ -59,6 +55,17 @@ const Create = () => {
       }
     });
 
+    // If email filled, check if it's a valid format (xxx@xxx.xxx)
+    if (!emailRegex.test(form.email) && form.email) {
+      included = false;
+
+      setErrors((prevState) => ({
+        ...prevState,
+        email: {
+          message: `Not a valid email address`,
+        },
+      }));
+    }
     return included;
   };
 
@@ -119,7 +126,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.name?.message}
+            {errors.level?.name ? errors.level?.name : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -143,7 +150,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.address?.message}
+            {errors.address?.message ? errors.address?.message : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -167,7 +174,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.email?.message}
+            {errors.email?.message ? errors.email?.message : ""}
           </Typography>
         </div>
         <div>
@@ -191,7 +198,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.phone?.message}
+            {errors.phone?.message ? errors.phone?.message : ""}
           </Typography>
         </div>
         <Input type="submit" />

@@ -15,9 +15,9 @@ import {
 
 const Edit = () => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);  
+  const [course, setCourse] = useState(null);
   const [errors, setErrors] = useState({});
- 
+
   const [form, setForm] = useState({
     title: "",
     description: "",
@@ -25,7 +25,7 @@ const Edit = () => {
     points: "",
     level: "",
   });
-  
+
   const navigate = useNavigate();
 
   const errorStyle = {
@@ -84,6 +84,18 @@ const Edit = () => {
       }
     });
 
+    // Validate that points are min of 100, give error if not
+    if (form.points && form.points < 100) {
+      included = false;
+
+      setErrors((prevState) => ({
+        ...prevState,
+        points: {
+          message: `Minimum points are 100`,
+        },
+      }));
+    }
+
     return included;
   };
 
@@ -112,7 +124,6 @@ const Edit = () => {
   };
 
   if (!course) return <h3>course not found</h3>;
-
 
   return (
     <Card color="transparent" shadow={false}>
@@ -147,7 +158,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.title?.message}
+            {errors.title?.message ? errors.title?.message : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -171,7 +182,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.description?.message}
+            {errors.description?.message ? errors.description?.message : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -195,7 +206,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.code?.message}
+            {errors.code?.message ? errors.code?.message  : ""}
           </Typography>
         </div>
         <div>
@@ -219,7 +230,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.points?.message}
+            {errors.points?.message ? errors.points?.message  : ""}
           </Typography>
         </div>
         <div>
@@ -228,43 +239,18 @@ const Edit = () => {
           </Typography>
 
           <select value={form.level} name="level" onChange={handleForm}>
-            
             {levelOptions.map((level, i) => (
-              <option value={level} key={i}> 
-              {level}              
+              <option value={level} key={i}>
+                {level}
               </option>
-            ))
-            }
+            ))}
           </select>
-          {/* <Select
-            variant="static"
-            onChange={handleForm}
-            name="level"
-            value={form.level}
-          >
-            <Option value="7">7</Option>
-            <Option value="8">8</Option>
-            <Option value="9">9</Option>
-            <Option value="10">10</Option>
-          </Select> */}
-          {/* <Input
-            type="text"
-            onChange={handleForm}
-            value={form.level}
-            name="level"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          /> */}
           <Typography
             variant="small"
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.level?.message}
+            {errors.level?.message ? errors.level?.message  : ""}
           </Typography>
         </div>
         <Input type="submit" />

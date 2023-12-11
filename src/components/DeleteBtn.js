@@ -11,6 +11,7 @@ const DeleteBtn = ({
   relatedResource = null,
   data,
   titleText = "Delete",
+  enrolements
 }) => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -24,7 +25,7 @@ const DeleteBtn = ({
     let token = localStorage.getItem("token");
 
     // Debugging:
-    // console.log(`resource: ${resource}`)
+    console.log(`resource: ${resource}`)
     // console.log(`related resource ${relatedResource}`)
     // console.log(data)
     // console.log(`Id: ${id}`)
@@ -33,8 +34,9 @@ const DeleteBtn = ({
     // Use an if statement to bypass enrolment deletion is no enrolments?
     // Deletes without errors if no enrolments
     /////////////////////////////
-    // If enrolments exists for resource, delete these first
-    if (!resource === "enrolments") {
+
+    // If enrolments exist, delete these first
+    if (enrolements) {
       // Creating a list of all enrolments for deletion
       let listOfDeleteRequests = data[relatedResource].map((current, index) =>
         axios.delete(`/${relatedResource}/${current.id}`, {
@@ -42,7 +44,7 @@ const DeleteBtn = ({
         })
       );
       // log the contents of listOfDeleteRequests
-      console.log("onDelete");
+      console.log("onDelete with enrolments");
       console.log(listOfDeleteRequests);
 
       // Using Promise instead of axios, axios.all depreciated + not in axios config
@@ -67,7 +69,7 @@ const DeleteBtn = ({
         })
         .then((response) => {
           // do something
-          console.log("enrolment deleted, in course delete");
+          console.log("no enrolments, resource delete");
           navigate(`/${resource}`);
         })
         .catch((error) => {

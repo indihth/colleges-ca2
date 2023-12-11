@@ -3,17 +3,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Components
-import {
-  Typography,
-  Button
-} from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 // import DeleteBtn from "../../components/DeleteBtn";
 import DeletePopup from "../../components/DeletePopup";
+import DeleteModal from "../../components/DeleteModal";
 
 const Show = () => {
   const { id } = useParams();
   const [course, setCourse] = useState(null);
-  const [enrolment, setEnrolment] = useState("");
+  const [enrolments, setEnrolments] = useState("");
   const [open, setOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -32,7 +30,9 @@ const Show = () => {
       .then((response) => {
         // console.log(response.data.data);
         setCourse(response.data.data); // Puts data in 'course' state
-        response.data.data.enrolments.length > 0 ? setEnrolment(true) : setEnrolment(false);
+        response.data.data.enrolments.length > 0
+          ? setEnrolments(true)
+          : setEnrolments(false);
         // setEnrolment(response.data.data.enrolments)
       })
       .catch((err) => {
@@ -45,7 +45,7 @@ const Show = () => {
 
   // Checking enrolments can be read
   // console.log(`Enrolments: ${course.enrolments.length}`)
-  console.log(`enrolment is: ${enrolment}, ${course.enrolments.length}`)
+  console.log(`enrolments is: ${enrolments}, ${course.enrolments.length}`);
 
   const handleOpen = () => setOpen(!open);
 
@@ -64,9 +64,10 @@ const Show = () => {
           <Button>Edit</Button>
         </Link>
 
-      {/* Passing the resource type to use in end point, 'data' to pass entire object */}
-      <DeletePopup resource="courses" data={course}/>
+        {/* Passing the resource type to use in end point, 'data' to pass entire object */}
+        {/* <DeletePopup resource="courses" data={course} enrolments={enrolments} title="Course"/> */}
 
+        <DeleteModal resource="courses" data={course} enrolments={enrolments} title="Course"/>
       </div>
     </>
   );

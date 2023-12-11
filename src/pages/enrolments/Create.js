@@ -150,7 +150,7 @@ const Create = () => {
           </Typography>
           {/* Setting defaultValue="" and <option> to hidden and value="" makes the placeholder option hidden after initially selecting*/}
           <select name="course_id" onChange={handleForm} defaultValue="">
-            <option hidden value="">Selecte a course</option>
+            <option hidden value="">Select a course</option>
             {courses.map((course, i) => (
               <option value={course.id} key={i}>
                 {course.title}
@@ -164,7 +164,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.course_id?.message ? "Lecturer is required" : ""}
+            {errors.course_id?.message ? "course is required" : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -173,7 +173,7 @@ const Create = () => {
           </Typography>
 
           <select name="lecturer_id" onChange={handleForm} defaultValue="">
-          <option hidden value="">Selecte a lecturer</option>
+          <option hidden value="">Select a lecturer</option>
             {lecturers.map((lecturer, i) => (
               <option value={lecturer.id} key={i}>
                 {lecturer.name}
@@ -185,7 +185,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.lecturer_id?.message ? "Lecturer is required" : ""}
+            {errors.lecturer_id?.message ? "lecturer is required" : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -194,7 +194,7 @@ const Create = () => {
           </Typography>
 
           <select name="status" onChange={handleForm} defaultValue="">
-          <option hidden value="">Selecte a status</option>
+          <option hidden value="">Select a status</option>
             {statusOptions.map((option, i) => (
               <option value={option.value} key={i}>
                 {option.label}

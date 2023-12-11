@@ -4,15 +4,12 @@ import axios from "axios";
 
 // Components
 import { Typography, Button } from "@material-tailwind/react";
-import DeleteBtn from "../../components/DeleteBtn";
 import DeletePopup from "../../components/DeletePopup";
-
 
 const Show = () => {
   const { id } = useParams();
   const [lecturer, setLecture] = useState(null);
-
-  const navigate = useNavigate();
+  const [enrolments, setEnrolments] = useState("");
 
   let token = localStorage.getItem("token");
 
@@ -27,6 +24,9 @@ const Show = () => {
       .then((response) => {
         console.log(response.data.data);
         setLecture(response.data.data); // Puts data in 'lecturer' state
+        response.data.data.enrolments.length > 0
+          ? setEnrolments(true)
+          : setEnrolments(false);
       })
       .catch((err) => {
         console.error(err);
@@ -35,6 +35,8 @@ const Show = () => {
 
   // If lecturer does not exist, show text. Or while loading
   if (!lecturer) return <h3>Lecturer not found</h3>;
+
+  console.log(`enrolments is: ${enrolments}, ${lecturer.enrolments.length}`);
 
   return (
     <>
@@ -50,8 +52,8 @@ const Show = () => {
           <Button>Edit</Button>
         </Link>
 
-      {/* Passing the resource type to use in end point, 'data' to pass entire object */}
-        <DeletePopup resource="lecturers" data={lecturer}/>
+        {/* Passing the resource type to use in end point, 'data' to pass entire object */}
+        <DeletePopup resource="lecturers" data={lecturer} enrolments={enrolments} title="Lecturer" />
       </div>
     </>
   );

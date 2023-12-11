@@ -11,16 +11,14 @@ import {
 } from "@material-tailwind/react";
 import DeleteBtn from '../components/DeleteBtn';
 
-const DeletePopup = ({ resource, data }) => {
+const DeletePopup = ({ resource, data, enrolments = false, title }) => {
   const { id } = useParams();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleOpen = () => setOpen(!open);
-  console.log(resource)
-
-  if (resource === "enrolments") {}
-  // const relatedResource = 
+  // console.log(resource)
+  // console.log(enrolments)  
 
   return (
     <>
@@ -31,16 +29,17 @@ const DeletePopup = ({ resource, data }) => {
       <Dialog
         open={open}
         handler={handleOpen}
-        // Default component animations were lagging in Chrom, reset to no movement (not working)
         animate={{
-          mount: { scale: 1, y: 0 },
-          unmount: { scale: 1, y: 0 },
+          mount: { scale: 1, y: 100, opacity: 1},
+          unmount: { scale: 1, y: 100, opacity: 1 },
+          transition: {duration: 0} 
         }}
+        // Default component animations were lagging in Chrom, reset to no movement (not working)
+        style={{ transition: "none !important" }}
       >
-        <DialogHeader>Delete Course?</DialogHeader>
+        <DialogHeader>Delete {title}?</DialogHeader>
         <DialogBody>
-          This course has enrolments. Are you sure you want to delete all enrol
-          associated with this course?
+       { (enrolments == true) ? ( "This course has enrolments. Are you sure you want to delete all enrol associated with this course?") : ("Deleting is permenent. Do you want to continue?")}
         </DialogBody>
         <DialogFooter>
           <Button
@@ -58,8 +57,9 @@ const DeletePopup = ({ resource, data }) => {
             resource={resource}
             relatedResource="enrolments"
             data={data}
-            titleText={"Delete All"}
+            titleText= { (enrolments == true) ? ( "Delete All") : (`Delete ${title}`)}
             deleteCallback={() => navigate("/courses")}
+            enrolements={enrolments}
           />
         </DialogFooter>
       </Dialog>

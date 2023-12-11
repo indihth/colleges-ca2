@@ -181,7 +181,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.name?.message}
+             {errors.name?.message ? errors.name?.message  : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -199,7 +199,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.address?.message}
+            {errors.address?.message ? errors.address?.message  : ""}
           </Typography>
         </div>
         <div className="mb-3">
@@ -219,7 +219,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.email?.message}
+           {errors.email?.message ? errors.email?.message  : ""}
           </Typography>
         </div>
         <div>
@@ -243,7 +243,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.date?.message}
+           {errors.date?.message ? errors.date?.message  : ""}
           </Typography>
         </div>
         <div>
@@ -269,7 +269,7 @@ const Create = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.time?.message}
+            {errors.time?.message ? errors.time?.message  : ""}
           </Typography>
         </div>
         <Input type="submit" />
