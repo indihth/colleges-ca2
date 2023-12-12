@@ -5,6 +5,7 @@ import axios from "axios";
 // Components
 import { Typography, Button } from "@material-tailwind/react";
 import DeletePopup from "../../components/DeletePopup";
+import DeleteModal from "../../components/DeleteModal";
 
 const Show = () => {
   const { id } = useParams();
@@ -53,7 +54,7 @@ const Show = () => {
         </Link>
 
         {/* Passing the resource type to use in end point, 'data' to pass entire object */}
-        <DeletePopup resource="lecturers" data={lecturer} enrolments={enrolments} title="Lecturer" />
+        <DeleteModal resource="lecturers" data={lecturer} enrolments={enrolments} title="Lecturer" />
       </div>
     </>
   );

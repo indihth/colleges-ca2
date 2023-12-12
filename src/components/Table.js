@@ -1,9 +1,6 @@
-import {
-  MagnifyingGlassIcon,
-  ChevronUpDownIcon,
-} from "@heroicons/react/24/outline";
-import { PencilIcon, UserPlusIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { PencilIcon, UserPlusIcon } from "@heroicons/react/24/solid";
 import {
   Card,
   CardHeader,
@@ -16,12 +13,14 @@ import {
   IconButton,
   Tooltip,
 } from "@material-tailwind/react";
+import DeletePopup from "./DeletePopup";
+import DeleteModal from "./DeleteModal";
 
 const TABLE_HEAD = [
   "Lecturer",
-  "Phone",
   "Address",
-  "Enrolments",
+  "Phone",
+  "Assigned | Associate | Interested",
   "Employed",
   "",
 ];
@@ -38,8 +37,11 @@ const TABLE_ROWS = [
   },
 ];
 
-
 const Table = ({ data }) => {
+
+
+  let enrolments = false;
+
   return (
     <Card className="h-full w-full">
       <CardHeader floated={false} shadow={false} className="rounded-none">
@@ -86,14 +88,19 @@ const Table = ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.map(({ name, email, phone, address, enrolments, id }, index) => {
+            {data.map((lecturer, index) => {
               const isLast = index === data.length - 1;
               const classes = isLast
                 ? "p-4"
                 : "p-4 border-b border-blue-gray-50";
 
+              enrolments =
+                lecturer.enrolments.length > 0
+                  ? (enrolments = true)
+                  : (enrolments = false);
+
               return (
-                <tr key={name}>
+                <tr key={lecturer.name}>
                   <td className={classes}>
                     <div className="flex items-center gap-3">
                       <div className="flex flex-col">
@@ -102,14 +109,14 @@ const Table = ({ data }) => {
                           color="blue-gray"
                           className="font-normal"
                         >
-                          {name}
+                          {lecturer.name}
                         </Typography>
                         <Typography
                           variant="small"
                           color="blue-gray"
                           className="font-normal opacity-70"
                         >
-                          {email}
+                          {lecturer.email}
                         </Typography>
                       </div>
                     </div>
@@ -121,42 +128,62 @@ const Table = ({ data }) => {
                         color="blue-gray"
                         className="font-normal"
                       >
-                        {address}
+                        {lecturer.address}
                       </Typography>
                       <Typography
                         variant="small"
                         color="blue-gray"
                         className="font-normal opacity-70"
                       >
-                        {phone}
+                        {lecturer.phone}
                       </Typography>
                     </div>
                   </td>
-                  <td className={classes}>{phone}</td>
+                  <td className={classes}>{lecturer.phone}</td>
                   <td className={classes}>
-                    <Typography
-                      variant="small"
-                      color="blue-gray"
-                      className="font-normal"
-                    >
-                      <div className="w-max">
-                        {/* <Chip value={enrolments.length} /> */}
-                        <div class="mt-4">
-                            <span class="rounded-tl-lg rounded-bl-lg px-3 py-1 text-white bg-indigo-400">{enrolments.filter((obj) => obj.status === "assigned").length }</span>
-                            <span class=" px-3 py-1 text-white bg-blue-500">{enrolments.filter((obj) => obj.status === "associate").length }</span>
-                            <span class="rounded-tr-lg rounded-br-lg px-3 py-1 text-white bg-orange-500">{enrolments.filter((obj) => obj.status === "interested").length }</span>
-                        </div>
+                    <div className="mt-4 flex text-center w-2/3">
+                      {/* Calculate number of enrolments for each option */}
+                      <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
+                        {
+                          lecturer.enrolments.filter(
+                            (obj) => obj.status === "assigned"
+                          ).length
+                        }
                       </div>
-                    </Typography>
+                      <div className="w-1/3 py-1 text-white bg-gray-400">
+                        {
+                          lecturer.enrolments.filter(
+                            (obj) => obj.status === "associate"
+                          ).length
+                        }
+                      </div>
+                      <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
+                        {
+                          lecturer.enrolments.filter(
+                            (obj) => obj.status === "interested"
+                          ).length
+                        }
+                      </div>
+                    </div>
                   </td>
+                  <td className={classes}></td>
                   <td className={classes}>
-                    <Tooltip content="Edit User">
-                      <Link to={`/lecturers/${id}/edit`}>
+                    <div className="flex">
+                      <Tooltip content="Edit Lecturer">
+                        <Link to={`/lecturers/${lecturer.id}/edit`}>
                           <IconButton variant="text">
                             <PencilIcon className="h-4 w-4" />
                           </IconButton>
-                      </Link>
-                    </Tooltip>
+                        </Link>
+                      </Tooltip>
+                      <DeleteModal
+                        resource="lecturers"
+                        data={lecturer}
+                        enrolments={enrolments}
+                        title="Lecturer"
+                        type="icon"
+                      />
+                    </div>
                   </td>
                 </tr>
               );

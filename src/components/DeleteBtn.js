@@ -11,12 +11,16 @@ const DeleteBtn = ({
   relatedResource = null,
   data,
   titleText = "Delete",
-  enrolements
+  enrolements,
+  toggleModal,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
 
+  // const changeModal = () => {
+  //   toggleModal();
+  // };
   // If a related resource is included (enrolments), delete these first then resource
 
   const onDelete = () => {
@@ -25,15 +29,13 @@ const DeleteBtn = ({
     let token = localStorage.getItem("token");
 
     // Debugging:
-    console.log(`resource: ${resource}`)
-    // console.log(`related resource ${relatedResource}`)
-    // console.log(data)
-    // console.log(`Id: ${id}`)
+    // console.log(`resource: ${resource}`);
 
     /////////////////////////////
     // Use an if statement to bypass enrolment deletion is no enrolments?
     // Deletes without errors if no enrolments
     /////////////////////////////
+    console.log(enrolements);
 
     // If enrolments exist, delete these first
     if (enrolements) {
@@ -54,9 +56,9 @@ const DeleteBtn = ({
             headers: { Authorization: `Bearer ${token}` },
           })
           .then((response) => {
-            // do something
+            // Close modal window if open, or navigate to resource index 
+            (toggleModal) ? toggleModal() : navigate(`/${resource}`);
             console.log("enrolment deleted, in course delete");
-            navigate(`/${resource}`);
           })
           .catch((error) => {
             console.log(error);
@@ -70,32 +72,17 @@ const DeleteBtn = ({
         .then((response) => {
           // do something
           console.log("no enrolments, resource delete");
-          navigate(`/${resource}`);
+          (toggleModal) ? toggleModal() : navigate(`/${resource}`);
         })
         .catch((error) => {
           console.log(error);
         });
     }
-
-    // axios
-    //   .delete(`/${resource}/${id}`, {
-    //     headers: {
-    //       Authorization: `Bearer ${token}`,
-    //     },
-    //   })
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     console.log("single delete");
-    //     deleteCallback(id); // Runs the removeX function from whatever resource it came from
-    //     // navigate("/courses");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err.response.data);
-    //   });
   };
 
   return (
     <Button color="red" onClick={onDelete}>
+      {/* <Button color="red" onClick={onDelete}> */}
       {isLoading ? "Deleting..." : titleText}
     </Button>
   );

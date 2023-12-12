@@ -12,6 +12,7 @@ const Index = () => {
   const { authenticated } = useAuth();
 
   const [lecturers, setLecturers] = useState([]);
+  const [newLecturers, setNewLecturers] = useState([]);
 
   let token = localStorage.getItem("token");
 
@@ -63,7 +64,6 @@ const Index = () => {
       </Link>
       <div>Courses Index</div>
       <Table data={lecturers}/>
-      {lecturersList}
     </>
   );
 };
