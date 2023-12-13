@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Components
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, Spinner } from "@material-tailwind/react";
 // import DeleteBtn from "../../components/DeleteBtn";
 import DeletePopup from "../../components/DeletePopup";
 import DeleteModal from "../../components/DeleteModal";
+import BackButton from "../../components/BackButton";
 
 const Show = () => {
   const { id } = useParams();
@@ -41,7 +42,7 @@ const Show = () => {
   }, [id]);
 
   // If course does not exist, show text. Or while loading
-  if (!course) return <h3>Course not found</h3>;
+  if (!course) return <Spinner className="mx-auto mt-10" />;
 
   // Checking enrolments can be read
   // console.log(`Enrolments: ${course.enrolments.length}`)
@@ -51,8 +52,9 @@ const Show = () => {
 
   return (
     <>
+      <BackButton className="mt-3" />
       <div>
-        <Typography variant="h2">{course.title}</Typography>
+        <Typography variant="h2" >{course.title}</Typography>
         <Typography variant="paragraph">{course.description}</Typography>
         <Typography variant="h5">Code: {course.code}</Typography>
         <Typography variant="h5">Points: {course.points}</Typography>
@@ -67,7 +69,12 @@ const Show = () => {
         {/* Passing the resource type to use in end point, 'data' to pass entire object */}
         {/* <DeletePopup resource="courses" data={course} enrolments={enrolments} title="Course"/> */}
 
-        <DeleteModal resource="courses" data={course} enrolments={enrolments} title="Course"/>
+        <DeleteModal
+          resource="courses"
+          data={course}
+          enrolments={enrolments}
+          title="Course"
+        />
       </div>
     </>
   );

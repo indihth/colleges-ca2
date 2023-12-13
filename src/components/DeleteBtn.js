@@ -12,7 +12,7 @@ const DeleteBtn = ({
   data,
   titleText = "Delete",
   enrolements,
-  toggleModal,
+  toggleModal
 }) => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -23,19 +23,17 @@ const DeleteBtn = ({
   // };
   // If a related resource is included (enrolments), delete these first then resource
 
+
+
   const onDelete = () => {
     setIsLoading(true);
 
     let token = localStorage.getItem("token");
 
-    // Debugging:
-    // console.log(`resource: ${resource}`);
-
     /////////////////////////////
     // Use an if statement to bypass enrolment deletion is no enrolments?
     // Deletes without errors if no enrolments
     /////////////////////////////
-    console.log(enrolements);
 
     // If enrolments exist, delete these first
     if (enrolements) {
@@ -45,10 +43,6 @@ const DeleteBtn = ({
           headers: { Authorization: `Bearer ${token}` },
         })
       );
-      // log the contents of listOfDeleteRequests
-      console.log("onDelete with enrolments");
-      console.log(listOfDeleteRequests);
-
       // Using Promise instead of axios, axios.all depreciated + not in axios config
       Promise.all(listOfDeleteRequests).then((response) => {
         axios

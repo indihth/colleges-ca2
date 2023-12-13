@@ -2,9 +2,9 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from '../../contexts/AuthContext'
-import { Button } from "@material-tailwind/react";
-
+import { useAuth } from "../../contexts/AuthContext";
+import { Button, Spinner } from "@material-tailwind/react";
+import TableEnrolments from "../../components/TableEnrolments";
 
 const Index = () => {
   const { authenticated } = useAuth();
@@ -12,6 +12,22 @@ const Index = () => {
   const [enrolments, setEnrolments] = useState([]);
 
   let token = localStorage.getItem("token");
+
+  // Defining table header information
+  const tableHead = ["Course", "Lecturer", "Status", "Actions "];
+
+  // Assign value to each field in table. All fields are required, use empty string "" to leave blank
+  // Two levels of dot notation need to access course and lecturer object, "course.name" doesn't work
+  const tableRows = {
+    field1: "course",
+    field1a: "title",
+    field2: "course",
+    field2a: "code",
+    field3: "lecturer",
+    field3a: "name",
+    field4: "status", // Field4 styling is suitable for longer texts
+    // add field5 for conditional rendering of enrolment col?
+  };
 
   useEffect(() => {
     axios
@@ -29,35 +45,18 @@ const Index = () => {
       });
   }, []);
 
-  if (enrolments.length === 0) return <h3>There are no enrolments</h3>;
-
-  const enrolmentList = enrolments.map((enrolment) => {
-    return (
-      <div key={enrolment.id} className="my-5">
-        {authenticated ? (
-          <>
-          <p>
-            <b>Status: </b>{" "}
-            <Link to={`/enrolments/${enrolment.id}`}>{enrolment.status}</Link>
-          </p>
-          <p><b>Course:</b> {enrolment.course.title}</p>
-          <p><b>Lecturer:</b> {enrolment.lecturer.name}</p>
-          </>
-        ) : (
-          <p>
-            <b>Course: </b> {enrolment.status}
-          </p>
-        )}
-      </div>
-    );
-  });
+  if (enrolments.length === 0) return  <Spinner className="mx-auto mt-10" />;
 
   return (
-    <>
-    <Link to="/enrolments/create"><Button>Create Enrolment</Button></Link>
-      <div>Enrolments Index</div>
-      {enrolmentList}
-    </>
+    <div>
+      <TableEnrolments
+        data={enrolments}
+        tableHead={tableHead}
+        tableRows={tableRows}
+        resource={"enrolments"}
+        title={"Enrolment"}
+      />
+    </div>
   );
 };
 

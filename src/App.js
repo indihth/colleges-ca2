@@ -69,16 +69,18 @@ function App() {
 
   return (
     <Router>
-      <div className="container mx-auto">
+      <div className="bg-gray-100">
         <NavbarDefault />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<CoursesIndex />} />
-          <Route path="/lecturers" element={<LecturersIndex />} />
-          <Route path="/enrolments" element={<EnrolmentsIndex />} />
-          {protectedRoutes}
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+        <div className="container mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<CoursesIndex />} />
+            <Route path="/lecturers" element={<LecturersIndex />} />
+            <Route path="/enrolments" element={<EnrolmentsIndex />} />
+            {protectedRoutes}
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

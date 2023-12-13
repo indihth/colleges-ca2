@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
-import { Button, Typography } from "@material-tailwind/react";
+import { Button, Typography, Spinner } from "@material-tailwind/react";
 
 // Components
 import Table from "../../components/Table";
@@ -12,9 +12,27 @@ const Index = () => {
   const { authenticated } = useAuth();
 
   const [lecturers, setLecturers] = useState([]);
-  const [newLecturers, setNewLecturers] = useState([]);
+  const [newLecturers, setNewLecturers] = useState([]); // Dynamic render when delete w/o api call
 
   let token = localStorage.getItem("token");
+
+  // Defining table header information
+  const tableHead = [
+    "Lecturer",
+    "Phone",
+    "Address",
+    "Assigned | Assoc. | Career Break | Interested ",
+    "Actions",
+  ];
+
+  // Assign value to each field in table. All fields are required, use empty string "" to leave blank
+  const tableRows = {
+    field1: "name",
+    field2: "email",
+    field3: "phone",  
+    field4: "address",    // Field4 styling is suitable for longer texts
+    // add field5 for conditional rendering of enrolment col?
+  };
 
   useEffect(() => {
     axios
@@ -32,38 +50,17 @@ const Index = () => {
       });
   }, []);
 
-  if (lecturers.length === 0) return <h3>There are no lecturers</h3>;
-
-  const lecturersList = lecturers.map((lecturer) => {
-    return (
-      <div key={lecturer.id} className="my-5">
-        {authenticated ? (
-          <Link to={`/lecturers/${lecturer.id}`}>
-            <Typography variant="h5">{lecturer.name}</Typography>
-          </Link>
-        ) : (
-          <Typography variant="h5">{lecturer.name}</Typography>
-        )}
-        <Typography variant="small" color="gray">
-          {lecturer.email}
-        </Typography>
-        <Typography variant="small" color="gray">
-          {lecturer.phone}
-        </Typography>
-        <Typography variant="small" color="gray">
-          Enrolments: {lecturer.enrolments.length}
-        </Typography>
-      </div>
-    );
-  });
+  if (lecturers.length === 0) return  <Spinner className="mx-auto mt-10" />;
 
   return (
     <>
-      <Link to="/lecturers/create">
-        <Button>Create Lecturer</Button>
-      </Link>
-      <div>Courses Index</div>
-      <Table data={lecturers}/>
+      <Table
+        data={lecturers}
+        tableHead={tableHead}
+        tableRows={tableRows}
+        resource={"lecturers"}
+        title={"Lecturer"}
+      />
     </>
   );
 };

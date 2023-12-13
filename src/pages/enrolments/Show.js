@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Components
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, Spinner } from "@material-tailwind/react";
 import DeletePopup from "../../components/DeletePopup";
+import BackButton from "../../components/BackButton";
 
 const Show = () => {
   const { id } = useParams();
@@ -31,11 +32,15 @@ const Show = () => {
       });
   }, [id]);
 
-  // If enrolment does not exist, show text. Or while loading
-  if (!enrolment) return <h3>Enrolments not found</h3>;
+  // If enrolment does not exist or while loading
+  if (!enrolment) return <Spinner className="mx-auto mt-10" />;
+
+  // Display message if nothing has loaded after x amount of time
+  // 
 
   return (
     <>
+      <BackButton className="mt-3" />
       <div>
         <Typography variant="h2">Status: {enrolment.status}</Typography>
         <Typography variant="h5">Course: {enrolment.course.title}</Typography>

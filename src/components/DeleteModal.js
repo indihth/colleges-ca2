@@ -22,11 +22,17 @@ const DeleteModal = ({
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
-  enrolments =  data.enrolments.length > 0 ? (enrolments = true) : (enrolments = false);
+  // Don't check enrolments if already false
+  // Need to refactor, enrolment status is already being passed but can't use straight in return()
+  // console.log(enrolments);
+  if (enrolments) {
+    enrolments =
+      data.enrolments.length > 0 ? (enrolments = true) : (enrolments = false);
+  }
 
   const toggleModal = () => {
-    setShowModal(!showModal)
-  }
+    setShowModal(!showModal);
+  };
 
   return (
     <>
@@ -88,7 +94,11 @@ const DeleteModal = ({
                       ? "This course has enrolments. Are you sure you want to delete all enrol associated with this course?"
                       : "Deleting is permenent. Do you want to continue?"}
                   </p>
-                  <p>enrolements: {data.enrolments.length}</p>
+                  {enrolments == true ? (
+                    <p>enrolements: {data.enrolments.length}</p>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

@@ -94,7 +94,7 @@ const Create = () => {
   };
 
   return (
-    <Card color="transparent" shadow={false}>
+    <Card color="transparent" shadow={false} className="items-center">
       <Typography variant="h4" color="blue-gray">
         Create Course
       </Typography>

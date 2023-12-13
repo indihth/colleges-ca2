@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "../../config/api";
 
 // Import components
-import { Card, Input, Textarea, Typography } from "@material-tailwind/react";
+import { Card, Input, Spinner, Typography } from "@material-tailwind/react";
 
 const Create = () => {
   const { id } = useParams();
@@ -147,7 +147,8 @@ const Create = () => {
           },
         })
         .then((response) => {
-          navigate(`/enrolments/${id}`);
+          navigate(-1);   // Back 1 page to either Show or Index
+          // navigate(`/enrolments/${id}`);
         })
         .catch((err) => {
           console.error(err);
@@ -156,7 +157,7 @@ const Create = () => {
   };
 
   return (
-    <Card color="transparent" shadow={false}>
+    <Card color="transparent" shadow={false} className="mx-auto">
       <Typography variant="h4" color="blue-gray">
         Create Enrolment
       </Typography>

@@ -55,6 +55,10 @@ const Create = () => {
       }
     });
 
+    ////////////////////////
+    // Address is max 100 characters
+    ////////////////////////
+
     // If email filled, check if it's a valid format (xxx@xxx.xxx)
     if (!emailRegex.test(form.email) && form.email) {
       included = false;
@@ -137,6 +141,7 @@ const Create = () => {
             type="text"
             onChange={handleForm}
             // value={form.address}
+            placeholder="Max 100 characters"
             name="address"
             size="md"
             variant="outlined"

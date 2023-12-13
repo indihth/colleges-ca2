@@ -115,7 +115,8 @@ const Edit = () => {
           },
         })
         .then((response) => {
-          navigate(`/courses/${id}`);
+          navigate(-1);   // Back 1 page, either Show or Index
+          // navigate(`/courses/${id}`);
         })
         .catch((err) => {
           console.error(err);

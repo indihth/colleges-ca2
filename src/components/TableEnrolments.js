@@ -10,12 +10,17 @@ import {
   CardFooter,
   IconButton,
   Tooltip,
+  Chip,
 } from "@material-tailwind/react";
 import DeleteModal from "./DeleteModal";
 
-const Table = ({ data, tableHead, tableRows, resource, title }) => {
+const TableEnrolments = ({ data, tableHead, tableRows, resource, title }) => {
   // console.log(tableRows.field1)
   let enrolments = false;
+  const resourceIsEnrolments = resource === "enrolments" ? true : false;
+
+  // console.log(data);
+
 
   return (
     <Card shadow={false} className="h-full w-full mt-3">
@@ -39,10 +44,10 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
           </div>
         </div>
       </CardHeader>
-      <CardBody className="px-0">
+    <CardBody className="px-0">
         <table className="mt-4 w-full min-w-max table-auto text-left">
           <thead>
-            <tr>
+            <tr key={"tableHead"}>
               {tableHead.map((head) => (
                 <th
                   key={head}
@@ -66,74 +71,40 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
                 ? "p-4"
                 : "p-4 border-b border-blue-gray-50";
 
-              enrolments =
-                item.enrolments.length > 0
-                  ? (enrolments = true)
-                  : (enrolments = false);
-
+              if (!resourceIsEnrolments) {
+                enrolments =
+                  item.enrolments.length > 0
+                    ? (enrolments = true)
+                    : (enrolments = false);
+              }
+              // console.log(item[tableRows.field1][tableRows.field1a])
               return (
-                <tr key={item[tableRows.field1]}>
+                <tr key={index}>
                   <td className={classes}>
                     <div className="flex items-center gap-3">
-                      <Link
-                        to={`/${resource}/${item.id}`}
-                        className="flex flex-col"
-                      >
+                      <Link to={`/${resource}/${item.id}`} className="flex flex-col">
                         <Typography
                           variant="small"
                           color="blue-gray"
                           className="font-normal"
                         >
-                          {item[tableRows.field1]}
+                          {item[tableRows.field1][tableRows.field1a]}
                         </Typography>
                         <Typography
                           variant="small"
                           color="blue-gray"
                           className="font-normal opacity-70"
                         >
-                          {item[tableRows.field2]}
+                          {item[tableRows.field2][tableRows.field2a]}
                         </Typography>
                       </Link>
                     </div>
                   </td>
-                  <td className={classes}>{item[tableRows.field3]}</td>
+                  <td className={classes}>{item[tableRows.field3][tableRows.field3a]}</td>
                   <td className={classes}>
-                    <p className="max-w-md line-clamp-2">
-                      {item[tableRows.field4]}
-                    </p>
-                  </td>
-                  <td className={classes}>
-                    <div className="flex items-center text-center w-4/5 ">
-                      {/* Calculate number of enrolments for each option */}
-                      <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "assigned"
-                          ).length
-                        }
+                      <div className="flex justify-center">
+                        <Chip value={item[tableRows.field4]} variant="ghost" />
                       </div>
-                      <div className="w-1/3 py-1 text-white bg-gray-400">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "associate"
-                          ).length
-                        }
-                      </div>
-                      <div className="w-1/3 py-1 text-white bg-gray-400">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "career_break"
-                          ).length
-                        }
-                      </div>
-                      <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "interested"
-                          ).length
-                        }
-                      </div>
-                    </div>
                   </td>
                   <td className={classes}>
                     <div className="flex items-center">
@@ -142,12 +113,11 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
                           <IconButton variant="text">
                             <PencilIcon className="h-4 w-4" />
                           </IconButton>
-                        </Link>
+                        </Link>    
                       </Tooltip>
                       <DeleteModal
                         resource={resource}
                         data={item}
-                        enrolments={enrolments}
                         title={title}
                         type="icon"
                       />
@@ -176,4 +146,4 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
   );
 };
 
-export default Table;
+export default TableEnrolments;

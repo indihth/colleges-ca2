@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Components
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, Spinner } from "@material-tailwind/react";
 import DeletePopup from "../../components/DeletePopup";
 import DeleteModal from "../../components/DeleteModal";
+import BackButton from "../../components/BackButton";
 
 const Show = () => {
   const { id } = useParams();
@@ -35,12 +36,13 @@ const Show = () => {
   }, [id]);
 
   // If lecturer does not exist, show text. Or while loading
-  if (!lecturer) return <h3>Lecturer not found</h3>;
+  if (!lecturer) return <Spinner className="mx-auto mt-10" />;
 
   console.log(`enrolments is: ${enrolments}, ${lecturer.enrolments.length}`);
 
   return (
     <>
+      <BackButton className="mt-3" />
       <div>
         <Typography variant="h2">{lecturer.name}</Typography>
         <Typography variant="h5">Address: {lecturer.address}</Typography>

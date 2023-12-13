@@ -105,7 +105,7 @@ const NavbarDefault = () => {
   );
 
   return (
-    <Navbar>
+    <Navbar shadow={false} fullWidth={true} >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Link to="/" className="mr-4 cursor-pointer py-1.5 font-medium">
           College API

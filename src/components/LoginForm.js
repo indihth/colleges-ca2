@@ -1,10 +1,13 @@
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import { useAuth } from "../contexts/AuthContext";
 
 const LoginForm = () => {
   const { onAuthenticated } = useAuth();
+
+  const navigate = useNavigate();
 
   // const validStyles = 
   const formStyles = {
@@ -66,6 +69,7 @@ const LoginForm = () => {
         .then((response) => {
           console.log(response.data);
           onAuthenticated(true, response.data.token);
+          navigate("/courses")
         })
         .catch((err) => {
           console.error(err);

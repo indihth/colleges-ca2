@@ -3,7 +3,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from '../../contexts/AuthContext'
-import { Button } from "@material-tailwind/react";
+import { Button, Spinner } from "@material-tailwind/react";
+
+// Components
+import Table from "../../components/Table";
 
 
 const Index = () => {
@@ -12,6 +15,25 @@ const Index = () => {
   const [courses, setCourses] = useState([]);
 
   let token = localStorage.getItem("token");
+
+    // Defining table header information
+    const tableHead = [
+      "Course",
+      "Code",
+      "Phone",
+      "Assigned | Assoc. | Career Break | Interested ",
+      "Actions",
+    ];
+  
+    // Assign value to each field in table. All fields are required, use empty string "" to leave blank
+    const tableRows = {
+      field1: "title",
+      field2: "code",
+      field3: "level",
+      field4: "description", // Field4 styling is suitable for longer texts
+      // add field5 for conditional rendering of enrolment col?
+    };
+  
 
   useEffect(() => {
     axios
@@ -29,38 +51,17 @@ const Index = () => {
       });
   }, []);
 
-  if (courses.length === 0) return <h3>There are no courses</h3>;
-
-  const courseList = courses.map((course) => {
-    return (
-
-      <div key={course.id} className="my-5">
-        {authenticated ? (
-          <p>
-            <b>Title: </b>{" "}
-            <Link to={`/courses/${course.id}`}>{course.title}</Link>
-          </p>
-        ) : (
-          <p>
-            <b>Title: </b> {course.title}
-          </p>
-        )}
-        {/* <p><b>Title: </b> <Link to={`/courses/${course._id}`}>{course.title}</Link></p> */}
-        <p>
-          <b>Description: </b> {course.description}
-        </p>
-        <p>
-          No. of Enrolments: {course.enrolments.length}
-        </p>
-      </div>
-    );
-  });
+  if (courses.length === 0) return  <Spinner className="mx-auto mt-10" />;
 
   return (
     <>
-    <Link to="/courses/create"><Button>Create Course</Button></Link>
-      <div>Courses Index</div>
-      {courseList}
+    <Table
+        data={courses}
+        tableHead={tableHead}
+        tableRows={tableRows}
+        resource={"courses"}
+        title={"Course"}
+      />
     </>
   );
 };
