@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { Button, Spinner } from "@material-tailwind/react";
 import TableEnrolments from "../../components/TableEnrolments";
+import Table from "../../components/Table";
 
 const Index = () => {
   const { authenticated } = useAuth();
@@ -14,7 +15,8 @@ const Index = () => {
   let token = localStorage.getItem("token");
 
   // Defining table header information
-  const tableHead = ["Course", "Lecturer", "Status", "Actions "];
+  const tableHead = ["Course", "Lecturer", "Status", "Actions"];
+  
 
   // Assign value to each field in table. All fields are required, use empty string "" to leave blank
   // Two levels of dot notation need to access course and lecturer object, "course.name" doesn't work
@@ -49,7 +51,7 @@ const Index = () => {
 
   return (
     <div>
-      <TableEnrolments
+      <Table
         data={enrolments}
         tableHead={tableHead}
         tableRows={tableRows}

@@ -10,12 +10,14 @@ import {
   CardFooter,
   IconButton,
   Tooltip,
+  Chip,
 } from "@material-tailwind/react";
 import DeleteModal from "./DeleteModal";
 
 const Table = ({ data, tableHead, tableRows, resource, title }) => {
   // console.log(tableRows.field1)
   let enrolments = false;
+  const resourceIsEnrolments = resource === "enrolments" ? true : false;
 
   return (
     <Card shadow={false} className="h-full w-full mt-3">
@@ -44,10 +46,7 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
           <thead>
             <tr>
               {tableHead.map((head) => (
-                <th
-                  key={head}
-                  className="border-y bg-blue-gray-50/50 p-4"
-                >
+                <th key={head} className="border-y bg-blue-gray-50/50 p-4">
                   <Typography
                     variant="small"
                     color="blue-gray"
@@ -66,10 +65,12 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
                 ? "p-4"
                 : "p-4 border-b border-blue-gray-50";
 
-              enrolments =
-                item.enrolments.length > 0
-                  ? (enrolments = true)
-                  : (enrolments = false);
+              if (!resourceIsEnrolments) {
+                enrolments =
+                  item.enrolments.length > 0
+                    ? (enrolments = true)
+                    : (enrolments = false);
+              }
 
               return (
                 <tr key={item[tableRows.field1]}>
@@ -84,57 +85,72 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
                           color="blue-gray"
                           className="font-normal"
                         >
-                          {item[tableRows.field1]}
+                          {item[tableRows.field1][tableRows.field1a]}
                         </Typography>
                         <Typography
                           variant="small"
                           color="blue-gray"
                           className="font-normal opacity-70"
                         >
-                          {item[tableRows.field2]}
+                          {item[tableRows.field2][tableRows.field2a]}
                         </Typography>
                       </Link>
                     </div>
                   </td>
-                  <td className={classes}>{item[tableRows.field3]}</td>
                   <td className={classes}>
-                    <p className="max-w-md line-clamp-2">
-                      {item[tableRows.field4]}
-                    </p>
+                    {item[tableRows.field3][tableRows.field3a]}
                   </td>
+                  {/* Only display is not Enrolments */}
+                  {!resourceIsEnrolments ? (
+                    <td className={classes}>
+                      <p className="max-w-md line-clamp-2">
+                        {item[tableRows.field4]}
+                      </p>
+                    </td>
+                  ) : (
+                    ""
+                  )}
+                  {/* Enrolments */}
                   <td className={classes}>
-                    <div className="flex items-center text-center w-4/5 ">
-                      {/* Calculate number of enrolments for each option */}
-                      <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "assigned"
-                          ).length
-                        }
+                    {!resourceIsEnrolments ? (
+                      <div className="flex items-center text-center w-4/5 ">
+                        {/* Calculate number of enrolments for each option */}
+                        <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
+                          {
+                            item.enrolments.filter(
+                              (obj) => obj.status === "assigned"
+                            ).length
+                          }
+                        </div>
+                        <div className="w-1/3 py-1 text-white bg-gray-400">
+                          {
+                            item.enrolments.filter(
+                              (obj) => obj.status === "associate"
+                            ).length
+                          }
+                        </div>
+                        <div className="w-1/3 py-1 text-white bg-gray-400">
+                          {
+                            item.enrolments.filter(
+                              (obj) => obj.status === "career_break"
+                            ).length
+                          }
+                        </div>
+                        <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
+                          {
+                            item.enrolments.filter(
+                              (obj) => obj.status === "interested"
+                            ).length
+                          }
+                        </div>
                       </div>
-                      <div className="w-1/3 py-1 text-white bg-gray-400">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "associate"
-                          ).length
-                        }
+                    ) : (
+                      <div className="flex">
+                        <Chip value={item[tableRows.field4]} variant="ghost" />
                       </div>
-                      <div className="w-1/3 py-1 text-white bg-gray-400">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "career_break"
-                          ).length
-                        }
-                      </div>
-                      <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
-                        {
-                          item.enrolments.filter(
-                            (obj) => obj.status === "interested"
-                          ).length
-                        }
-                      </div>
-                    </div>
+                    )}
                   </td>
+                  {/* Edit and Delete Buttons */}
                   <td className={classes}>
                     <div className="flex items-center">
                       <Tooltip content={`Edit ${title}`} className="">
@@ -147,7 +163,7 @@ const Table = ({ data, tableHead, tableRows, resource, title }) => {
                       <DeleteModal
                         resource={resource}
                         data={item}
-                        enrolments={enrolments}
+                        enrolments={resourceIsEnrolments ? enrolments : false}
                         title={title}
                         type="icon"
                       />
