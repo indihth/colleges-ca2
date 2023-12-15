@@ -16,7 +16,10 @@ const DeleteModal = ({
   data,
   enrolments = false,
   title,
-  type = "button"
+  type = "button",
+  variant = "outlined",
+  className = "",
+  color = "blue-gray"
 }) => {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
@@ -35,18 +38,19 @@ const DeleteModal = ({
   };
 
   return (
-    <>
+    <div className={className} >
       {/* Different button styling set through props */}
       {type === "button" ? (
         // Red button
-        <Button onClick={toggleModal} color="red">
-          Delete (popup)
+        <Button onClick={toggleModal} variant={variant} color={color}>
+          Delete {title}
         </Button>
       ) : (
         // White button with 'trash' icon
         <Button
           onClick={toggleModal}
           variant="text"
+          color={color}
           className="flex items-center"
         >
           <div>
@@ -123,7 +127,7 @@ const DeleteModal = ({
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
-    </>
+    </div>
   );
 };
 

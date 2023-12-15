@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { Button, Spinner } from "@material-tailwind/react";
-import TableEnrolments from "../../components/TableEnrolments";
 import Table from "../../components/Table";
 
 const Index = () => {
@@ -27,7 +26,7 @@ const Index = () => {
     field2a: "code",
     field3: "lecturer",
     field3a: "name",
-    field4: "status", // Field4 styling is suitable for longer texts
+    status: "status", // Field4 styling is suitable for longer texts
     // add field5 for conditional rendering of enrolment col?
   };
 

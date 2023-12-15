@@ -94,137 +94,140 @@ const Create = () => {
   };
 
   return (
-    <Card color="transparent" shadow={false} className="items-center">
+    <Card color="white" shadow={false} className="items-center">
       <Typography variant="h4" color="blue-gray">
         Create Course
       </Typography>
-      <form
-        onSubmit={submitForm}
-        className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
-      >
-        <div className="mb-5">
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Title
-          </Typography>
+      <form onSubmit={submitForm} className="mt-8 mb-2  flex">
+        <div>
+          {/* Title */}
+          <div className="mb-5">
+            <Typography variant="h6" color="blue-gray" className="-mb-3">
+              Title
+            </Typography>
+            <Input
+              type="text"
+              onChange={handleForm}
+              name="title"
+              size="lg"
+              variant="static"
+              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+            {/* ? will display if a title exists */}
+            <Typography
+              variant="small"
+              color="gray"
+              className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+            >
+              {errors.title?.message ? errors.title?.message : ""}
+            </Typography>
+          </div>
+          {/* Description */}
+          <div className="mb-5">
+            <Typography variant="h6" color="blue-gray" className="mb-3">
+              Description
+            </Typography>
+            <Textarea
+              type="text"
+              onChange={handleForm}
+              // value={form.description}
+              name="description"
+              size="md"
+              variant="outlined"
+              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+            <Typography
+              variant="small"
+              color="gray"
+              className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+            >
+              {errors.description?.message ? errors.description?.message : ""}
+            </Typography>
+          </div>
+        </div>
 
-          <Input
-            type="text"
-            onChange={handleForm}
-            // value={form.title}
-            name="title"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-
-          {/* ? will display if a title exists */}
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.title?.message ? errors.title?.message : ""}
-          </Typography>
-        </div>
-        <div className="mb-5">
-          <Typography variant="h6" color="blue-gray" className="mb-3">
-            Description
-          </Typography>
-          <Textarea
-            type="text"
-            onChange={handleForm}
-            // value={form.description}
-            name="description"
-            size="md"
-            variant="outlined"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.description?.message ? errors.description?.message : ""}
-          </Typography>
-        </div>
-        <div className="mb-5">
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Code
-          </Typography>
-          <Input
-            type="text"
-            onChange={handleForm}
-            // value={form.code}
-            name="code"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.code?.message ? errors.code?.message : ""}
-          </Typography>
-        </div>
-        <div className="mb-5">
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Points
-          </Typography>
-          <Input
-            type="number"
-            onChange={handleForm}
-            // value={form.points}
-            name="points"
-            size="lg"
-            variant="static"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.points?.message ? errors.points?.message : ""}
-          </Typography>
-        </div>
-        <div className="mb-5">
-          <Typography variant="h6" color="blue-gray" className="mb-3">
-            Level
-          </Typography>
-
-          <select name="level" onChange={handleForm}>
-            <option hidden value="">
-              Select
-            </option>
-            {levelOptions.map((level, i) => (
-              <option value={level} key={i}>
-                {level}
+        <div>
+          {/* Code */}
+          <div className="mb-5">
+            <Typography variant="h6" color="blue-gray" className="-mb-3">
+              Code
+            </Typography>
+            <Input
+              type="text"
+              onChange={handleForm}
+              // value={form.code}
+              name="code"
+              size="lg"
+              variant="static"
+              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+            <Typography
+              variant="small"
+              color="gray"
+              className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+            >
+              {errors.code?.message ? errors.code?.message : ""}
+            </Typography>
+          </div>
+          {/* Points */}
+          <div className="mb-5">
+            <Typography variant="h6" color="blue-gray" className="-mb-3">
+              Points
+            </Typography>
+            <Input
+              type="number"
+              onChange={handleForm}
+              // value={form.points}
+              name="points"
+              size="lg"
+              variant="static"
+              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+            <Typography
+              variant="small"
+              color="gray"
+              className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+            >
+              {errors.points?.message ? errors.points?.message : ""}
+            </Typography>
+          </div>
+          {/* Level */}
+          <div className="mb-5">
+            <Typography variant="h6" color="blue-gray" className="mb-3">
+              Level
+            </Typography>
+            <select name="level" onChange={handleForm}>
+              <option hidden value="">
+                Select
               </option>
-            ))}
-          </select>
-          <Typography
-            variant="small"
-            color="gray"
-            className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
-          >
-            {errors.level?.message ? errors.level?.message : ""}
-          </Typography>
+              {levelOptions.map((level, i) => (
+                <option value={level} key={i}>
+                  {level}
+                </option>
+              ))}
+            </select>
+            <Typography
+              variant="small"
+              color="gray"
+              className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
+            >
+              {errors.level?.message ? errors.level?.message : ""}
+            </Typography>
+          </div>
+          <Input type="submit" />
         </div>
-        <Input type="submit" />
       </form>
     </Card>
   );

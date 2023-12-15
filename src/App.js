@@ -28,23 +28,6 @@ function App() {
 
   let protectedRoutes;
 
-  // useEffect(() => {
-  //   if (localStorage.getItem("token")) {
-  //     setAuthenticated(true);
-  //   }
-  // }, []);
-
-  // const onAuthenticated = (auth, token) => {
-  //   setAuthenticated(auth);
-
-  //   // Only is authenticated, stores token in local storage so persists on page refresh
-  //   if (auth) {
-  //     localStorage.setItem("token", token);
-  //   } else {
-  //     localStorage.removeItem("token");
-  //   }
-  // };
-
   // Only show protected routes if user is authenticated
   if (authenticated) {
     protectedRoutes = (
@@ -68,10 +51,10 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="bg-gray-100">
+    <div className="bg-gray-100">
+      <Router>
         <NavbarDefault />
-        <div className="container mx-auto">
+        <div >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<CoursesIndex />} />
@@ -81,8 +64,8 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

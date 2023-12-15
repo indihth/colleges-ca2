@@ -60,33 +60,42 @@ const Edit = () => {
     fields.forEach((field) => {
       // Square notation changes to value of
       if (!form[field]) {
-        // console.log(`${field} is required`)
-
+        // Square notation changes to value of
         included = false;
         // Remember the previous state
         setErrors((prevState) => ({
           ...prevState,
-          [field]: {
-            message: `${field} is required`,
-          },
+          [field]: `${field} is required`,
+          // [field]: {
+          //   message: `${field} is required`,
+          // },
         }));
       }
     });
 
-    // If email filled, check if it's a valid format
+    ////////////////////////
+    // Address is max 100 characters
+    if (form.address.length > 100) {
+      included = false;
+
+      setErrors((prevState) => ({
+        ...prevState,
+        address: `The address may not be greater than 100 characters.`,
+      }));
+    }
+    ////////////////////////
+
+    // If email filled, check if it's a valid format (xxx@xxx.xxx)
     if (!emailRegex.test(form.email) && form.email) {
       included = false;
 
       setErrors((prevState) => ({
         ...prevState,
-        email: {
-          message: `Not a valid email address`,
-        },
+        email: `Not a valid email address`,
       }));
     }
     return included;
   };
-
 
   const submitForm = (e) => {
     e.preventDefault(); // Prevents page reload on form submit
@@ -104,7 +113,7 @@ const Edit = () => {
           },
         })
         .then((response) => {
-          navigate(-1);   // Back 1 page, either Show or Index
+          navigate(-1); // Back 1 page, either Show or Index
           // navigate(`/lecturers/${id}`);
         })
         .catch((err) => {
@@ -148,7 +157,8 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.level?.name ? errors.level?.name : ""}
+                       {errors.level ? errors.level : ""}
+
           </Typography>
         </div>
         <div className="mb-3">
@@ -172,7 +182,8 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.address?.message ? errors.address?.message : ""}
+                      {errors.address ? errors.address : ""}
+
           </Typography>
         </div>
         <div className="mb-3">
@@ -196,7 +207,8 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.email?.message ? errors.email?.message : ""}
+                        {errors.email ? errors.email : ""}
+
           </Typography>
         </div>
         <div>
@@ -220,7 +232,7 @@ const Edit = () => {
             color="gray"
             className="mt-2 flex items-center gap-1 font-normal text-red-600 dark:text-red-500"
           >
-            {errors.phone?.message ? errors.phone?.message : ""}
+             {errors.phone ? errors.phone : ""}
           </Typography>
         </div>
         <Input type="submit" />

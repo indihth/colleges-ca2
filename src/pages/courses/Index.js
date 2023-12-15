@@ -19,9 +19,9 @@ const Index = () => {
     // Defining table header information
     const tableHead = [
       "Course",
-      "Code",
-      "Phone",
-      "Assigned | Assoc. | Career Break | Interested ",
+      "Level",
+      "Description",
+      "Assigned | Assoc. | Career Break | Interested",
       "Actions",
     ];
   

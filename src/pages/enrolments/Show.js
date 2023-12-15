@@ -4,8 +4,8 @@ import axios from "axios";
 
 // Components
 import { Typography, Button, Spinner } from "@material-tailwind/react";
-import DeletePopup from "../../components/DeletePopup";
 import BackButton from "../../components/BackButton";
+import DeleteModal from "../../components/DeleteModal";
 
 const Show = () => {
   const { id } = useParams();
@@ -54,7 +54,11 @@ const Show = () => {
           <Button>Edit</Button>
         </Link>
 
-        <DeletePopup resource="enrolments" data={enrolment} />
+        <DeleteModal
+            resource="enrolments"
+            data={enrolment}
+            title="Enrolments"
+          />
       </div>
     </>
   );
