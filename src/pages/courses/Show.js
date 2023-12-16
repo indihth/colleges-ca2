@@ -198,7 +198,6 @@ const Show = () => {
               <div>
                 <img
                   src={OnlineStudy}
-                  className=""
                   alt="Person studying at desk with laptop"
                 />
               </div>
@@ -225,3 +224,5 @@ const Show = () => {
 };
 
 export default Show;
+
+
