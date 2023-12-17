@@ -58,7 +58,7 @@ const Show = () => {
       .then((response) => {
         console.log(response.data.data);
         setLecture(response.data.data); // Puts data in 'lecturer' state
-        // genderAPICall(response.data.data.name);
+        genderAPICall(response.data.data.name);
 
         // If enrolments exist, set to true and store in state
         if (response.data.data.enrolments.length > 0) {
@@ -288,13 +288,13 @@ const Show = () => {
                     />
 
                     {/* For testing only */}
-                    <Button
+                    {/* <Button
                       onClick={() => {
                         genderAPICall(lecturer.name);
                       }}
                     >
                       Gender API Call
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>
