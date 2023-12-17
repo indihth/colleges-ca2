@@ -51,10 +51,10 @@ function App() {
   }
 
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <Router>
         <NavbarDefault />
-        <div >
+        <div className="container mx-auto px-16" >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<CoursesIndex />} />

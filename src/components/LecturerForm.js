@@ -14,42 +14,40 @@ import {
 } from "@material-tailwind/react";
 
 // Image assets
-import OnlineStudy from "../assets/onlineLearning.svg";
+import Educator from "../assets/educator.svg";
 import BackButton from "./BackButton";
 
-const CourseForm = ({ type }) => {
+const LecturerForm = ({ type }) => {
   const { id } = useParams();
-  const [course, setCourse] = useState(null);
-
+  const [lecturer, setLecturer] = useState(null);
   const [errors, setErrors] = useState({});
 
   const [form, setForm] = useState({
-    title: "",
-    description: "",
-    code: "",
-    points: "",
-    level: "",
+    name: "",
+    address: "",
+    email: "",
+    phone: "",
+    // enrolments: "",
   });
 
   const navigate = useNavigate();
 
   let token = localStorage.getItem("token");
 
-  const fieldText = ["title", "description", "code", "points", "level"];
-  const levelOptions = [7, 8, 9, 10];
+  const fieldText = ["name", "address", "email", "phone"];
 
   useEffect(() => {
     // Only run axios if on edit page - causes slight delay in text filling fields
     if (type === "edit") {
       axios
-        .get(`/courses/${id}`, {
+        .get(`/lecturers/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         })
         .then((response) => {
           // console.log(response);
-          setCourse(response.data.data); // Puts data in 'course' state
+          setLecturer(response.data.data); // Puts data in 'lecturer' state
           setForm(response.data.data); // Fills form with existing data
         })
         .catch((err) => {
@@ -69,7 +67,7 @@ const CourseForm = ({ type }) => {
 
   const isRequired = (fields) => {
     let included = true;
-    // const emailRegex = new RegExp(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/);
+    let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
     setErrors({});
 
@@ -89,31 +87,46 @@ const CourseForm = ({ type }) => {
       }
     });
 
-    // Validate that points are min of 100, give error if not
-    if (form.points && form.points < 100) {
+    ////////////////////////
+    // Address is max 100 characters
+    if (form.address.length > 100) {
       included = false;
 
       setErrors((prevState) => ({
         ...prevState,
-        points: {
-          message: `Minimum points are 100`,
+        address: {
+          message: `The address may not be greater than 100 characters.`,
         },
       }));
     }
+    ////////////////////////
 
+    // If email filled, check if it's a valid format (xxx@xxx.xxx)
+    if (!emailRegex.test(form.email) && form.email) {
+      included = false;
+
+      setErrors((prevState) => ({
+        ...prevState,
+        email: {
+          message: `Not a valid email address`,
+        },
+      }));
+    }
     return included;
   };
 
   const submitForm = (e) => {
     e.preventDefault(); // Prevents page reload on form submit
+    console.log("in submit");
 
     // Only submits data is required fields are filled
     if (isRequired(fieldText)) {
       let token = localStorage.getItem("token");
+      console.log("in submit after required checked");
 
       if (type === "edit") {
         axios
-          .put(`/courses/${id}`, form, {
+          .put(`/lecturers/${id}`, form, {
             // Put method with id in URL
             headers: {
               Authorization: `Bearer ${token}`,
@@ -121,7 +134,7 @@ const CourseForm = ({ type }) => {
           })
           .then((response) => {
             navigate(-1); // Back 1 page, either Show or Index
-            // navigate(`/courses/${id}`);
+            // navigate(`/lecturers/${id}`);
           })
           .catch((err) => {
             console.error(err);
@@ -129,15 +142,14 @@ const CourseForm = ({ type }) => {
           });
       } else {
         axios
-          .post(`/courses`, form, {
+          .post(`/lecturers`, form, {
             // Put method with id in URL
             headers: {
               Authorization: `Bearer ${token}`,
             },
           })
           .then((response) => {
-            console.log("submitted", form);
-            navigate(`/courses`);
+            navigate(`/lecturers`);
           })
           .catch((err) => {
             console.error(err);
@@ -182,6 +194,11 @@ const CourseForm = ({ type }) => {
     );
   };
 
+  const inputValue = () => {
+    if (type === "edit") {
+    }
+  };
+
   return (
     <div className="grid grid-cols-3">
       {/* Left - Form */}
@@ -189,90 +206,69 @@ const CourseForm = ({ type }) => {
         <BackButton />
         <div className="mt-6">
           <Typography variant="h2" color="blue-gray" className="mb-8">
-            {type === "edit" ? "Edit Course" : "Create Course"}
+            {type === "edit" ? "Edit Lecturer" : "Create Lecturer"}
           </Typography>
           <form onSubmit={submitForm} className="grid gap-10">
             <div className="flex mt-8 mb-2 gap-12">
-              <div className="">
+              <div>
                 {/* Title */}
-                <div className="mb-7">
+                <div className="mb-5">
                   <Input
-                    label="Title"
+                    label="Name"
                     type="text"
                     onChange={handleForm}
                     // Only fills value if on edit page
-                    value={type === "edit" ? form.title : null}
-                    name="title"
+                    value={type === "edit" ? form.name : null} // Warning on null but can't type in field with empty string
+                    name="name"
                     size="lg"
                     variant="outlined"
                     className="w-72"
                   />
-                  {validatingMessage("title", "Required field")}
+                  {validatingMessage("name", "Required field")}
                 </div>
-                {/* Description */}
+                {/* Address */}
                 <div className="mb-5">
                   <Textarea
-                    label="Description"
+                    label="Address"
                     type="text"
                     onChange={handleForm}
-                    value={type === "edit" ? form.description : null}
-                    name="description"
+                    value={type === "edit" ? form.address : null}
+                    name="address"
                     size="md"
                     variant="outlined"
                   />
-                  {validatingMessage("description", "Required field")}
+                  {validatingMessage(
+                    "address",
+                    "Required field - Max 100 characters"
+                  )}
                 </div>
               </div>
-              <div className="grid gap-2">
-                {/* Code */}
+              <div>
+                {/* Email */}
                 <div className="mb-5">
                   <Input
-                    label="Code"
+                    label="Email"
                     type="text"
                     onChange={handleForm}
-                    value={type === "edit" ? form.code : null}
-                    name="code"
+                    value={type === "edit" ? form.email : null}
+                    name="email"
                     size="lg"
                     variant="outlined"
                   />
-                  {validatingMessage("code", "Required field")}
+                  {validatingMessage("email", "Required field")}
                 </div>
-                {/* Points */}
+                {/* Phone */}
                 <div className="mb-5">
                   <Input
-                    label="Points"
-                    type="number"
+                    label="Phone"
+                    type="text"
                     onChange={handleForm}
-                    value={type === "edit" ? form.points : null}
-                    name="points"
+                    value={type === "edit" ? form.phone : null}
+                    name="phone"
                     size="lg"
                     variant="outlined"
                   />
-                  {validatingMessage("points", "Required field - Minimum 100")}
-                </div>
-                {/* Level */}
-                <div className="mb-5">
-                  <div className="relative h-10 min-w-[200px]">
-                    <select
-                      name="level"
-                      onChange={handleForm}
-                      value={type === "edit" ? form.level : null}
-                      className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-gray-900 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                    >
-                      <option hidden value="">
-                        Select
-                      </option>
-                      {levelOptions.map((level, i) => (
-                        <option value={level} key={i}>
-                          {level}
-                        </option>
-                      ))}
-                    </select>
-                    <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-                      Select a level
-                    </label>
-                  </div>
-                  {validatingMessage("level", "Required field")}
+                  {validatingMessage("phone", "Required field")}
                 </div>
               </div>
             </div>
@@ -284,10 +280,10 @@ const CourseForm = ({ type }) => {
       </section>
       {/* Right - Image */}
       <section className="col-span-2 flex justify-end ">
-        <img src={OnlineStudy} className="h-3/5 my-auto" />
+        <img src={Educator} className="h-3/5 my-auto" />
       </section>
     </div>
   );
 };
 
-export default CourseForm;
+export default LecturerForm;

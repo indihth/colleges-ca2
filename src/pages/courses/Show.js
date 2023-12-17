@@ -159,18 +159,18 @@ const Show = () => {
                   </Typography>
                 </div>
                 {/* Icon Details */}
-                <div class="flex gap-16">
-                  <div class="flex gap-2 items-center">
+                <div className="flex gap-16">
+                  <div className="flex gap-2 items-center">
                     {codeIcon()}
                     <Typography variant="paragraph">{course.code}</Typography>
                   </div>
-                  <div class="flex gap-2 items-center">
+                  <div className="flex gap-2 items-center">
                     {levelIcon()}
                     <Typography variant="paragraph">
                       Level {course.level}
                     </Typography>
                   </div>
-                  <div class="flex gap-2">
+                  <div className="flex gap-2">
                     {pointsIcon()}
                     <Typography variant="paragraph">
                       {course.points} Points
@@ -208,21 +208,22 @@ const Show = () => {
 
       {/* Lecturer Info */}
       <section className="container mx-auto px-16">
-        {/* 
-    Table of lecturers with status, filter option (table component?) - Show lecturer name, phone, email */}
-        <Table
-          data={enrolmentData}
-          tableHead={tableHead}
-          tableRows={tableRows}
-          resource={"lecturers"}
-          nestedResource={"courses"}
-          title={"Lecturer"}
-        />
+        {/* Table of lecturers with status, filter option (table component?) - Show lecturer name, phone, email */}
+        {enrolments ? (
+          <Table
+            data={enrolmentData}
+            tableHead={tableHead}
+            tableRows={tableRows}
+            resource={"lecturers"}
+            nestedResource={"courses"}
+            title={"Lecturer"}
+          />
+        ) : (
+          <Typography variant="lead">No enrolments</Typography>
+        )}
       </section>
     </>
   );
 };
 
 export default Show;
-
-

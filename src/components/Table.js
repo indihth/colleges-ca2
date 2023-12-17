@@ -27,7 +27,7 @@ const Table = ({
   const resourceIsEnrolments = resource === "enrolments" ? true : false;
 
   return (
-    <Card shadow={false} className="h-full w-full mt-3 ">
+    <Card shadow={false} className="h-full w-full my-3 ">
       {/* Card header not displayed if nestedResource */}
       {!nestedResource ? (
         <CardHeader floated={false} shadow={false} className="rounded-none">
@@ -209,7 +209,7 @@ const Table = ({
           </tbody>
         </table>
       </CardBody>
-      <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
+      {/* <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
         <Typography variant="small" color="blue-gray" className="font-normal">
           Page 1 of 10
         </Typography>
@@ -221,7 +221,7 @@ const Table = ({
             Next
           </Button>
         </div>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 };

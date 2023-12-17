@@ -66,7 +66,8 @@ const DeleteBtn = ({
         .then((response) => {
           // do something
           console.log("no enrolments, resource delete");
-          (toggleModal) ? toggleModal() : navigate(`/${resource}`);
+          navigate(`/${resource}`);
+          // (toggleModal) ? toggleModal() : navigate(`/${resource}`);
         })
         .catch((error) => {
           console.log(error);

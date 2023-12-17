@@ -230,7 +230,7 @@ const Show = () => {
           {/* Testing GenderAPI - only 100 free requests available per account. Testing in useEffect causes too many requests*/}
           <BackButton className="mt-3" />
           <div className="pb-20 pt-10">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4 items-center">
               {/* Left column - Details */}
               <div className="col-span-2 pe-28 grid gap-6">
                 <div className="flex gap-4">
