@@ -226,9 +226,9 @@ const EnrolmentForm = ({ type }) => {
           <BackButton />
           <div className="mt-6">
             <Typography variant="h2" color="blue-gray" className="mb-8">
-              {type === "edit" ? "Edit Lecturer" : "Create Lecturer"}
+              {type === "edit" ? "Edit Enrolment" : "Create Enrolment"}
             </Typography>
-            <form onSubmit={submitForm} className="grid ">
+            <form onSubmit={submitForm} className="grid gap-6">
               <div className="flex mt-8 mb-2 gap-12">
                 <div className="">
                   {/* Level */}

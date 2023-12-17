@@ -59,7 +59,7 @@ const Table = ({
         <table
           className={`${
             nestedResource ? "" : "mt-4"
-          } w-full min-w-full table-auto text-left`}
+          } w-fit min-w-full table-auto text-left`}
         >
           <thead>
             <tr>
@@ -149,34 +149,43 @@ const Table = ({
                     {!resourceIsEnrolments && !nestedResource ? (
                       <div className="flex items-center text-center w-4/5 ">
                         {/* Calculate number of enrolments for each option */}
-                        <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
-                          {
-                            item.enrolments.filter(
-                              (obj) => obj.status === "assigned"
-                            ).length
-                          }
-                        </div>
-                        <div className="w-1/3 py-1 text-white bg-gray-400">
-                          {
-                            item.enrolments.filter(
-                              (obj) => obj.status === "associate"
-                            ).length
-                          }
-                        </div>
-                        <div className="w-1/3 py-1 text-white bg-gray-400">
-                          {
-                            item.enrolments.filter(
-                              (obj) => obj.status === "career_break"
-                            ).length
-                          }
-                        </div>
-                        <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
-                          {
-                            item.enrolments.filter(
-                              (obj) => obj.status === "interested"
-                            ).length
-                          }
-                        </div>
+                        <Tooltip content="Assigned">
+                          <div className="w-1/3 rounded-tl-lg rounded-bl-lg py-1 text-white bg-blue-200">
+                            {
+                              item.enrolments.filter(
+                                (obj) => obj.status === "assigned"
+                              ).length
+                            }
+                          </div>
+                        </Tooltip>
+                        <Tooltip content="Associate">
+                          <div className="w-1/3 py-1 text-white bg-gray-400">
+                            {
+                              item.enrolments.filter(
+                                (obj) => obj.status === "associate"
+                              ).length
+                            }
+                          </div>
+                        </Tooltip>
+
+                        <Tooltip content="Career Break">
+                          <div className="w-1/3 py-1 text-white bg-gray-400">
+                            {
+                              item.enrolments.filter(
+                                (obj) => obj.status === "career_break"
+                              ).length
+                            }
+                          </div>
+                        </Tooltip>
+                        <Tooltip content="Interested">
+                          <div className="w-1/3 rounded-tr-lg rounded-br-lg py-1 text-white bg-blue-200">
+                            {
+                              item.enrolments.filter(
+                                (obj) => obj.status === "interested"
+                              ).length
+                            }
+                          </div>
+                        </Tooltip>
                       </div>
                     ) : (
                       <div className="flex">
@@ -186,21 +195,31 @@ const Table = ({
                   </td>
                   {/* Edit and Delete Buttons */}
                   <td className={classes}>
-                    <div className="flex items-center">
-                      <Tooltip content={`Edit ${title}`} className="">
-                        <Link to={`/${resource}/${item.id}/edit`}>
-                          <IconButton variant="text">
-                            <PencilIcon className="h-4 w-4" />
-                          </IconButton>
+                    <div className="flex items-center justify-between">
+                      {resourceIsEnrolments ? (
+                        <Link to={`/${resource}/${item.id}`}>
+                          <Button variant="outlined">View Enrolment</Button>
                         </Link>
-                      </Tooltip>
-                      <DeleteModal
-                        resource={resource}
-                        data={item}
-                        enrolments={resourceIsEnrolments ? enrolments : false}
-                        title={title}
-                        type="icon"
-                      />
+                      ) : (
+                        ""
+                      )}
+
+                      <div className="flex items-center">
+                        <Tooltip content={`Edit ${title}`}>
+                          <Link to={`/${resource}/${item.id}/edit`}>
+                            <IconButton variant="text">
+                              <PencilIcon className="h-4 w-4" />
+                            </IconButton>
+                          </Link>
+                        </Tooltip>
+                        <DeleteModal
+                          resource={resource}
+                          data={item}
+                          enrolments={resourceIsEnrolments ? enrolments : false}
+                          title={title}
+                          type="icon"
+                        />
+                      </div>
                     </div>
                   </td>
                 </tr>

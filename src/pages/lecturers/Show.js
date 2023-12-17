@@ -8,10 +8,7 @@ import {
   Typography,
   Button,
   Spinner,
-  Avatar,
-  Card,
-  CardBody,
-  CardHeader,
+  Avatar
 } from "@material-tailwind/react";
 import DeleteModal from "../../components/DeleteModal";
 import BackButton from "../../components/BackButton";
@@ -277,9 +274,9 @@ const Show = () => {
                     {emailIcon()} {lecturer.email}
                   </Typography>
 
-                  <div className="mt-3 flex gap-2">
+                  <div className="mt-3 flex items-center gap-4">
                     <Link to={`/lecturers/${id}/edit`}>
-                      <Button>Edit</Button>
+                      <Button variant="outlined">Edit</Button>
                     </Link>
                     {/* Passing the resource type to use in end point, 'data' to pass entire object */}
                     <DeleteModal
@@ -287,7 +284,10 @@ const Show = () => {
                       data={lecturer}
                       enrolments={enrolments}
                       title="Lecturer"
+                      color="red"
                     />
+
+                    {/* For testing only */}
                     <Button
                       onClick={() => {
                         genderAPICall(lecturer.name);

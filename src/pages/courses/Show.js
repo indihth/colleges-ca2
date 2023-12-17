@@ -184,7 +184,6 @@ const Show = () => {
                   </Link>
                   {/* Passing the resource type to use in end point, 'data' to pass entire object */}
                   <DeleteModal
-                    className=""
                     resource="courses"
                     data={course}
                     enrolments={enrolments}

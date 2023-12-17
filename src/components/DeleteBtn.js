@@ -7,12 +7,11 @@ import { Button } from "@material-tailwind/react";
 const DeleteBtn = ({
   id,
   resource,
-  deleteCallback,
   relatedResource = null,
   data,
   titleText = "Delete",
   enrolements,
-  toggleModal
+  toggleModal,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -22,8 +21,6 @@ const DeleteBtn = ({
   //   toggleModal();
   // };
   // If a related resource is included (enrolments), delete these first then resource
-
-
 
   const onDelete = () => {
     setIsLoading(true);
@@ -50,9 +47,9 @@ const DeleteBtn = ({
             headers: { Authorization: `Bearer ${token}` },
           })
           .then((response) => {
-            // Close modal window if open, or navigate to resource index 
-            (toggleModal) ? toggleModal() : navigate(`/${resource}`);
-            console.log("enrolment deleted, in course delete");
+            toggleModal(); // Close the modal window
+            navigate(`/${resource}`);
+            // console.log("enrolment deleted, in course delete");
           })
           .catch((error) => {
             console.log(error);
@@ -64,10 +61,9 @@ const DeleteBtn = ({
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {
-          // do something
-          console.log("no enrolments, resource delete");
           navigate(`/${resource}`);
-          // (toggleModal) ? toggleModal() : navigate(`/${resource}`);
+          toggleModal(); // Close the modal window
+          // console.log("no enrolments, resource delete");
         })
         .catch((error) => {
           console.log(error);

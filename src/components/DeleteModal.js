@@ -1,13 +1,10 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 // Components
 import {
   Button,
-  Dialog,
-  DialogBody,
-  DialogHeader,
-  DialogFooter,
+  Tooltip
 } from "@material-tailwind/react";
 import DeleteBtn from "./DeleteBtn";
 
@@ -19,7 +16,7 @@ const DeleteModal = ({
   type = "button",
   variant = "outlined",
   className = "",
-  color = "blue-gray"
+  color = "black"
 }) => {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
@@ -47,6 +44,8 @@ const DeleteModal = ({
         </Button>
       ) : (
         // White button with 'trash' icon
+        <Tooltip content={`Delete ${title}`}>
+        
         <Button
           onClick={toggleModal}
           variant="text"
@@ -72,6 +71,8 @@ const DeleteModal = ({
           </div>
           <p className="ms-3">Delete</p>
         </Button>
+        </Tooltip>
+
       )}
       {showModal ? (
         <>
